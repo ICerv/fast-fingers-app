@@ -4,7 +4,7 @@ import './style.css';
 import { quotesArray, random, allowedKeys } from './QuotesData';
 import Results from './Results';
 
-const Keyboard = () => {
+export const Keyboard = () => {
   const [input, setInput] = useState('');
   const [quote, setQuote] = useState({});
   const [index, setIndex] = useState(0);
@@ -177,4 +177,3 @@ const Keyboard = () => {
   );
 };
 
-export default Keyboard;

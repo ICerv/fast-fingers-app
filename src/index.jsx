@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import Header from './components/Header/index.';
 import Footer from './components/Footer';
-import Keyboard from './pages/TrainingSection/Keyboard';
+import TrainingPage from './pages/TrainingPage';
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Header />
 
       <main>
-        <Keyboard />
+        <TrainingPage />
       </main>
 
 

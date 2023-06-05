@@ -3,7 +3,7 @@ import './style.css'
 
 import { Keyboard } from "./Keyboard";
 
-const TrainingSection = () => {
+const TrainingPage = () => {
   return (
     <div>
       <Keyboard />
@@ -11,4 +11,4 @@ const TrainingSection = () => {
   )
 }
 
-export default TrainingSection
+export default TrainingPage;
