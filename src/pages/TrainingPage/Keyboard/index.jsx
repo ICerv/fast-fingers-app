@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 
 import { quotesArray, random, allowedKeys } from './QuotesData';
+import TextInput from './TextInput';
 import Results from './Results';
 
 export const Keyboard = () => {
@@ -87,7 +88,8 @@ export const Keyboard = () => {
       {/* INPUT TEXT  */}
       <div className="keyboard">
         <div className='input-container'>
-          <input
+            <TextInput />
+          {/* <input
             type="text"
             className="input-text"
             value={input}
@@ -96,7 +98,8 @@ export const Keyboard = () => {
             onChange={(e) => {
               setInput(e.target.value);
             }}
-          />
+
+          /> */}
 
           {/* POKUS
           {quote && quote.quote ? (
