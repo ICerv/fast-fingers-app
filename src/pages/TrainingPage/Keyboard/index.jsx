@@ -42,14 +42,17 @@ export const Keyboard = () => {
   };
 
 
-  const timeRemains = ((60 - duration) / 60).toFixed(2);
-  const _accuracy = Math.floor((index - errorIndex) / index * 100);
-  const _wpm = Math.round(correctIndex / 5 / timeRemains);
+  useEffect(() => {
+    if (index > 5) {
 
-  if (index > 5) {
-    setAccuracy(_accuracy);
-    setWpm(_wpm);
-  }
+      const timeRemains = ((60 - duration) / 60).toFixed(2);
+      const _accuracy = Math.floor((index - errorIndex) / index * 100);
+      const _wpm = Math.round(correctIndex / 5 / timeRemains);
+
+      setAccuracy(_accuracy);
+      setWpm(_wpm);
+    }
+  }, [index, errorIndex, correctIndex, duration])
 
 
   useEffect(() => {
