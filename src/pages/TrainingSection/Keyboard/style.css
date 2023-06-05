@@ -6,14 +6,27 @@
   height: auto;
 }
 
-.keyboard {
+.result-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  margin-top: 2rem;
-  flex: 2 1 80%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: white;
+  justify-content: flex-start;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.result-list {
+  list-style-type: none;
+  text-align: center;
+  flex: 0 0 16%;
+  max-width: 16%;
+}
+
+.result-list small {
+  font-size: small;
 }
 
 .input-container {
@@ -42,6 +55,16 @@
   position: relative;
   outline: none;
   border-radius: 4px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 2rem;
+  flex: 2 1 80%;
 }
 
 .row {

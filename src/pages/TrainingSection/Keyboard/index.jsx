@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 
 import { quotesArray, random, allowedKeys } from './QuotesData';
+import Results from './Results';
 
 const Keyboard = () => {
   const [input, setInput] = useState('');
@@ -9,6 +10,9 @@ const Keyboard = () => {
   const [index, setIndex] = useState(0);
   const [errorIndex, setErrorIndex] = useState(0);
   const [correctIndex, setCorrectIndex] = useState(0);
+  const [duration, setDuration] = useState(60);
+  const [accuracy, setAccuracy] = useState(0);
+  const [wpm, setWpm] = useState(0);
 
 
   useEffect(() => {
@@ -37,6 +41,17 @@ const Keyboard = () => {
     }
   };
 
+
+  const timeRemains = ((60 - duration) / 60).toFixed(2);
+  const _accuracy = Math.floor((index - errorIndex) / index * 100);
+  const _wpm = Math.round(correctIndex / 5 / timeRemains);
+
+  if (index > 5) {
+    setAccuracy(_accuracy);
+    setWpm(_wpm);
+  }
+
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
 
@@ -50,6 +65,15 @@ const Keyboard = () => {
 
   return (
     <div className='container-page'>
+
+      {/* RESULTS  */}
+      <div className='result-container'>
+        <ul className="result-list">
+          <Results name="Čas" data={duration} />
+          <Results name="Chyby" data={errorIndex} />
+          <Results name="Přesnost" data={accuracy} symble="%" />
+        </ul>
+      </div>
 
       {/* INPUT TEXT  */}
       <div className="keyboard">
