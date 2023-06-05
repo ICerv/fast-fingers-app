@@ -1,14 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
+import { quotesArray, random, allowedKeys } from './QuotesData';
+
 const Keyboard = () => {
   const [input, setInput] = useState('');
+  const [quote, setQuote] = useState({});
+  const [index, setIndex] = useState(0);
+  const [errorIndex, setErrorIndex] = useState(0);
+  const [correctIndex, setCorrectIndex] = useState(0);
+
+
+  useEffect(() => {
+    const newQuote = random(quotesArray);
+    setQuote(newQuote);
+    setInput(newQuote.quote);
+  }, []);
 
 
   const handleKeyDown = (event) => {
     event.preventDefault();
-    console.log(event)
+    // console.log(event)
     const { key } = event;
+
+    if (quote && quote.quote) {
+      const quoteText = quote.quote;
+
+      if (key === quoteText.charAt(index)) {
+        setIndex(index + 1);
+        const currentChar = quoteText.substring(index + 1, index + quoteText.length);
+        setInput(currentChar);
+        setCorrectIndex(correctIndex + 1);
+      } else if (allowedKeys.includes(key)) {
+        setErrorIndex(errorIndex + 1);
+      }
+    }
   };
 
   useEffect(() => {
@@ -33,10 +59,10 @@ const Keyboard = () => {
             className="input-text"
             value={input}
             onKeyDown={handleKeyDown}
-          // autoFocus
-          // onChange={(e) => {
-          //   setInput(e.target.value);
-          // }}
+            // autoFocus
+            onChange={(e) => {
+              setInput(e.target.value);
+            }}
           />
 
           {/* POKUS
