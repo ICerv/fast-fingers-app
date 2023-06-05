@@ -16,12 +16,18 @@ export const Keyboard = () => {
 
 
   useEffect(() => {
+    // Select a random quote from the quotesArray
     const newQuote = random(quotesArray);
+
+    // Set the selected quote as the current quote in state
     setQuote(newQuote);
+
+    // Set the input value to the quote text
     setInput(newQuote.quote);
   }, []);
 
 
+  //Compare the pressed key to the quote and update the corresponding indexes
   const handleKeyDown = (event) => {
     event.preventDefault();
     // console.log(event)
@@ -42,10 +48,11 @@ export const Keyboard = () => {
   };
 
 
+  //Update accuracy and WPM based on tracked variable changes
   useEffect(() => {
     if (index > 5) {
 
-      const timeRemains = ((60 - duration) / 60).toFixed(2);
+      const timeRemains = Math.round(((60 - duration) / 60) * 100) / 100;
       const _accuracy = Math.floor((index - errorIndex) / index * 100);
       const _wpm = Math.round(correctIndex / 5 / timeRemains);
 
@@ -57,7 +64,6 @@ export const Keyboard = () => {
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
-
     // Cleanup function to remove event listener
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
@@ -74,7 +80,7 @@ export const Keyboard = () => {
         <ul className="result-list">
           <Results name="Čas" data={duration} />
           <Results name="Chyby" data={errorIndex} />
-          <Results name="Přesnost" data={accuracy} symble="%" />
+          <Results name="Přesnost" data={accuracy} symbol="%" />
         </ul>
       </div>
 
