@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 const Header = () => {
@@ -14,11 +15,11 @@ const Header = () => {
                 </div>
                 <div className="navigation">
                 <button className="nav-btn" onClick={toggleNav}></button>
-                    <nav className={`rollout-nav ${!navOpen ? 'nav-closed' : ''}`}>
-                        <a>Domů</a>
-                        <a>Cvičení</a>
-                        <a>Testy</a>
-                    </nav>
+                <div className={`rollout-nav ${!navOpen ? 'nav-closed' : ''}`}>
+                    <Link to="/">Domů</Link>
+                    <Link to="/lessons">Cvičení</Link>
+                    <Link to="/tests">Testy</Link>
+                </div>
                 </div>
             </div> 
         </header>

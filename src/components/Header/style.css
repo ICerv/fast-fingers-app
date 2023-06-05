@@ -1,4 +1,4 @@
-@import '~typeface-roboto'; 
+@import '~typeface-roboto';
 
 header {
   height: 5rem;
@@ -6,7 +6,6 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   color: white;
-  background-color: #15616D;
 }
 
 .navigation {
@@ -23,17 +22,24 @@ header {
 .site-logo {
   width: 160px;
   height: 70px;
-  background-image: url("./img/logo.jpg");
+  background-image: url('./img/logo.png');
   background-size: contain;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .rollout-nav {
-  padding: 0 20px 10px 20px;
+  z-index: 10;
+  padding: 10px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #15616D;
-  
+  background: #203A43;
 }
 
 .nav-btn {
@@ -47,9 +53,23 @@ header {
   cursor: pointer;
 }
 
+.rollout-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: 0.5s;
+  line-height: 40px;
+  opacity: 0.5;
+  margin: 0;
+}
+
 .rollout-nav a:hover {
   cursor: pointer;
-  border-bottom: 3px solid #c62828;
+  opacity: 1;
+
 }
 
 .nav-closed {
@@ -57,26 +77,32 @@ header {
 }
 
 @media (min-width: 768px) {
-  header {
-    padding-right: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .rollout-nav {
-    padding: 0;
-    display: flex;
-    flex-direction: row;  
-  }
+    .rollout-nav {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      background: transparent;
+    }
 
-  .rollout-nav a {
-    margin: 1rem;
-  }
+    .rollout-nav a {
+      border-bottom: 1px solid transparent;
+      text-decoration: none;
+      margin: 1rem;
+    }
 
+    .rollout-nav a:hover {
+      border-bottom: 3px solid #c62828;
+      cursor: pointer;
+    }
 
-  .nav-btn {
-    display: none;
-  }
+    .nav-btn {
+      display: none;
+    }
 }

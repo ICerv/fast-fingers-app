@@ -1,12 +1,34 @@
 footer {
-  background-color: #15616D;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+  color: white;
   padding: 1rem 0;
+  bottom: 0;
 }
 
-.footer__content {
-  max-width: 25rem;
-  margin: 0 auto;
-  font-size: small;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+  line-height: 1.8rem;
+
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 120%;
   text-align: center;
-  color: #EFEFEF;
+}
+
+.footer-text {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+    line-height: 1.3rem;
+  }
 }

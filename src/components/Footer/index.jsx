@@ -4,7 +4,14 @@ import './style.css'
 const Footer = () => {
   return (
     <footer>
-      <p className="footer__content">&copy;2023 FastFingers - Czechitas, Digitální akademie: Web</p>
+      <div className='footer-container'>
+        <div className='footer-title'>
+          FastFingers
+        </div>
+        <div className='footer-text'>
+          &copy;2023 - Czechitas, Digitální akademie: Web
+        </div>
+      </div>
     </footer>
   )
 }
