@@ -84,10 +84,13 @@ export const Keyboard = () => {
           <Results name="Přesnost" data={accuracy} symbol="%" />
         </ul>
       </div>
-
+      
       {/* INPUT TEXT  */}
       <div className="keyboard">
-        <div className='input-container'>
+      <div className='hand-image'>
+        <img src={require('./img/Hand left.png')} className='hand left' alt='Left hand'/>
+      </div>
+        <div className='input-container'> 
             <TextInput />
           {/* <input
             type="text"
@@ -183,7 +186,9 @@ export const Keyboard = () => {
           <li className='key' id="AltGr">AltGr</li>
           <li className='key' id="Ctrl">Ctrl</li>
         </ul>
-
+        <div className='hand-image'>
+        <img src={require('./img/Hand right.png')} className='hand right' alt='Right hand'/>
+      </div>
       </div>
     </div>
   );

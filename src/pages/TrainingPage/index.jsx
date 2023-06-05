@@ -5,7 +5,7 @@ import { Keyboard } from "./Keyboard";
 
 const TrainingPage = () => {
   return (
-    <div>
+    <div className="training-section">
       <Keyboard />
     </div>
   )

@@ -2,30 +2,30 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 
 const TextInput = () => {
-  const targetText = 'f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff'
+  const targetText = 'f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f'
   const [inputText, setInputText] = useState('');
 
   const validKey = (keyCode) => {
     return keyIsNumber(keyCode) || 
     keyIsUpperKey(keyCode) || 
-    keyIsLowerKer(keyCode) || 
+    keyIsLowerKey(keyCode) || 
     keyIsAvalibeSymbole(keyCode)
   }
 
   const keyIsNumber = (keyCode) => {
-        return keyCode >= 48 && keyCode <= 57
+    return keyCode >= 48 && keyCode <= 57
   }
 
   const keyIsUpperKey = (keyCode) => {
-        return keyCode >= 65 && keyCode <= 90
+    return keyCode >= 65 && keyCode <= 90
   }
 
-  const keyIsLowerKer = (keyCode) => {
-        return keyCode >= 97 && keyCode <= 122
+  const keyIsLowerKey = (keyCode) => {
+    return keyCode >= 97 && keyCode <= 223
   }
 
   const keyIsAvalibeSymbole = (keyCode) => {
-        return [13, 32].includes(keyCode)
+    return [13, 32].includes(keyCode)
   }
 
   const handleInputChange = (event) => {
@@ -47,7 +47,9 @@ const TextInput = () => {
     return targetChars.map((char, index) => {
       if (index < inputText.length) {
         return <span key={index} className={char === inputChars[index] ? 'letter right' : 'letter wrong'}>{char}</span>
-      } 
+      } if (index === inputText.length) {
+        return <span key={index} className='letter active'>{char}</span>
+      }
       return <span key={index} className='letter'>{char}</span>
        
     });
