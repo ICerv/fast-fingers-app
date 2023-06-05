@@ -2,64 +2,126 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 
 const Keyboard = () => {
-  const [inputText, setInputText] = useState('');
+  const [input, setInput] = useState('');
+
+
+  const handleKeyDown = (event) => {
+    event.preventDefault();
+    console.log(event)
+    const { key } = event;
+  };
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
-      const { key } = event;
-      handleKeyPress(key);
-    };
-
     window.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup function to remove event listener
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
 
 
-  //Dodelat CapsLk, Ctrl, Alt, AltGr a dalsi...
-  const handleKeyPress = (key) => {
-    if (key === 'Backspace') {
-      setInputText(prevText => prevText.slice(0, -1));
-    } else if (key === 'Enter') {
-      setInputText(prevText => prevText + '\n');
-    } else if (key === 'Shift') {
-      setInputText(prevText => prevText.toUpperCase());
-    } else {
-      setInputText(prevText => prevText + key);
-    }
-  };
-
-  const keyboardRows = [
-    [';', '+', 'ě', 'š', 'č', 'ř', 'ž', 'ý', 'á', 'í', 'é', '=', '´', 'Backspace'],
-    ['Tab', 'Q', 'W', 'E', 'R', 'T', 'Z', 'U', 'I', 'O', 'P', 'ú', ')', 'Enter'],
-    ['CapsLk', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'ů', '§', '¨¨'],
-    ['Shift', 'Y', 'X', 'C', 'V', 'B', 'N', 'M', ',', '.', '-', 'Shift'],
-    ['Ctrl', 'Fn', 'Alt', 'Space', 'AltGr', 'Ctrl', 'Home', 'PgUp', 'PgDn', 'End']
-  ];
 
   return (
-    <div className='main-container'>
-      <textarea
-        value={inputText}
-        readOnly
-        rows={7}
-        className="input-text"
-      />
+    <div className='container-page'>
+
+      {/* INPUT TEXT  */}
       <div className="keyboard">
-        {keyboardRows.map((row, rowIndex) => (
-          <div key={rowIndex} className="keyboard-row">
-            {row.map((key, keyIndex) => (
-              <button
-                key={keyIndex}
-                onClick={() => handleKeyPress(key)}
-                className={`keyboard-key ${key === 'Shift' ? 'shift-key' : ''}`}
-              >
-                {key}
-              </button>
-            ))}
-          </div>
-        ))}
+        <div className='input-container'>
+          <input
+            type="text"
+            className="input-text"
+            value={input}
+            onKeyDown={handleKeyDown}
+          // autoFocus
+          // onChange={(e) => {
+          //   setInput(e.target.value);
+          // }}
+          />
+
+          {/* POKUS
+          {quote && quote.quote ? (
+            <div className='input-text'>
+              {quote.quote.split('').map((char, charId) => (
+                <span
+                  key={charId}
+                  className={`${charId === index ? 'active' : ''} ${charId >= index ? 'upcoming' : ''
+                    } ${charId < index && char !== input[charId] ? 'wrong' : ''
+                    }`}
+                >
+                  {char}
+                </span>
+              ))}
+            </div>
+          ) : null} */}
+        </div>
+
+        {/* KEYBOARD  */}
+        <ul className="row row-1">
+          <li className='key' id=";">;</li>
+          <li className='key' id="1">1</li>
+          <li className='key' id="2">2</li>
+          <li className='key' id="3">3</li>
+          <li className='key' id="4">4</li>
+          <li className='key' id="5">5</li>
+          <li className='key' id="6">6</li>
+          <li className='key' id="7">7</li>
+          <li className='key' id="8">8</li>
+          <li className='key' id="9">9</li>
+          <li className='key' id="0">0</li>
+          <li className='key' id="=">=</li>
+          <li className=' key special-key' id="Backspace">Backspace</li>
+        </ul>
+        <ul className="row row-2">
+          <li className='key special-key' id="Tab">Tab</li>
+          <li className='key' id="Q">Q</li>
+          <li className='key' id="W">W</li>
+          <li className='key' id="E">E</li>
+          <li className='key' id="R">R</li>
+          <li className='key' id="T">T</li>
+          <li className='key' id="Y">Y</li>
+          <li className='key' id="U">U</li>
+          <li className='key' id="I">I</li>
+          <li className='key' id="O">O</li>
+          <li className='key' id="P">P</li>
+          <li className='key'>[</li>
+          <li className='key'>]</li>
+        </ul>
+        <ul className="row row-3">
+          <li className='key special-key' id="CapsLk">CapsLk</li>
+          <li className='key' id="A">A</li>
+          <li className='key' id="S">S</li>
+          <li className='key' id="D">D</li>
+          <li className='key' id="F">F</li>
+          <li className='key' id="G">G</li>
+          <li className='key' id="H">H</li>
+          <li className='key' id="J">J</li>
+          <li className='key' id="K">K</li>
+          <li className='key' id="L">L</li>
+          <li className='key'>;</li>
+          <li className='key'>{"'"}</li>
+        </ul>
+        <ul className="row row-4">
+          <li className='key special-key' id="Shift">Shift</li>
+          <li className='key' id="Z">Z</li>
+          <li className='key' id="X">X</li>
+          <li className='key' id="C">C</li>
+          <li className='key' id="V">V</li>
+          <li className='key' id="B">B</li>
+          <li className='key' id="N">N</li>
+          <li className='key' id="M">M</li>
+          <li className='key'>,</li>
+          <li className='key'>.</li>
+          <li className='key'>/</li>
+        </ul>
+        <ul className="row row-5">
+          <li className='key' id="Ctrl">Ctrl</li>
+          <li className='key' id="Alt">Alt</li>
+          <li className='key' id="space">SPACE</li>
+          <li className='key' id="AltGr">AltGr</li>
+          <li className='key' id="Ctrl">Ctrl</li>
+        </ul>
+
       </div>
     </div>
   );

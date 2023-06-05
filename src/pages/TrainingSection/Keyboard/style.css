@@ -1,4 +1,135 @@
-.main-container {
+.container-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  height: auto;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 2rem;
+  flex: 2 1 80%;
+}
+
+.input-container {
+  width: 650px;
+  height: 20vh;
+  border: 1px solid white;
+  box-shadow: 2px 2px 4px rgba(243, 241, 241);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.input-text {
+  color: #FAFAFA;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  caret-color: #c62828;
+  font-family: sans-serif;
+  overflow: auto;
+  resize: none;
+  width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  outline: none;
+  border-radius: 4px;
+}
+
+.row {
+  list-style: none;
+  display: flex;
+}
+
+.row-1 {
+  padding-left: 0em;
+}
+
+.row-2 {
+  padding-left: 0.25em;
+}
+
+.row-3 {
+  padding-left: 0.5em;
+}
+
+.row-4 {
+  padding-left: 0em;
+}
+
+.row-5 {
+  padding-left: 0em;
+}
+
+ul {
+  display: block;
+}
+
+.key {
+  height: 3em;
+  width: 3em;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.2em;
+  /* transition: 0.3s; */
+  text-align: center;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  opacity: 0.8;
+  border: 2px solid #706d6d;
+  background-color: white;
+  cursor: pointer;
+}
+
+.special-key {
+  width: 6.2rem;
+}
+
+#space {
+  height: 3em;
+  width: 21em;
+  color: black;
+  font-family: sans-serif;
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.4em;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 1em;
+  background-color: white;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,4 +168,4 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-}
+} */
