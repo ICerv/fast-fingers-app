@@ -55,13 +55,22 @@ const TrainingPage = () => {
 
       {/* INPUT TEXT  */}
       <div className="keyboard">
+      
         <div className='input-container'>
           <TextInput
             targetText={targetText} />
         </div>
+        <div className='hand-image'>
+
+        <img src={require('./img/Hand left.png')} className='hand left' alt='Left hand'/>
+      </div>
 
         {/* KEYBOARD  */}
         <Keyboard />
+        
+        <div className='hand-image'>
+          <img src={require('./img/Hand right.png')} className='hand right' alt='Right hand'/>
+      </div>
       </div>
     </div>
   );
