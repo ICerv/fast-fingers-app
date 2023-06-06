@@ -3,6 +3,7 @@ import './style.css';
 import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
+import Timer from './Timer';
 
 const TrainingPage = () => {
   const targetText = 'f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff';
@@ -10,6 +11,9 @@ const TrainingPage = () => {
   const [errorIndex, setErrorIndex] = useState(0);
   const [correctIndex, setCorrectIndex] = useState(0);
   const [accuracy, setAccuracy] = useState(0);
+  const [startTime, setStartTime] = useState(0);
+  const [endTime, setEndTime] = useState(0);
+
 
   const handleInputChange = (event) => {
     const { key } = event;
@@ -40,16 +44,37 @@ const TrainingPage = () => {
     };
   }, [inputText, correctIndex, errorIndex]);
 
+  const handleStart = () => {
+    setStartTime(Date.now()); // set start time
+  };
+
+  const handleEnd = () => {
+    setEndTime(Date.now()); // set end time
+  };
+
+  const calculateWPM = () => {
+    const words = inputText.trim().split(' ');
+    const numWords = words.length;
+    const minutes = (endTime - startTime) / 60000; // convert milliseconds to minutes
+    const wpm = Math.floor(numWords / minutes);
+    return wpm;
+  };
+
+  const wpm = endTime > startTime ? calculateWPM() : 0;
+
 
   return (
     <div className='container-page'>
+
+      {/* TIMER */}
+      <Timer onStart={handleStart} onEnd={handleEnd} />
 
       {/* RESULTS  */}
       <div className='result-container'>
         <ul className="result-list">
           <Results name="Chyby" data={errorIndex} />
           <Results name="Přesnost" data={accuracy} symbol="%" />
-
+          <Results name="WPM" data={wpm} />
         </ul>
       </div>
 
