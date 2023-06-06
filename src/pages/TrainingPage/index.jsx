@@ -57,7 +57,6 @@ const TrainingPage = () => {
       <div className="keyboard">
         <div className='input-container'>
           <TextInput
-            inputText={inputText}
             targetText={targetText} />
         </div>
 
