@@ -65,6 +65,7 @@
   margin-bottom: 40px;
   margin-top: 2rem;
   flex: 2 1 80%;
+  position: relative;
 }
 
 .row {
@@ -133,6 +134,20 @@ ul {
   font-size: 1em;
   background-color: white;
   opacity: 0.8;
+}
+
+img.hand {
+  width: 20rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.hand.left {
+  left: 100px;
+}
+
+.hand.right {
+  right: 100px;
 }
 
 

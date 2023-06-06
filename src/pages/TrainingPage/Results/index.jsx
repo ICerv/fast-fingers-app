@@ -12,5 +12,5 @@ const Results = ({ name, data, symbol }) => {
     </li>
   )
 }
-
 export default Results;
+
