@@ -1,3 +1,21 @@
-.training-section {
-    height: 80vh;
+.container-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    height: auto;
+}
+
+img.hand {
+    width: 17rem;
+    position: absolute;
+    bottom: 5rem;
+}
+  
+.hand.left {
+    left: 100px;
+}
+  
+.hand.right {
+    right: 100px;
 }
