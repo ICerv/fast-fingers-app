@@ -1,6 +1,7 @@
 li.result-item {
-  margin-top: 1rem;
-  padding-top: 4rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 0.25rem;
   border: 1px solid white;
   box-shadow: 2px 2px 4px rgba(243, 241, 241);

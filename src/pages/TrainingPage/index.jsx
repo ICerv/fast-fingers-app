@@ -67,7 +67,28 @@ const TrainingPage = () => {
     <div className='container-page'>
 
       {/* TIMER */}
-      <Timer onStart={handleStart} onEnd={handleEnd} />
+      <div className="middle-container">
+        <Timer onStart={handleStart} onEnd={handleEnd} />
+
+        {/* INPUT TEXT  */}
+        <div className="keyboard">
+
+          <div className='input-container'>
+            <TextInput targetText={targetText} />
+          </div>
+
+          <div className='hand-image'>
+            <img src={require('./img/Hand left.png')} className='hand left' alt='Left hand' />
+          </div>
+
+          {/* KEYBOARD  */}
+          <Keyboard />
+
+          <div className='hand-image'>
+            <img src={require('./img/Hand right.png')} className='hand right' alt='Right hand' />
+          </div>
+        </div>
+      </div>
 
       {/* RESULTS  */}
       <div className='result-container'>
@@ -76,26 +97,6 @@ const TrainingPage = () => {
           <Results name="Přesnost" data={accuracy} symbol="%" />
           <Results name="WPM" data={wpm} />
         </ul>
-      </div>
-
-      {/* INPUT TEXT  */}
-      <div className="keyboard">
-      
-        <div className='input-container'>
-          <TextInput
-            targetText={targetText} />
-        </div>
-        <div className='hand-image'>
-
-        <img src={require('./img/Hand left.png')} className='hand left' alt='Left hand'/>
-      </div>
-
-        {/* KEYBOARD  */}
-        <Keyboard />
-        
-        <div className='hand-image'>
-          <img src={require('./img/Hand right.png')} className='hand right' alt='Right hand'/>
-      </div>
       </div>
     </div>
   );

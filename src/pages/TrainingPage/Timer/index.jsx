@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './style.css';
 
 export const Timer = ({ onStart, onEnd }) => {
   const [time, setTime] = useState(60); // start time
@@ -33,7 +34,7 @@ export const Timer = ({ onStart, onEnd }) => {
       <button className='timer-start-btn' onClick={handleStart}>Start</button>
 
       {/* TIMER */}
-      <div>Time: {time}</div>
+      <div className='time'>Time: {time}</div>
     </div>
   );
 };
