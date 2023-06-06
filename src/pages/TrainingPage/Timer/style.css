@@ -5,19 +5,26 @@
   gap: 1rem;
 }
 
-.timer-start-btn {
+.btn {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  color: #c62828;
   opacity: 0.8;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
 }
 
-.time {
+.timer-start-btn {
+  color: green;
+}
 
+.timer-stop-btn {
+  color: #c62828;
+}
+
+
+.time {
   color: white;
   opacity: 0.8;
 }
