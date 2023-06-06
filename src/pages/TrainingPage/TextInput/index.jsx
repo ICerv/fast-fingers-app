@@ -61,7 +61,7 @@ const TextInput = ({ targetText }) => {
 
   return (
     <>
-      <div>{renderText()}</div>
+      <div className='input-text'>{renderText()}</div>
     </>
   );
 }
