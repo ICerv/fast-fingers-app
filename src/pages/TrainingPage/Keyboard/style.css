@@ -60,7 +60,11 @@ ul {
   width: 6.2rem;
 }
 
-#space {
+.key.active {
+  background-color: #3abbbb;
+}
+
+.space {
   height: 3em;
   width: 21em;
   color: black;

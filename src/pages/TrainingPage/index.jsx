@@ -4,6 +4,7 @@ import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
+import{ validKey } from './validKey'
 
 const TrainingPage = () => {
   const targetText = 'f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff';
@@ -14,25 +15,24 @@ const TrainingPage = () => {
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
 
-
   const handleInputChange = (event) => {
+
+    if (validKey(event.keyCode)) {
+      setInputText((prev) => prev + event.key)
+    } else if (event.keyCode === 8) {
+      setInputText((prev) => prev.slice(0, -1))
+    } 
+
     const { key } = event;
-    let newCorrectIndex = correctIndex;
-    let newErrorIndex = errorIndex;
 
     if (key === targetText.charAt(correctIndex) || key === ' ') {
-      setInputText(inputText + key);
-      newCorrectIndex++;
+      setCorrectIndex((index) => index + 1)
     } else {
-      setInputText(inputText + key);
-      newErrorIndex++;
+      setErrorIndex((index) => index + 1)
     }
 
-    setCorrectIndex(newCorrectIndex);
-    setErrorIndex(newErrorIndex);
-
-    const _accuracy = newCorrectIndex + newErrorIndex !== 0
-      ? Math.floor((newCorrectIndex / (newCorrectIndex + newErrorIndex)) * 100)
+    const _accuracy = correctIndex + errorIndex !== 0
+      ? Math.floor((correctIndex / (correctIndex + errorIndex)) * 100)
       : 0;
     setAccuracy(_accuracy);
   };
@@ -42,7 +42,7 @@ const TrainingPage = () => {
     return () => {
       window.removeEventListener('keydown', handleInputChange);
     };
-  }, [inputText, correctIndex, errorIndex]);
+  }, [correctIndex, errorIndex]);
 
   const handleStart = () => {
     setStartTime(Date.now()); // set start time
@@ -74,7 +74,10 @@ const TrainingPage = () => {
         <div className="keyboard">
 
           <div className='input-container'>
-            <TextInput targetText={targetText} />
+            <TextInput 
+            targetText={targetText} 
+            inputText={inputText}
+            />
           </div>
 
           <div className="keyboard-container">
@@ -84,7 +87,10 @@ const TrainingPage = () => {
             </div>
 
             {/* KEYBOARD  */}
-            <Keyboard />
+            <Keyboard 
+            targetText={targetText} 
+            inputText={inputText}
+            />
 
             <div className='hand-image'>
               <img src={require('./img/Hand right.png')} className='hand right' alt='Right hand' />
