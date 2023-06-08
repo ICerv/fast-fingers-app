@@ -80,6 +80,22 @@ ul {
   opacity: 0.8;
 }
 
+.key_two {
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  left: 4px;
+  top: -10px
+}
+
+.bottom {
+  position: absolute;
+  right: 4px;
+  bottom: -10px
+}
+
 
 
 

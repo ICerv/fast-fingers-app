@@ -4,10 +4,10 @@ import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
-import{ validKey } from './validKey'
+import{ validKey } from './generalConstants'
 
 const TrainingPage = () => {
-  const targetText = 'f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff';
+  const targetText = '30 % všech lidí, 25 % žáků, 80 % studentů, 66 % učitelů';
   const [inputText, setInputText] = useState('');
   const [errorIndex, setErrorIndex] = useState(0);
   const [correctIndex, setCorrectIndex] = useState(0);
@@ -24,11 +24,14 @@ const TrainingPage = () => {
     } 
 
     const { key } = event;
+ 
+    if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
 
-    if (key === targetText.charAt(correctIndex) || key === ' ') {
-      setCorrectIndex((index) => index + 1)
-    } else {
-      setErrorIndex((index) => index + 1)
+      if (key === targetText.charAt(correctIndex) || key === ' ') {
+        setCorrectIndex((index) => index + 1)
+      } else {
+        setErrorIndex((index) => index + 1)
+      }
     }
 
     const _accuracy = correctIndex + errorIndex !== 0
