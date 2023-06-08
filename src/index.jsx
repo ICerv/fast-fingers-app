@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import TrainingPage from './pages/TrainingPage';
 import HomePage from './pages/HomePage'
 import ErrorPage from './pages/ErrorPage'
+import LessonsPage from './pages/LessonsPage';
 
 
 const App = () => {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/lessons',
-        element: <TrainingPage/>,
+        element: <LessonsPage/>,
       },
   
     ]

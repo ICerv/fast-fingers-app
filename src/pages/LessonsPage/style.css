@@ -1,0 +1,133 @@
+.lessons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.lessons-section {
+    width: 80vw;
+    background-color: rgba(231, 242, 245, 0.8);
+    color: #203A43;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.section-container {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-info {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.amount {
+    margin-top: 5px;
+}
+
+.section-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    background: transparent;
+    background-size: contain;
+}
+
+.icon-closed {
+    background-image: url('./img/icon-closed.png');
+}
+
+.icon-opened {
+    background-image: url('./img/icon-opened.png');
+}
+
+.lessons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 2%;
+}
+
+.lesson-card {
+    width: 80vw;
+    height: 10rem;
+    padding-top: 10px;
+    margin-top: 1rem;
+    background-color: rgba(231, 242, 245, 0.8);
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lesson-number {
+    font-size: 22px;
+    color: white;
+    background-color: #15616D;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.lesson-title {
+    font-size: 24px;
+    color: #156a89;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.lesson_intro {
+    color: #156a89;
+    font-size: 16px;
+    font-family: Arial, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    
+    .lessons-section {
+        width: 70vw;
+    }
+    
+    .section-info {
+        gap: 2rem;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    
+    .section-icon {
+        margin-right: 1rem;
+    }
+    
+    .lessons-list {
+        width: 70vw;
+    }
+    
+    .lesson-card {
+        width: 30%;
+    }
+
+}
