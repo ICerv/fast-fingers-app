@@ -1,6 +1,6 @@
 import React from 'react';
-import { rightShiftSymbol } from '../generalConstants'
-import { lefttShiftSymbol } from '../generalConstants'
+import { rightShiftSymbol } from '../../generalConstants'
+import { lefttShiftSymbol } from '../../generalConstants'
 import './style.css';
 
 

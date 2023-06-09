@@ -4,7 +4,7 @@ import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
-import{ validKey } from './generalConstants'
+import{ validKey } from '../generalConstants'
 
 const TrainingPage = () => {
   const targetText = '30 % všech lidí, 25 % žáků, 80 % studentů, 66 % učitelů';
