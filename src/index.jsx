@@ -8,7 +8,7 @@ import TrainingPage from './pages/TrainingPage';
 import HomePage from './pages/HomePage'
 import ErrorPage from './pages/ErrorPage'
 import LessonsPage from './pages/LessonsPage';
-
+import TestsPage from './pages/TestsPage';
 
 const App = () => {
   return (
@@ -33,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: '/lessons',
         element: <LessonsPage/>,
+      },
+      {
+        path: '/tests',
+        element: <TestsPage/>,
+      },
+      {
+        path: '/lesson/lesson1',
+        element: <TrainingPage/>,
       },
   
     ]

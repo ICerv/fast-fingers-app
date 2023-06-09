@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import './style.css'; 
 
 const LessonsPage = () => {
+    const navigate = useNavigate()
+
     return (
         <div className='lessons-container'>
             <div className='lessons-section'>
@@ -17,7 +20,7 @@ const LessonsPage = () => {
                 </div>
             </div>
             <div className='lessons-list'>
-                <div className="lesson-card">
+                <div className="lesson-card" onClick={() => navigate('/lesson/lesson1')}>
                     <span className="lesson-number">Lekce 1</span>
                     <div className="lesson-title">Písmena f, j а mezera</div>
                     <p className="lesson_intro">5 úkolů</p>
