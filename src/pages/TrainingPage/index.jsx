@@ -1,41 +1,53 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import './style.css';
 import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
+import { exercisesSections } from '../exercisesSections';
 import { validKey } from '../generalConstants'
 
 const TrainingPage = () => {
-  const targetText = '30 % všech lidí, 25 % žáků, 80 % studentů, 66 % učitelů';
+  const { sectionId, lessonId } = useParams()
+  const section = exercisesSections.find((section) => section.id === Number(sectionId))
+  const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
+  const test = true;
+  const targetText = lesson.exercises[0];
   const [inputText, setInputText] = useState('');
-  const [errorIndex, setErrorIndex] = useState(0);
-  const [correctIndex, setCorrectIndex] = useState(0);
+  const [index, setIndex] = useState(0);
+  const [errorCount, setErrorCount] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [accuracy, setAccuracy] = useState(0);
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
 
   const handleInputChange = (event) => {
 
-    if (validKey(event.keyCode)) {
-      setInputText((prev) => prev + event.key)
-    } else if (event.keyCode === 8) {
-      setInputText((prev) => prev.slice(0, -1))
-    }
+    // if (validKey(event.keyCode)) {
+    //   setInputText((prev) => prev + event.key)
+    // } else if (event.keyCode === 8) {
+    //   setInputText((prev) => prev.slice(0, -1))
+    // } 
 
     const { key } = event;
 
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
-
-      if (key === targetText.charAt(correctIndex) || key === ' ') {
-        setCorrectIndex((index) => index + 1)
+      // console.log(key , targetText.charAt(correctIndex) , 'test')
+      if (key === targetText.charAt(index)) {
+        setIndex(index + 1)
+        setCorrectCount(correctCount + 1)
+        setInputText((prev) => prev + event.key)
+      } else if (test) {
+        setErrorCount(errorCount + 1)
       } else {
-        setErrorIndex((index) => index + 1)
+        setErrorCount(errorCount + 1)
+        setInputText((prev) => prev + event.key)
       }
     }
 
-    const _accuracy = correctIndex + errorIndex !== 0
-      ? Math.floor((correctIndex / (correctIndex + errorIndex)) * 100)
+    const _accuracy = correctCount + errorCount !== 0
+      ? Math.floor((correctCount / (correctCount + errorCount)) * 100)
       : 0;
     setAccuracy(_accuracy);
   };
@@ -45,7 +57,7 @@ const TrainingPage = () => {
     return () => {
       window.removeEventListener('keydown', handleInputChange);
     };
-  }, [correctIndex, errorIndex]);
+  }, [correctCount, errorCount]);
 
   const handleStart = () => {
     setStartTime(Date.now()); // set start time
@@ -105,7 +117,7 @@ const TrainingPage = () => {
       {/* RESULTS  */}
       <div className='result-container'>
         <ul className="result-list">
-          <Results name="Chyby" data={errorIndex} />
+          <Results name="Chyby" data={errorCount} />
           <Results name="Přesnost" data={accuracy} symbol="%" />
           <Results name="WPM" data={wpm} />
         </ul>

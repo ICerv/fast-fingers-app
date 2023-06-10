@@ -21,7 +21,9 @@ const LessonsPage = () => {
                             <div className='section-icon icon-closed'></div>
                         </div>
                     </div>
-                    <LessonsList lessons={section.lessons}/>
+                    <LessonsList 
+                    lessons={section.lessons} 
+                    sectionId={section.id}/>
                 </div>
             )}
        </>
