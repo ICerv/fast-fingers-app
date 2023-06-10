@@ -55,7 +55,7 @@ const TrainingPage = () => {
   }
 
   const handleInputChange = (event) => {
-    event.preventDefault()
+    if (!isTypingAllowed) return;
 
     const { key } = event;
 
@@ -79,20 +79,32 @@ const TrainingPage = () => {
     return () => {
       window.removeEventListener('keydown', handleInputChange);
     };
-  }, [correctCount, errorCount]);
+  }, [correctCount, isTypingAllowed, errorCount]);
 
   const handleStart = () => {
-    setStartTime(Date.now()); // set start time
+    setStartTime(Date.now());
+    setIsTypingAllowed(true);
   };
 
   const handleEnd = () => {
-    setEndTime(Date.now()); // set end time
+    setEndTime(Date.now());
+    setIsTypingAllowed(false);
   };
+
+  const handleReload = () => {
+    setInputText('')
+    setCorrectCount(0)
+    setErrorCount(0)
+    setAccuracy(0)
+    setEndTime(0)
+    setStartTime(0)
+  }
+
 
   const calculateWPM = () => {
     const words = inputText.trim().split(' ');
     const numWords = words.length;
-    const minutes = (endTime - startTime) / 60000; // convert milliseconds to minutes
+    const minutes = (endTime - startTime) / 60000;
     const wpm = Math.floor(numWords / minutes);
     return wpm;
   };
@@ -104,7 +116,10 @@ const TrainingPage = () => {
 
       {/* TIMER */}
       <div className="middle-container">
-        <Timer onStart={handleStart} onEnd={handleEnd} />
+        <Timer
+          onStart={handleStart}
+          onEnd={handleEnd}
+          onReload={handleReload} />
 
         {/* INPUT TEXT  */}
         <div className="keyboard">
