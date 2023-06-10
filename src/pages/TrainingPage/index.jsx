@@ -13,7 +13,7 @@ const TrainingPage = () => {
   const section = exercisesSections.find((section) => section.id === Number(sectionId))
   const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
   const test = true;
-  const [isAlreadyError , setIsAlredyError] = useState(false)
+  const [isAlreadyError, setIsAlredyError] = useState(false)
 
   const targetText = lesson.exercises[0];
   const [inputText, setInputText] = useState('');
@@ -23,15 +23,13 @@ const TrainingPage = () => {
   const [accuracy, setAccuracy] = useState(0);
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
+  const [isTypingAllowed, setIsTypingAllowed] = useState(false);
+
 
   const handleInputChange = (event) => {
-    event.preventDefault()
+    if (!isTypingAllowed) return;
 
-    // if (validKey(event.keyCode)) {
-    //   setInputText((prev) => prev + event.key)
-    // } else if (event.keyCode === 8) {
-    //   setInputText((prev) => prev.slice(0, -1))
-    // } 
+    event.preventDefault()
 
     const { key } = event;
 
@@ -41,18 +39,18 @@ const TrainingPage = () => {
         setCorrectCount(correctCount + 1)
 
         if (isAlreadyError) {
-        setInputText((prev) => prev.slice(0, -1) + event.key)
-        setIsAlredyError(false)
+          setInputText((prev) => prev.slice(0, -1) + event.key)
+          setIsAlredyError(false)
         } else {
           setInputText((prev) => prev + event.key)
         }
-      } else if (test ) {
+      } else if (test) {
         if (!isAlreadyError) {
           setErrorCount(errorCount + 1)
           setInputText((prev) => prev + event.key)
           setIsAlredyError(true)
         }
-        
+
       } else {
         setErrorCount(errorCount + 1)
         setInputText((prev) => prev + event.key)
@@ -70,20 +68,32 @@ const TrainingPage = () => {
     return () => {
       window.removeEventListener('keydown', handleInputChange);
     };
-  }, [correctCount, errorCount]);
+  }, [correctCount, isTypingAllowed, errorCount]);
 
   const handleStart = () => {
-    setStartTime(Date.now()); // set start time
+    setStartTime(Date.now());
+    setIsTypingAllowed(true);
   };
 
   const handleEnd = () => {
-    setEndTime(Date.now()); // set end time
+    setEndTime(Date.now());
+    setIsTypingAllowed(false);
   };
+
+  const handleReload = () => {
+    setInputText('')
+    setCorrectCount(0)
+    setErrorCount(0)
+    setAccuracy(0)
+    setEndTime(0)
+    setStartTime(0)
+  }
+
 
   const calculateWPM = () => {
     const words = inputText.trim().split(' ');
     const numWords = words.length;
-    const minutes = (endTime - startTime) / 60000; // convert milliseconds to minutes
+    const minutes = (endTime - startTime) / 60000;
     const wpm = Math.floor(numWords / minutes);
     return wpm;
   };
@@ -95,7 +105,10 @@ const TrainingPage = () => {
 
       {/* TIMER */}
       <div className="middle-container">
-        <Timer onStart={handleStart} onEnd={handleEnd} />
+        <Timer
+          onStart={handleStart}
+          onEnd={handleEnd}
+          onReload={handleReload} />
 
         {/* INPUT TEXT  */}
         <div className="keyboard">
@@ -114,9 +127,9 @@ const TrainingPage = () => {
             </div>
 
             {/* KEYBOARD  */}
-            <Keyboard 
-            targetText={targetText} 
-            inputText={isAlreadyError ? inputText.slice(0, -1) : inputText}
+            <Keyboard
+              targetText={targetText}
+              inputText={isAlreadyError ? inputText.slice(0, -1) : inputText}
             />
 
             <div className='hand-image'>
