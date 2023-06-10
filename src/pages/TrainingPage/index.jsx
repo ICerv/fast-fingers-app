@@ -23,49 +23,48 @@ const TrainingPage = () => {
   const [accuracy, setAccuracy] = useState(0);
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
+  const onKeyCorrect = (event) => {
+      setIndex(index + 1)
+      setCorrectCount(correctCount + 1)
+    if (exerciseMode) {        
+      if (isAlreadyError) {
+        setInputText((prev) => prev.slice(0, -1) + event.key)
+        setIsAlredyError(false)
+      } else {
+        setInputText((prev) => prev + event.key)
+      }
+    } else {
+      setInputText((prev) => prev + event.key)
+      setIsAlredyError(false)
+    }
+  }
+
+  const onKeyError = (event) => {
+    if (exerciseMode) {
+      if (!isAlreadyError) {
+        setErrorCount(errorCount + 1)
+        setInputText((prev) => prev + event.key)
+        setIsAlredyError(true)
+      }
+    } else {
+      setIndex(index + 1)
+      setIsAlredyError(true)
+      setErrorCount(errorCount + 1)
+      setInputText((prev) => prev + event.key)
+    }
+  }
 
   const handleInputChange = (event) => {
     event.preventDefault()
 
-    // if (validKey(event.keyCode)) {
-    //   setInputText((prev) => prev + event.key)
-    // } else if (event.keyCode === 8) {
-    //   setInputText((prev) => prev.slice(0, -1))
-    // } 
-
     const { key } = event;
 
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
+
       if (key === targetText.charAt(index)) {
-        if (!exerciseMode) {        
-          setIndex(index + 1)
-          setCorrectCount(correctCount + 1)
-          setInputText((prev) => prev + event.key)
-
-          setIsAlredyError(false)
-        } else {
-          setIndex(index + 1)
-          setCorrectCount(correctCount + 1)
-
-          if (isAlreadyError) {
-            setInputText((prev) => prev.slice(0, -1) + event.key)
-            setIsAlredyError(false)
-          } else {
-            setInputText((prev) => prev + event.key)
-          }
-          
-        }
+       onKeyCorrect(event)
       } else {
-        if (!exerciseMode) {
-          setIndex(index + 1)
-          setIsAlredyError(true)
-          setErrorCount(errorCount + 1)
-          setInputText((prev) => prev + event.key)
-        } else if (!isAlreadyError) {
-            setErrorCount(errorCount + 1)
-            setInputText((prev) => prev + event.key)
-            setIsAlredyError(true)
-        }
+        onKeyError(event)
       }
     }
 
