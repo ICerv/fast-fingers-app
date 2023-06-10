@@ -24,7 +24,7 @@ const TrainingPage = () => {
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
   const [isTypingAllowed, setIsTypingAllowed] = useState(false);
-
+  const [time, setTime] = useState(0);
 
   const handleInputChange = (event) => {
     if (!isTypingAllowed) return;
@@ -78,6 +78,7 @@ const TrainingPage = () => {
   const handleEnd = () => {
     setEndTime(Date.now());
     setIsTypingAllowed(false);
+    setTime(time + (Date.now() - startTime));
   };
 
   const handleReload = () => {
@@ -87,17 +88,19 @@ const TrainingPage = () => {
     setAccuracy(0)
     setEndTime(0)
     setStartTime(0)
+    setTime(0);
   }
-
 
   const calculateWPM = () => {
     const words = inputText.trim().split(' ');
     const numWords = words.length;
-    const minutes = (endTime - startTime) / 60000;
+    const minutes = time / 60000;
+    console.log(time, minutes)
     const wpm = Math.floor(numWords / minutes);
     return wpm;
   };
 
+  console.log(time)
   const wpm = endTime > startTime ? calculateWPM() : 0;
 
   return (
