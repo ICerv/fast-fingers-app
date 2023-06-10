@@ -4,14 +4,19 @@ import { lefttShiftSymbol } from '../../generalConstants'
 import './style.css';
 
 
-export const Keyboard = ({targetText, inputText}) => {
-  const char = targetText[inputText.length]
+export const Keyboard = ({targetText, inputText, isAlreadyError}) => {
   
+  const char = isAlreadyError ? targetText[inputText.length -1] : targetText[inputText.length]
 
-    const getClassName = (keyString) => {
+    const getClassName = (keyArray) => {
+          
+      const errorChar = inputText.slice(-1)
+      if (isAlreadyError && keyArray.includes(errorChar.toLowerCase())) {
+        return "key wrong"  
+      }
       let isActive = false
       if (char) {
-        isActive = keyString.some((key) =>  key === char.toLowerCase());
+        isActive = (keyArray.some((key) =>  key === char.toLowerCase()));
       }
         return isActive ? "key active" : "key";
     }

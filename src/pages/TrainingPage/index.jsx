@@ -129,7 +129,8 @@ const TrainingPage = () => {
             {/* KEYBOARD  */}
             <Keyboard
               targetText={targetText}
-              inputText={isAlreadyError ? inputText.slice(0, -1) : inputText}
+              inputText={inputText}
+              isAlreadyError={isAlreadyError}
             />
 
             <div className='hand-image'>

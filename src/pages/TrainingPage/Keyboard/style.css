@@ -64,6 +64,22 @@ ul {
   background-color: #3abbbb;
 }
 
+
+.key.wrong {
+  -webkit-animation:name 2s;
+  animation:name 2s;
+}
+
+@-webkit-keyframes name
+{
+0% {background-color:#df3138;}
+100% {background-color:white;}
+}
+    @keyframes name {
+        0% {background-color:#df3138;}
+        100% {background-color:white;}
+    }
+
 .space {
   height: 3em;
   width: 21em;
