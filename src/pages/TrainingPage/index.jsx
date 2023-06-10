@@ -13,6 +13,8 @@ const TrainingPage = () => {
   const section = exercisesSections.find((section) => section.id === Number(sectionId))
   const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
   const test = true;
+  const [isAlreadyError , setIsAlredyError] = useState(false)
+
   const targetText = lesson.exercises[0];
   const [inputText, setInputText] = useState('');
   const [index, setIndex] = useState(0);
@@ -23,6 +25,7 @@ const TrainingPage = () => {
   const [endTime, setEndTime] = useState(0);
 
   const handleInputChange = (event) => {
+    event.preventDefault()
 
     // if (validKey(event.keyCode)) {
     //   setInputText((prev) => prev + event.key)
@@ -33,13 +36,23 @@ const TrainingPage = () => {
     const { key } = event;
  
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
-// console.log(key , targetText.charAt(correctIndex) , 'test')
       if (key === targetText.charAt(index)) {
         setIndex(index + 1)
         setCorrectCount(correctCount + 1)
-        setInputText((prev) => prev + event.key)
+
+        if (isAlreadyError) {
+        setInputText((prev) => prev.slice(0, -1) + event.key)
+        setIsAlredyError(false)
+        } else {
+          setInputText((prev) => prev + event.key)
+        }
       } else if (test ) {
-        setErrorCount(errorCount + 1)
+        if (!isAlreadyError) {
+          setErrorCount(errorCount + 1)
+          setInputText((prev) => prev + event.key)
+          setIsAlredyError(true)
+        }
+        
       } else {
         setErrorCount(errorCount + 1)
         setInputText((prev) => prev + event.key)
@@ -77,7 +90,6 @@ const TrainingPage = () => {
 
   const wpm = endTime > startTime ? calculateWPM() : 0;
 
-
   return (
     <div className='container-page'>
 
@@ -104,7 +116,7 @@ const TrainingPage = () => {
             {/* KEYBOARD  */}
             <Keyboard 
             targetText={targetText} 
-            inputText={inputText}
+            inputText={isAlreadyError ? inputText.slice(0, -1) : inputText}
             />
 
             <div className='hand-image'>

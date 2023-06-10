@@ -6,19 +6,15 @@ import './style.css';
 
 export const Keyboard = ({targetText, inputText}) => {
   const char = targetText[inputText.length]
-
-  const getClassName = (keyString) => {
-
-    const isActive = keyString.some((key) => {
-      
-      if (char) {
-        return key === char.toLowerCase()
-      }
-      return false
-    });
   
-    return isActive ? "key active" : "key";
-  }
+
+    const getClassName = (keyString) => {
+      let isActive = false
+      if (char) {
+        isActive = keyString.some((key) =>  key === char.toLowerCase());
+      }
+        return isActive ? "key active" : "key";
+    }
 
   const getRightShiftClassName = () => {
 
