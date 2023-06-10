@@ -4,7 +4,7 @@ import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
-import{ validKey } from '../generalConstants'
+import { validKey } from '../generalConstants'
 
 const TrainingPage = () => {
   const targetText = '30 % všech lidí, 25 % žáků, 80 % studentů, 66 % učitelů';
@@ -21,10 +21,10 @@ const TrainingPage = () => {
       setInputText((prev) => prev + event.key)
     } else if (event.keyCode === 8) {
       setInputText((prev) => prev.slice(0, -1))
-    } 
+    }
 
     const { key } = event;
- 
+
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
 
       if (key === targetText.charAt(correctIndex) || key === ' ') {
@@ -77,9 +77,9 @@ const TrainingPage = () => {
         <div className="keyboard">
 
           <div className='input-container'>
-            <TextInput 
-            targetText={targetText} 
-            inputText={inputText}
+            <TextInput
+              targetText={targetText}
+              inputText={inputText}
             />
           </div>
 
@@ -90,9 +90,9 @@ const TrainingPage = () => {
             </div>
 
             {/* KEYBOARD  */}
-            <Keyboard 
-            targetText={targetText} 
-            inputText={inputText}
+            <Keyboard
+              targetText={targetText}
+              inputText={inputText}
             />
 
             <div className='hand-image'>
