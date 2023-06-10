@@ -19,7 +19,7 @@ export const Timer = ({ onStart, onEnd }) => {
       // } else if (!isStarted) {
       //   clearInterval(timer);
       //   // } else {
-      //   //   clearInterval(timer);
+      //   /   clearInterval(timer);
       //   //   onEnd();
     }
     return () => {
