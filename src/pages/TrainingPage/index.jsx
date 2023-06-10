@@ -6,10 +6,10 @@ import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
 import { exercisesSections } from '../exercisesSections';
-import{ validKey } from '../generalConstants'
+import { validKey } from '../generalConstants'
 
 const TrainingPage = () => {
-  const {sectionId, lessonId}= useParams()
+  const { sectionId, lessonId } = useParams()
   const section = exercisesSections.find((section) => section.id === Number(sectionId))
   const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
   const test = true;
@@ -34,7 +34,7 @@ const TrainingPage = () => {
     // } 
 
     const { key } = event;
- 
+
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
       if (key === targetText.charAt(index)) {
         setIndex(index + 1)
@@ -101,9 +101,9 @@ const TrainingPage = () => {
         <div className="keyboard">
 
           <div className='input-container'>
-            <TextInput 
-            targetText={targetText} 
-            inputText={inputText}
+            <TextInput
+              targetText={targetText}
+              inputText={inputText}
             />
           </div>
 
