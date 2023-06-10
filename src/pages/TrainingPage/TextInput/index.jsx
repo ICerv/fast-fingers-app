@@ -15,8 +15,8 @@ const TextInput = ({ targetText, inputText }) => {
           isActive = false
         }
         return <span key={index} className={className }>{char}</span>
-      } if (index === inputText.length) {
-        return <span key={index} className={isActive ? 'letter active' : 'letter'}>{char}</span>
+      } if (index === inputText.length && isActive) {
+        return <span key={index} className= 'letter active'>{char}</span>
       }
       
       return <span key={index} className='letter'>{char}</span> 
