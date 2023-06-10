@@ -12,7 +12,7 @@ const TrainingPage = () => {
   const { sectionId, lessonId } = useParams()
   const section = exercisesSections.find((section) => section.id === Number(sectionId))
   const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
-  const test = true;
+  const exerciseMode = false
   const [isAlreadyError , setIsAlredyError] = useState(false)
 
   const targetText = lesson.exercises[0];
@@ -37,25 +37,35 @@ const TrainingPage = () => {
 
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
       if (key === targetText.charAt(index)) {
-        setIndex(index + 1)
-        setCorrectCount(correctCount + 1)
-
-        if (isAlreadyError) {
-        setInputText((prev) => prev.slice(0, -1) + event.key)
-        setIsAlredyError(false)
-        } else {
+        if (!exerciseMode) {        
+          setIndex(index + 1)
+          setCorrectCount(correctCount + 1)
           setInputText((prev) => prev + event.key)
+
+          setIsAlredyError(false)
+        } else {
+          setIndex(index + 1)
+          setCorrectCount(correctCount + 1)
+
+          if (isAlreadyError) {
+            setInputText((prev) => prev.slice(0, -1) + event.key)
+            setIsAlredyError(false)
+          } else {
+            setInputText((prev) => prev + event.key)
+          }
+          
         }
-      } else if (test ) {
-        if (!isAlreadyError) {
+      } else {
+        if (!exerciseMode) {
+          setIndex(index + 1)
+          setIsAlredyError(true)
           setErrorCount(errorCount + 1)
           setInputText((prev) => prev + event.key)
-          setIsAlredyError(true)
+        } else if (!isAlreadyError) {
+            setErrorCount(errorCount + 1)
+            setInputText((prev) => prev + event.key)
+            setIsAlredyError(true)
         }
-        
-      } else {
-        setErrorCount(errorCount + 1)
-        setInputText((prev) => prev + event.key)
       }
     }
 
@@ -104,6 +114,7 @@ const TrainingPage = () => {
             <TextInput
               targetText={targetText}
               inputText={inputText}
+              exerciseMode={exerciseMode}
             />
           </div>
 
@@ -118,6 +129,8 @@ const TrainingPage = () => {
             targetText={targetText} 
             inputText={inputText}
             isAlreadyError={isAlreadyError}
+            exerciseMode={exerciseMode}
+
             />
 
             <div className='hand-image'>
