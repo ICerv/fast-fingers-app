@@ -12,8 +12,8 @@ const TrainingPage = () => {
   const { sectionId, lessonId } = useParams()
   const section = exercisesSections.find((section) => section.id === Number(sectionId))
   const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
-  const test = true;
-  const [isAlreadyError, setIsAlredyError] = useState(false)
+  const exerciseMode = false
+  const [isAlreadyError , setIsAlredyError] = useState(false)
 
   const targetText = lesson.exercises[0];
   const [inputText, setInputText] = useState('');
@@ -23,37 +23,53 @@ const TrainingPage = () => {
   const [accuracy, setAccuracy] = useState(0);
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
+<<<<<<< HEAD
   const [isTypingAllowed, setIsTypingAllowed] = useState(false);
   const [time, setTime] = useState(0);
+=======
+  const onKeyCorrect = (event) => {
+      setIndex(index + 1)
+      setCorrectCount(correctCount + 1)
+    if (exerciseMode) {        
+      if (isAlreadyError) {
+        setInputText((prev) => prev.slice(0, -1) + event.key)
+        setIsAlredyError(false)
+      } else {
+        setInputText((prev) => prev + event.key)
+      }
+    } else {
+      setInputText((prev) => prev + event.key)
+      setIsAlredyError(false)
+    }
+  }
+
+  const onKeyError = (event) => {
+    if (exerciseMode) {
+      if (!isAlreadyError) {
+        setErrorCount(errorCount + 1)
+        setInputText((prev) => prev + event.key)
+        setIsAlredyError(true)
+      }
+    } else {
+      setIndex(index + 1)
+      setIsAlredyError(true)
+      setErrorCount(errorCount + 1)
+      setInputText((prev) => prev + event.key)
+    }
+  }
+>>>>>>> d3f627b0146c083d8372c69265d724c03f859b1c
 
   const handleInputChange = (event) => {
     if (!isTypingAllowed) return;
 
-    event.preventDefault()
-
     const { key } = event;
 
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
+
       if (key === targetText.charAt(index)) {
-        setIndex(index + 1)
-        setCorrectCount(correctCount + 1)
-
-        if (isAlreadyError) {
-          setInputText((prev) => prev.slice(0, -1) + event.key)
-          setIsAlredyError(false)
-        } else {
-          setInputText((prev) => prev + event.key)
-        }
-      } else if (test) {
-        if (!isAlreadyError) {
-          setErrorCount(errorCount + 1)
-          setInputText((prev) => prev + event.key)
-          setIsAlredyError(true)
-        }
-
+       onKeyCorrect(event)
       } else {
-        setErrorCount(errorCount + 1)
-        setInputText((prev) => prev + event.key)
+        onKeyError(event)
       }
     }
 
@@ -120,6 +136,7 @@ const TrainingPage = () => {
             <TextInput
               targetText={targetText}
               inputText={inputText}
+              exerciseMode={exerciseMode}
             />
           </div>
 
@@ -130,10 +147,12 @@ const TrainingPage = () => {
             </div>
 
             {/* KEYBOARD  */}
-            <Keyboard
-              targetText={targetText}
-              inputText={inputText}
-              isAlreadyError={isAlreadyError}
+            <Keyboard 
+            targetText={targetText} 
+            inputText={inputText}
+            isAlreadyError={isAlreadyError}
+            exerciseMode={exerciseMode}
+
             />
 
             <div className='hand-image'>

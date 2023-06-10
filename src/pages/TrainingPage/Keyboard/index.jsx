@@ -4,9 +4,12 @@ import { lefttShiftSymbol } from '../../generalConstants'
 import './style.css';
 
 
-export const Keyboard = ({targetText, inputText, isAlreadyError}) => {
-  
-  const char = isAlreadyError ? targetText[inputText.length -1] : targetText[inputText.length]
+export const Keyboard = ({targetText, inputText, isAlreadyError, exercisesMode }) => {
+  let char = targetText[inputText.length]
+  if (exercisesMode && isAlreadyError) {
+      char = targetText[inputText.length -1]
+  } 
+
 
     const getClassName = (keyArray) => {
           

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-const TextInput = ({ targetText, inputText }) => {
+const TextInput = ({ targetText, inputText, exerciseMode }) => {
   const renderText = () => {
     let isActive = true
     return Array.from(targetText).map((char, index) => {
@@ -15,8 +15,11 @@ const TextInput = ({ targetText, inputText }) => {
           isActive = false
         }
         return <span key={index} className={className }>{char}</span>
-      } if (index === inputText.length && isActive) {
-        return <span key={index} className= 'letter active'>{char}</span>
+      } if (index === inputText.length) {
+
+        if (!exerciseMode || (exerciseMode && isActive)  ) {
+          return <span key={index} className= 'letter active'>{char}</span>
+        }
       }
       
       return <span key={index} className='letter'>{char}</span> 

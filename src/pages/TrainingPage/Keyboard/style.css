@@ -54,6 +54,7 @@ ul {
   border: 2px solid #706d6d;
   background-color: white;
   cursor: pointer;
+
 }
 
 .special-key {
@@ -66,11 +67,12 @@ ul {
 
 
 .key.wrong {
-  -webkit-animation:name 2s;
-  animation:name 2s;
+  background: #df3138;
+ /* -webkit-animation:name 2s;
+  animation:name 2s;*/
 }
 
-@-webkit-keyframes name
+/*@-webkit-keyframes name
 {
 0% {background-color:#df3138;}
 100% {background-color:white;}
@@ -79,7 +81,7 @@ ul {
         0% {background-color:#df3138;}
         100% {background-color:white;}
     }
-
+*/
 .space {
   height: 3em;
   width: 21em;
