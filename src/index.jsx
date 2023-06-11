@@ -1,14 +1,14 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import './style.css';
-import Header from './components/Header/index.';
-import Footer from './components/Footer';
-import TrainingPage from './pages/TrainingPage';
-import HomePage from './pages/HomePage'
-import ErrorPage from './pages/ErrorPage'
-import LessonsPage from './pages/LessonsPage';
-import TestsPage from './pages/TestsPage';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import "./style.css";
+import Header from "./components/Header/index.";
+import Footer from "./components/Footer";
+import TrainingPage from "./pages/TrainingPage";
+import HomePage from "./pages/HomePage";
+import ErrorPage from "./pages/ErrorPage";
+import LessonsPage from "./pages/LessonsPage";
+import TestsPage from "./pages/TestsPage";
 
 const App = () => {
   return (
@@ -22,31 +22,29 @@ const App = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <HomePage />,
       },
       {
-        path: '/lessons',
-        element: <LessonsPage/>,
+        path: "/lessons",
+        element: <LessonsPage />,
       },
       {
-        path: '/tests',
-        element: <TestsPage/>,
+        path: "/tests",
+        element: <TestsPage />,
       },
       {
-        path: '/section/:sectionId/lesson/:lessonId',
-        element: <TrainingPage/>,
+        path: "/section/:sectionId/lesson/:lessonId/exercise/:exerciseId",
+        element: <TrainingPage />,
       },
-  
-    ]
+    ],
   },
-
 ]);
-createRoot(
-  document.querySelector('#app'),
-).render(<RouterProvider router={router} />);
+createRoot(document.querySelector("#app")).render(
+  <RouterProvider router={router} />
+);

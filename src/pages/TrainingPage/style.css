@@ -1,10 +1,36 @@
 .container-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     height: auto;
     padding: 1rem;
     grid: 1rem;
+}
+
+.up-container {
+    height: 10vh;
+    display: flex;
+    margin: 0 0 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 0.25rem;
+    border: 1px solid white;
+    background-color: rgba(243, 241, 241, 0.6);
+    cursor: pointer;
+}
+
+.button.back {
+    margin-left: 2rem;
+}
+
+.button.next {
+    margin-right: 2rem;
 }
 
 .middle-container {
@@ -12,10 +38,12 @@
     flex-direction: column;
     align-items: center;
     padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 .keyboard-container {
     display: flex;
+    height: 40vh
 }
 
 img.hand {
@@ -23,21 +51,19 @@ img.hand {
 }
 
 .result-container {
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
     margin-bottom: 20px;
     color: white;
-    justify-content: start;
     text-align: center;
-    padding-right: 2rem;
   }
   
 .result-list {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     text-align: center;
-    flex: 0 0 16%;
-    max-width: 16%;
+    justify-content: center;
+    gap: 1rem;
 }
   
 .result-list small {

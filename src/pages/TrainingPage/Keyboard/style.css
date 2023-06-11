@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
   flex: 2 1 80%;
 }
 
@@ -45,7 +43,6 @@ ul {
   line-height: 3em;
   letter-spacing: 1px;
   margin: 0.2em;
-  /* transition: 0.3s; */
   text-align: center;
   font-size: 1em;
   font-family: sans-serif;
@@ -67,7 +64,6 @@ ul {
 
 
 .key.wrong {
-  background: #df3138;
   -webkit-animation:name 2s;
   animation:name 2s;
 }
@@ -113,61 +109,3 @@ ul {
   right: 4px;
   bottom: -10px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 85vh;
-}
-
-.input-text {
-  width: 600px;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  background-color: #fff;
-}
-
-.keyboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.keyboard-row {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.keyboard-key {
-  padding: 8px 12px;
-  margin-right: 5px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-} */
