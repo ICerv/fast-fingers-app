@@ -32,6 +32,6 @@ const TrainingPage = () => {
     return `/section/${sectionId}/lesson/${lesson.id}/exercise/${exerciseId + 1}`;
   };
 
-  return <Practice targetText={targetText} nextLink={nextExercise()} />;
+  return <Practice targetText={targetText} backUrl={'/lessons'} nextLink={nextExercise()} />;
 };
 export default TrainingPage;
