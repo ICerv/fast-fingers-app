@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import TimerButton from './TimerButton';
 
-export const Timer = ({ onStart, onEnd, onReload, isStarted }) => {
+export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText }) => {
   const [time, setTime] = useState(50);
 
   useEffect(() => {
@@ -21,6 +21,10 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted }) => {
       clearTimeout(timer);
     };
   }, [isStarted, time]);
+
+  useEffect(() => {
+    setTime(50);
+  }, [targetText]);
 
   const handleStopStart = (action) => {
     if (action === 'start') {

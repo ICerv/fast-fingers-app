@@ -107,6 +107,8 @@ const Practice = ({ targetText, nextLink, backUrl }) => {
     setStartTime(0);
     setTime(0);
     setIndex(0);
+    setIsAlredyError(false);
+    setIsTypingAllowed(false);
   };
 
   const calculateWPM = () => {
@@ -135,7 +137,13 @@ const Practice = ({ targetText, nextLink, backUrl }) => {
           </div>
         </div>
         {/* TIMER */}
-        <Timer onStart={handleStart} onEnd={handleEnd} onReload={handleReload} isStarted={isTypingAllowed} />
+        <Timer
+          onStart={handleStart}
+          onEnd={handleEnd}
+          onReload={handleReload}
+          isStarted={isTypingAllowed}
+          targetText={targetText}
+        />
 
         <button className="button next" onClick={() => navigate(`${nextLink}`)}>
           Pokračovat
