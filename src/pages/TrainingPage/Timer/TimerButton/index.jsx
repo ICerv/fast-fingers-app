@@ -10,19 +10,13 @@ const TimerButton = ({ onClick, isStarted, isTimeUp }) => {
     } else {
       onClick('start');
     }
-
   };
 
   const buttonClass = isStarted ? 'btn timer-stop-btn' : 'btn timer-start-btn';
 
-
   return (
     <button className={buttonClass} onClick={handleClick}>
-      {isStarted ? 'Stop' :
-        (isTimeUp ? <small className=" btn timer-reload-btn">Reload</small> : 'Start')
-
-      }
-
+      {isStarted ? 'Stop' : isTimeUp ? <small className=" btn timer-reload-btn">Reload</small> : 'Start'}
     </button>
   );
 };

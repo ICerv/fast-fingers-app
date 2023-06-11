@@ -1,26 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router";
-import { useNavigate } from "react-router-dom";
-import "./style.css";
-import TextInput from "./TextInput";
-import Results from "./Results";
-import { Keyboard } from "./Keyboard";
-import Timer from "./Timer";
-import { exercisesSections } from "../exercisesSections";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+import './style.css';
+import TextInput from './TextInput';
+import Results from './Results';
+import { Keyboard } from './Keyboard';
+import Timer from './Timer';
+import { exercisesSections } from '../exercisesSections';
 
 const TrainingPage = () => {
   let { sectionId, lessonId, exerciseId } = useParams();
-  const section = exercisesSections.find(
-    (section) => section.id === Number(sectionId)
-  );
-  const lesson = section.lessons.find(
-    (lesson) => lesson.id === Number(lessonId)
-  );
+  const section = exercisesSections.find((section) => section.id === Number(sectionId));
+  const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId));
   const exercise = lesson.exercises[Number(exerciseId)];
   const exerciseMode = false;
   const [isAlreadyError, setIsAlredyError] = useState(false);
   const targetText = exercise;
-  const [inputText, setInputText] = useState("");
+  const [inputText, setInputText] = useState('');
   const [index, setIndex] = useState(0);
   const [errorCount, setErrorCount] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
@@ -41,19 +37,15 @@ const TrainingPage = () => {
         return `/section/${sectionId}/lesson/${lessonId + 1}/exercise/0`;
       } else {
         if (sectionId === 4) {
-          return "/lessons";
+          return '/lessons';
         } else {
-          lessonId = exercisesSections.find(
-            (section) => section.id === sectionId + 1
-          ).lessons[0].id;
+          lessonId = exercisesSections.find((section) => section.id === sectionId + 1).lessons[0].id;
           return `/section/${sectionId + 1}/lesson/${lessonId}/exercise/0`;
         }
       }
     }
 
-    return `/section/${sectionId}/lesson/${lesson.id}/exercise/${
-      exerciseId + 1
-    }`;
+    return `/section/${sectionId}/lesson/${lesson.id}/exercise/${exerciseId + 1}`;
   };
 
   const onKeyCorrect = (event) => {
@@ -102,16 +94,14 @@ const TrainingPage = () => {
     }
 
     const _accuracy =
-      correctCount + errorCount !== 0
-        ? Math.floor((correctCount / (correctCount + errorCount)) * 100)
-        : 0;
+      correctCount + errorCount !== 0 ? Math.floor((correctCount / (correctCount + errorCount)) * 100) : 0;
     setAccuracy(_accuracy);
   };
 
   useEffect(() => {
-    window.addEventListener("keydown", handleInputChange);
+    window.addEventListener('keydown', handleInputChange);
     return () => {
-      window.removeEventListener("keydown", handleInputChange);
+      window.removeEventListener('keydown', handleInputChange);
     };
   }, [correctCount, isTypingAllowed, errorCount]);
 
@@ -127,7 +117,7 @@ const TrainingPage = () => {
   };
 
   const handleReload = () => {
-    setInputText("");
+    setInputText('');
     setCorrectCount(0);
     setErrorCount(0);
     setAccuracy(0);
@@ -137,7 +127,7 @@ const TrainingPage = () => {
   };
 
   const calculateWPM = () => {
-    const words = inputText.trim().split(" ");
+    const words = inputText.trim().split(' ');
     const numWords = words.length;
     const minutes = time / 60000;
     const wpm = Math.floor(numWords / minutes);
@@ -149,7 +139,7 @@ const TrainingPage = () => {
   return (
     <div className="container-page">
       <div className="up-container">
-        <button className="button back" onClick={() => navigate("/lessons")}>
+        <button className="button back" onClick={() => navigate('/lessons')}>
           Zpět
         </button>
 
@@ -162,16 +152,9 @@ const TrainingPage = () => {
           </div>
         </div>
         {/* TIMER */}
-        <Timer
-          onStart={handleStart}
-          onEnd={handleEnd}
-          onReload={handleReload}
-        />
+        <Timer onStart={handleStart} onEnd={handleEnd} onReload={handleReload} />
 
-        <button
-          className="button next"
-          onClick={() => navigate(nextExercise())}
-        >
+        <button className="button next" onClick={() => navigate(nextExercise())}>
           Pokračovat
         </button>
       </div>
@@ -179,20 +162,12 @@ const TrainingPage = () => {
       <div className="middle-container">
         {/* INPUT TEXT  */}
         <div className="input-container">
-          <TextInput
-            targetText={targetText}
-            inputText={inputText}
-            exerciseMode={exerciseMode}
-          />
+          <TextInput targetText={targetText} inputText={inputText} exerciseMode={exerciseMode} />
         </div>
 
         <div className="keyboard-container">
           <div className="hand-image">
-            <img
-              src={require("./img/Hand left.png")}
-              className="hand left"
-              alt="Left hand"
-            />
+            <img src={require('./img/Hand left.png')} className="hand left" alt="Left hand" />
           </div>
 
           {/* KEYBOARD  */}
@@ -204,11 +179,7 @@ const TrainingPage = () => {
           />
 
           <div className="hand-image">
-            <img
-              src={require("./img/Hand right.png")}
-              className="hand right"
-              alt="Right hand"
-            />
+            <img src={require('./img/Hand right.png')} className="hand right" alt="Right hand" />
           </div>
         </div>
       </div>

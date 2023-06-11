@@ -1,5 +1,5 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
 
 const Results = ({ name, data, symbol }) => {
   return (
@@ -7,7 +7,7 @@ const Results = ({ name, data, symbol }) => {
       {name}
       <span className="result-value">
         {data}
-        {symbol && data > 0 ? <small>{symbol}</small> : ""}
+        {symbol && data > 0 ? <small>{symbol}</small> : ''}
       </span>
     </div>
   );

@@ -1,12 +1,12 @@
-import React, { useRef, useEffect } from "react";
-import "./style.css";
+import React, { useRef, useEffect } from 'react';
+import './style.css';
 
 const TextInput = ({ targetText, inputText, exerciseMode }) => {
   const ref = useRef();
 
   useEffect(() => {
     ref.current?.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }, [inputText]);
 
@@ -16,10 +16,10 @@ const TextInput = ({ targetText, inputText, exerciseMode }) => {
       if (index < inputText.length) {
         let className;
         if (char === inputText[index]) {
-          className = "letter right";
+          className = 'letter right';
           isActive = true;
         } else {
-          className = "letter wrong";
+          className = 'letter wrong';
           isActive = false;
         }
         return (
