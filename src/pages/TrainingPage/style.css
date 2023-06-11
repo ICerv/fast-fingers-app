@@ -72,12 +72,13 @@ img.hand {
   
 .input-container {
     width: 650px;
-    height: 20vh;
+    height: 40px;
     border: 1px solid white;
     box-shadow: 2px 2px 4px rgba(243, 241, 241);
     border-radius: 5px;
-    padding: 15px;
+    padding-left: 15px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
   
   
