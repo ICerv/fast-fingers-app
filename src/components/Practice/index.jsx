@@ -8,8 +8,7 @@ import { Keyboard } from './Keyboard';
 import Timer from './Timer';
 import Hand from './Hand';
 
-const Practice = ({ targetText, nextLink, backUrl }) => {
-  const exerciseMode = false;
+const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const [isAlreadyError, setIsAlredyError] = useState(false);
   const [inputText, setInputText] = useState('');
   const [index, setIndex] = useState(0);

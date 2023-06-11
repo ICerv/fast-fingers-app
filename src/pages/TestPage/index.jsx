@@ -27,7 +27,7 @@ const TestPage = () => {
 
   return (
     <>
-      <Practice targetText={targetText} nextLink={nextExercise()} backUrl="/tests" />;
+      <Practice targetText={targetText} nextLink={nextExercise()} backUrl="/tests" exerciseMode={false} />;
     </>
   );
 };
