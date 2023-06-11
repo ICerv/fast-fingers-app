@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import TimerButton from './TimerButton';
 
-export const Timer = ({ onStart, onEnd, onReload }) => {
+export const Timer = ({ onStart, onEnd, onReload, isStarted }) => {
   const [time, setTime] = useState(50);
-  const [isStarted, setIsStarted] = useState(false);
 
   useEffect(() => {
     let timer;
@@ -14,7 +13,6 @@ export const Timer = ({ onStart, onEnd, onReload }) => {
       }, 1000);
     } else if (isStarted && time === 0) {
       clearTimeout(timer);
-      setIsStarted(false);
       onEnd();
     } else if (!isStarted) {
       clearTimeout(timer);
@@ -27,12 +25,10 @@ export const Timer = ({ onStart, onEnd, onReload }) => {
   const handleStopStart = (action) => {
     if (action === 'start') {
       onStart();
-      setIsStarted(true);
     } else if (action === 'reload') {
       setTime(50);
       onReload();
     } else {
-      setIsStarted(false);
       onEnd();
     }
   };

@@ -6,6 +6,7 @@ import TextInput from './TextInput';
 import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
+import Hand from './Hand';
 
 const Practice = ({ targetText, nextLink }) => {
   const exerciseMode = false;
@@ -54,8 +55,12 @@ const Practice = ({ targetText, nextLink }) => {
 
   const handleInputChange = (event) => {
     event.preventDefault();
+
     if (!isTypingAllowed) return;
 
+    if (targetText.length === inputText.length) {
+      handleEnd();
+    }
     const { key } = event;
 
     if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
@@ -78,6 +83,10 @@ const Practice = ({ targetText, nextLink }) => {
     };
   }, [correctCount, isTypingAllowed, errorCount]);
 
+  useEffect(() => {
+    handleReload();
+  }, [targetText]);
+
   const handleStart = () => {
     setStartTime(Date.now());
     setIsTypingAllowed(true);
@@ -97,6 +106,7 @@ const Practice = ({ targetText, nextLink }) => {
     setEndTime(0);
     setStartTime(0);
     setTime(0);
+    setIndex(0);
   };
 
   const calculateWPM = () => {
@@ -125,7 +135,7 @@ const Practice = ({ targetText, nextLink }) => {
           </div>
         </div>
         {/* TIMER */}
-        <Timer onStart={handleStart} onEnd={handleEnd} onReload={handleReload} />
+        <Timer onStart={handleStart} onEnd={handleEnd} onReload={handleReload} isStarted={isTypingAllowed} />
 
         <button className="button next" onClick={() => navigate(`${nextLink}`)}>
           Pokračovat
@@ -140,7 +150,7 @@ const Practice = ({ targetText, nextLink }) => {
 
         <div className="keyboard-container">
           <div className="hand-image">
-            <img src={require('./img/Hand left.png')} className="hand left" alt="Left hand" />
+            <Hand isLeft={true} />
           </div>
 
           {/* KEYBOARD  */}
@@ -152,7 +162,7 @@ const Practice = ({ targetText, nextLink }) => {
           />
 
           <div className="hand-image">
-            <img src={require('./img/Hand right.png')} className="hand right" alt="Right hand" />
+            <Hand isLeft={false} />
           </div>
         </div>
       </div>

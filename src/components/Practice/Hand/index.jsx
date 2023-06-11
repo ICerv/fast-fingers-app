@@ -1,9 +1,16 @@
 import React from 'react';
 import './style.css';
 
-const Hand = () => {
+const Hand = ({ isLeft }) => {
   return (
-    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 541 642" width="300" height="300">
+    <svg
+      version="1.2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 541 642"
+      width="300"
+      height="300"
+      transform={isLeft ? 'scale(-1, 1)' : ''}
+    >
       <title>Hand-svg</title>
       <style></style>
       <g id="g2399">
