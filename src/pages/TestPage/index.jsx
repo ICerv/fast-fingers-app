@@ -22,7 +22,6 @@ const TestPage = () => {
 
     const nextSectionId = sectionId;
     const nextTestId = section.tests[randomNumber].id;
-    console.log('id');
     return `/section/${nextSectionId}/test/${nextTestId}`;
   };
 

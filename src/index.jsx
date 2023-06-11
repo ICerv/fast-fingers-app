@@ -51,3 +51,5 @@ const router = createBrowserRouter([
   },
 ]);
 createRoot(document.querySelector('#app')).render(<RouterProvider router={router} />);
+
+return '/section/1/test/3';
