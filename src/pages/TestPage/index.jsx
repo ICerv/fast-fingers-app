@@ -5,16 +5,32 @@ import Practice from '../../components/Practice';
 import { testsSections } from '../testsSections';
 
 const TestPage = () => {
-  const { sectionId, testId } = useParams();
+  let { sectionId, testId } = useParams();
   const section = testsSections.find((section) => section.id === Number(sectionId));
   const test = section.tests.find((test) => test.id === Number(testId));
 
   const targetText = test.exercises[0];
 
+  const nextExercise = () => {
+    testId = Number(testId);
+    sectionId = Number(sectionId);
+
+    const min = 0;
+    const max = section.tests.length - 1;
+
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    const nextSectionId = sectionId;
+    const nextTestId = section.tests[randomNumber].id;
+    console.log('id');
+    return `/section/${nextSectionId}/test/${nextTestId}`;
+  };
+
   return (
     <>
-      <Practice targetText={targetText} backUrl="/tests" />;
+      <Practice targetText={targetText} nextLink={nextExercise()} backUrl="/tests" />;
     </>
   );
 };
+
 export default TestPage;
