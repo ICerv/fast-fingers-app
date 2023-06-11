@@ -25,6 +25,7 @@ const TrainingPage = () => {
   const [isTypingAllowed, setIsTypingAllowed] = useState(false);
   const [time, setTime] = useState(0);
 
+
   const onKeyCorrect = (event) => {
       setIndex(index + 1)
       setCorrectCount(correctCount + 1)
@@ -105,15 +106,16 @@ const TrainingPage = () => {
     setTime(0);
   }
 
-
   const calculateWPM = () => {
     const words = inputText.trim().split(' ');
     const numWords = words.length;
-    const minutes = (endTime - startTime) / 60000;
+    const minutes = time / 60000;
+    console.log(time, minutes)
     const wpm = Math.floor(numWords / minutes);
     return wpm;
   };
 
+  console.log(time)
   const wpm = endTime > startTime ? calculateWPM() : 0;
 
   return (
