@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 import LessonsPage from './pages/LessonsPage';
 import TestsPage from './pages/TestsPage';
+import TestPage from './pages/TestPage';
 
 const App = () => {
   return (
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/section/:sectionId/lesson/:lessonId/exercise/:exerciseId',
         element: <TrainingPage />,
+      },
+      {
+        path: '/section/:sectionId/test/:testId',
+        element: <TestPage />,
       },
     ],
   },
