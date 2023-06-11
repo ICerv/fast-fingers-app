@@ -17,8 +17,26 @@
 
 .letter.active {
     color: white;
-    text-decoration: underline
-}
+    border-color: white;
+    border-bottom: 2px solid white;
+    animation-name: cursorBlink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes cursorBlink {
+    0% {
+      border-color: white;
+    }
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: white;
+    }
+  }
+  
 
 .letter.wrong {
     background-color: #ffdcd9;

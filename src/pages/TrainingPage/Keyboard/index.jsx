@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import { rightShiftSymbol } from '../../generalConstants'
 import { lefttShiftSymbol } from '../../generalConstants'
 import './style.css';
 
 
 export const Keyboard = ({targetText, inputText, isAlreadyError, exercisesMode }) => {
+  
   let char = targetText[inputText.length]
+
   if (exercisesMode && isAlreadyError) {
-      char = targetText[inputText.length -1]
+    char = targetText[inputText.length -1]
   } 
 
-
-    const getClassName = (keyArray) => {
-          
-      const errorChar = inputText.slice(-1)
-      if (isAlreadyError && keyArray.includes(errorChar.toLowerCase())) {
-        return "key wrong"  
-      }
-      let isActive = false
-      if (char) {
-        isActive = (keyArray.some((key) =>  key === char.toLowerCase()));
-      }
-        return isActive ? "key active" : "key";
+  const getClassName = (keyArray) => {
+        
+    const errorChar = inputText.slice(-1)
+    if (isAlreadyError && keyArray.includes(errorChar.toLowerCase())) {
+      return "key wrong"
     }
+    
+    let isActive = false
+    if (char) {
+      isActive = (keyArray.some((key) =>  key === char.toLowerCase()));
+    }
+
+    return isActive ? "key active" : "key";
+  }
 
   const getRightShiftClassName = () => {
 

@@ -4,7 +4,7 @@ import TimerButton from './TimerButton';
 
 
 export const Timer = ({ onStart, onEnd, onReload }) => {
-  const [time, setTime] = useState(5);
+  const [time, setTime] = useState(50);
   const [isStarted, setIsStarted] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export const Timer = ({ onStart, onEnd, onReload }) => {
       onStart()
       setIsStarted(true)
     } else if (action === 'reload') {
-      setTime(5);
+      setTime(50);
       onReload()
     } else {
       setIsStarted(false)

@@ -6,7 +6,6 @@ import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
 import { exercisesSections } from '../exercisesSections';
-import { validKey } from '../generalConstants'
 
 const TrainingPage = () => {
   const { sectionId, lessonId } = useParams()
@@ -14,7 +13,6 @@ const TrainingPage = () => {
   const lesson = section.lessons.find((lesson) => lesson.id === Number(lessonId))
   const exerciseMode = false
   const [isAlreadyError , setIsAlredyError] = useState(false)
-
   const targetText = lesson.exercises[0];
   const [inputText, setInputText] = useState('');
   const [index, setIndex] = useState(0);
@@ -23,6 +21,10 @@ const TrainingPage = () => {
   const [accuracy, setAccuracy] = useState(0);
   const [startTime, setStartTime] = useState(0);
   const [endTime, setEndTime] = useState(0);
+
+  const [isTypingAllowed, setIsTypingAllowed] = useState(false);
+  const [time, setTime] = useState(0);
+
   const onKeyCorrect = (event) => {
       setIndex(index + 1)
       setCorrectCount(correctCount + 1)
@@ -55,6 +57,7 @@ const TrainingPage = () => {
   }
 
   const handleInputChange = (event) => {
+    event.preventDefault()
     if (!isTypingAllowed) return;
 
     const { key } = event;
@@ -89,6 +92,7 @@ const TrainingPage = () => {
   const handleEnd = () => {
     setEndTime(Date.now());
     setIsTypingAllowed(false);
+    setTime(time + (Date.now() - startTime));
   };
 
   const handleReload = () => {
@@ -98,6 +102,7 @@ const TrainingPage = () => {
     setAccuracy(0)
     setEndTime(0)
     setStartTime(0)
+    setTime(0);
   }
 
 
