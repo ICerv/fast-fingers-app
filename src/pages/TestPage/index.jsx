@@ -11,6 +11,10 @@ const TestPage = () => {
 
   const targetText = test.exercises[0];
 
-  return <Practice targetText={targetText} />;
+  return (
+    <>
+      <Practice targetText={targetText} backUrl="/tests" />;
+    </>
+  );
 };
 export default TestPage;

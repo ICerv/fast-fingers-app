@@ -8,7 +8,7 @@ import { Keyboard } from './Keyboard';
 import Timer from './Timer';
 import Hand from './Hand';
 
-const Practice = ({ targetText, nextLink }) => {
+const Practice = ({ targetText, nextLink, backUrl }) => {
   const exerciseMode = false;
   const [isAlreadyError, setIsAlredyError] = useState(false);
   const [inputText, setInputText] = useState('');
@@ -122,7 +122,7 @@ const Practice = ({ targetText, nextLink }) => {
   return (
     <div className="container-page">
       <div className="up-container">
-        <button className="button back" onClick={() => navigate('/lessons')}>
+        <button className="button back" onClick={() => navigate(backUrl)}>
           Zpět
         </button>
 
