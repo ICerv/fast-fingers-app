@@ -105,9 +105,7 @@ export const testsSections = [
            number: 1,
            exercises: 
                [
-                  `HTML je zkratka slov Hyper Text Markup Language. XML je zkratka slov eXtensible Markup Language. SGML je zkratka slov Standard Generalized Markup Language a je to norma ISO. SGML je tedy standard pro HTML a XML. Javascript NEVZNIKL Z Javy. XML NEOBSAHUJE CSS. XML OBSAHUJE tagy. XML je CASE SENSITIVE jazyk. XML dokument obsahuje DTD. DTD je zkratka slov Document Type Definition. Document Type
-                  Definition, Definice Typu Dokumentu. Je to vlastnost XML pro tvorbu elementů a atributů. XML bez DTD? Ano. Internet Explorer pracuje s DTD. Validace dokumentu XML je NUTNOST. Validita potvrzuje WELL FORMED dokumentu XML. CSS, Cascading Style Sheets. CSS je pro HTML i XML. CSS obsahuje SELEKTORY, DEKLARACE a VLASTNOSTI. Vlastnost obsahuje HODNOTU. Definice stylu obsahuje DEKLARACI. ARIAL, COURIER, HELVETICA, TIMES ROMAN jsou typy fontů. ITALIC A NORMAL
-                  jsou styly fontů. Styl textu obsahuje mnoho parametrů. V XML lze vyhotovit tiskopis pro tisk, dokument pro podnikatele i aplikaci. XML nenahrazuje HTML. XML existuje vedle HTML. Je to alternativa k tomuto jazyku. XHTML nahrazuje HTML. Pravidla jsou ZDOKONALENA. Dokumenty XHTML projdou VALIDITOU, a proto se jsou podle normy WELL FORMED.
+                  `HTML (HyperText Markup Language) je značkovací jazyk používaný pro tvorbu webových stránek a jejich strukturování. HTML definuje strukturu a obsah webové stránky pomocí různých značek a elementů, které jsou interpretovány webovým prohlížečem a zobrazovány uživatelům. S HTML můžete vytvářet různé prvky, jako jsou nadpisy, odstavce, odkazy, tabulky, formuláře a mnoho dalšího.
                   `
                ],
        },
@@ -116,11 +114,8 @@ export const testsSections = [
            number: 2,
            exercises: 
                [
-                  `Webpack je nástroj pro sestavování a balení zdrojových souborů webové aplikace. Je často používán ve spojení s moderními frontendovými frameworky, jako je React nebo Vue, a umožňuje spravovat závislosti, kompilovat zdrojový kód, optimalizovat výstupní balíčky a mnoho dalšího.
-
-                  Webpack funguje na principu modulů, které jsou načítány a transformovány do výsledného balíčku. Podporuje různé typy souborů, jako jsou JavaScript, CSS, obrázky a další, a umožňuje jejich zpracování a optimalizaci.
-                  
-                  Díky Webpacku je možné efektivně spravovat a distribuovat zdrojový kód webové aplikace a zajišťovat vysokou výkonnost a rychlost na straně klienta.`
+                  `CSS (Cascading Style Sheets) je jazyk používaný pro popis vzhledu a formátování webových stránek. CSS se používá k definování různých stylů, jako jsou barvy, velikosti písma, rozložení, pozadí a dalších vizuálních vlastností elementů na stránce. Pomocí CSS můžete měnit vzhled a rozvržení stránek, přidávat animace, responsivní design a další efekty.
+                  HTML a CSS spolu tvoří základní stavební kameny webových stránek, přičemž HTML se stará o strukturu a obsah a CSS o vzhled a formátování.`
                ],
  },
      {  
@@ -128,10 +123,7 @@ export const testsSections = [
            number: 3,
            exercises: 
                [
-                 `React byl vyvinut společností Facebook a poprvé veřejně představen v roce 2013. Jeho tvůrci jsou Jordan Walke a tým vývojářů v Facebooku. React byl vytvořen jako knihovna pro tvorbu uživatelského rozhraní (UI) a zaměřuje se na jednoduchost, efektivitu a přehlednost při vývoji webových aplikací.
-
-                 Jedním z hlavních konceptů v Reactu je komponentní architektura. Aplikace v Reactu jsou postaveny na znovupoužitelných komponentách, které reprezentují různé části uživatelského rozhraní. Každá komponenta má svůj vlastní stav (state) a definuje, jak se má zobrazovat na základě tohoto stavu.
-                 `
+                 `JavaScript je programovací jazyk používaný pro tvorbu interaktivního obsahu na webových stránkách. Byl vyvinut v roce 1995 Brendanem Eichem a původně se nazýval "LiveScript". Později byl přejmenován na "JavaScript" kvůli popularitě jazyka Java v té době.`
                ],
  },
      {  
@@ -139,12 +131,7 @@ export const testsSections = [
            number: 4,
            exercises: 
                [
-                  `React využívá virtuální DOM (Document Object Model), což je abstrakce reálného DOM, která umožňuje efektivnější aktualizaci a vykreslování uživatelského rozhraní. React porovnává změny ve virtuálním DOM s reálným DOM a aktualizuje pouze ty části stránky, které se skutečně změnily.
-
-                  React je často kombinován s jinými nástroji a knihovnami, jako je například Redux pro správu stavu aplikace nebo React Router pro routování a správu navigace v aplikaci.
-                  
-                  Od svého vzniku se React stal velmi populárním nástrojem pro tvorbu webových aplikací a získal si širokou komunitu vývojářů. Je používán mnoha společnostmi a organizacemi při vývoji moderních a interaktivních webových aplikací.
-                  `
+                  `JavaScript je interpretovaný jazyk, což znamená, že se kód vykonává v prohlížeči nebo v jiném prostředí, jako je například Node.js. Jeho hlavní využití spočívá v interakci s webovou stránkou, manipulaci s HTML a CSS, reagování na uživatelské akce a vytváření dynamických a interaktivních funkcionalit.`
                ],
  },
      {  
@@ -152,10 +139,7 @@ export const testsSections = [
            number: 5,
            exercises: 
                [
-                `JavaScript je programovací jazyk používaný pro tvorbu interaktivního obsahu na webových stránkách. Byl vyvinut v roce 1995 Brendanem Eichem a původně se nazýval "LiveScript". Později byl přejmenován na "JavaScript" kvůli popularitě jazyka Java v té době.
-
-                JavaScript je interpretovaný jazyk, což znamená, že se kód vykonává v prohlížeči nebo v jiném prostředí, jako je například Node.js. Jeho hlavní využití spočívá v interakci s webovou stránkou, manipulaci s HTML a CSS, reagování na uživatelské akce a vytváření dynamických a interaktivních funkcionalit.
-                `
+                `React byl vyvinut společností Facebook a poprvé veřejně představen v roce 2013. Jeho tvůrci jsou Jordan Walke a tým vývojářů v Facebooku. React byl vytvořen jako knihovna pro tvorbu uživatelského rozhraní (UI) a zaměřuje se na jednoduchost, efektivitu a přehlednost při vývoji webových aplikací.`
                ],
  },
      {  
@@ -163,10 +147,7 @@ export const testsSections = [
            number: 6,
            exercises: 
                [
-                 `JavaScript je vysoce flexibilní jazyk, který umožňuje vytvářet různé typy aplikací, včetně webových aplikací, mobilních aplikací a desktopových aplikací. Má širokou škálu funkcí a knihoven, které usnadňují vývoj a umožňují programátorům vytvářet sofistikované aplikace.
-
-                 V průběhu let se JavaScript stal jedním z nejpoužívanějších programovacích jazyků na světě a má rozsáhlou komunitu vývojářů. Existuje mnoho nástrojů, rámců (frameworků) a knihoven postavených na JavaScriptu, které usnadňují vývoj a rozšiřují jeho možnosti.
-                 `
+                 `Jedním z hlavních konceptů v Reactu je komponentní architektura. Aplikace v Reactu jsou postaveny na znovupoužitelných komponentách, které reprezentují různé části uživatelského rozhraní. Každá komponenta má svůj vlastní stav (state) a definuje, jak se má zobrazovat na základě tohoto stavu.`
                ],
  },
      {  
@@ -174,11 +155,7 @@ export const testsSections = [
            number: 7,
            exercises: 
                [
-                 `Adolf Heyduk byl pritelem Nerudy. Básnik, stoupenec ceskoslovenské vzájemnosti. Je známy básnickym cyklem Cigánské melodie. Ve svém púsobivém dile nabádá ke vzáiemnému sblízeni. Jeho zájem se také upiná k problémúm venkovského kraje, kde bere v úvahu jednotlivé historické souvislosti. Povídky z jihoceského lidového prostredi Drevorubec a básnické historické skladby Za volnost a viru
-                 jsou typickym prikladem autorova zaujeti obydejnymi venkovskymi lidmi. Jaroslav Vrchlicky patfi ke známym deskym básniküm. Nebyl jen básnikem, ale pracoval i jako tajemnik. Ji≥ za svého Zivota se stal uznávanou osobností ceské poezie. Známá je napr. Prvotina Z hlubin, která vykazuje prvky tzv. horké poezie z Nerudovy sbirky Hrbitovni kvití. V prvnich sbirkach nacházime stridmé rymy, v pozdnich sbirkách rymy rozevláté, bohaté a rozmarilé.
-                 Jaroslav Vrchlicky za sebou zanechal rozsáhle básnické dilo. Presto se zejména v pozdnim obdobi zacaly mnozit kritické hlasy proti Vrchlického básnim. Zejména je vytykán skepticismus, nedostatek vyrazné individuality a básnické disciplíny. Posledni Vrchlického sbirka se jmenuje Me¿
-                 Damoklúv a odrázi autorovy predtuchy osudové rány a pocity
-                 `
+                 `React využívá virtuální DOM (Document Object Model), což je abstrakce reálného DOM, která umožňuje efektivnější aktualizaci a vykreslování uživatelského rozhraní. React porovnává změny ve virtuálním DOM s reálným DOM a aktualizuje pouze ty části stránky, které se skutečně změnily.`
                ],
  },
      {  
@@ -186,17 +163,7 @@ export const testsSections = [
            number: 8,
            exercises: 
                [
-                  `Vitr Septal Markétce do ouska mazlivá slúvka máiového vánku. Topoly sevelily a odlesky slunce v tekoucím ¿irém potücku sálily zrak. Kytice Seríku od svého milého Markétku hrála u srdce. Jméno Jan si v myslenkach ríkala znovu a znovu. Mlady a sarmantni hoch chodi do nagi Skoly teprve dva tydny. Markétce pomáhá s nákupni i skolni taskou, doprovázi ji pred skolni budovu, obdas az do trídy. Po celé
-                  §kole koluje septanda o tom, co se vsechno mezi Markétkou a Janem stalo. Pravdou je, Ze se nestalo vübec nic. Markétka Jana miluje silenou, vásnivou láskou a Jan Markétku také.
-                  Láska muze byt sálivá, ale je to prece jen prirozeny lidsky cit.
-                  Odpoledne, po skole, se Markétka setká s Janem v bistru. Daji si spolu sálek caje a budou si povidat o skole. Jindriska Markétce Jana závidí. o prestávce si
-                  spitala s Matyldou. Nikdo nevi, co za silenost vymyslely.
-                  Markétka se uz osálit nenechá. Má ráda svého sarmantního Jana a spolu prekonaji vsechny prekázky. Dnes si pro svého milácka nachystala prekvapeni.
-                  Prinese mu osatku
-                  povidlovych koládu. Veder si sednou na záprazi a pri zapadajícim slunci a nastávajícim seru je budou jist k vederi.
-                  Jan poseptá Markétce slúvka o lásce a Markétka dá
-                  Janovi sladké pusinky.
-                  `
+                  `React využívá virtuální DOM (Document Object Model), což je abstrakce reálného DOM, která umožňuje efektivnější aktualizaci a vykreslování uživatelského rozhraní. React porovnává změny ve virtuálním DOM s reálným DOM a aktualizuje pouze ty části stránky, které se skutečně změnily.`
                ],
  },
      {  
@@ -204,21 +171,7 @@ export const testsSections = [
            number: 9,
            exercises: 
                [
-                 `Sárka se podívala tázavym pohledem na svého ucitele. Ámos, jak mu vsichni ríkali, stál postaveny delem k oknu a díval se ven na skolni dvir. Uz dávno skondila posledni hodina.
-                 Trest, jak prohlásil pan ucitel, si sárka odpyká odpoledne po skolnich hodinach. NESMIM HAZET KRIDOU NA STEFANA A TÁÑU. Tato slova musí Sárka opsat celkem stokrat. Ámos se oblomit nenecha. A to si Sárka myslela, ze ji má alespon
-                 trochu rad. Nejspis nemá. NESMÍM HAZET KRÍDOU NA STEFANA A TÁÑU. Stále zbyvalo napsat mnoho slov.
-                 Sárku u≥ bolela celá
-                 ruka. Takovy trest müze dát jen opravdovy sadista. Ten jediny hod kridou ji za to nestál. Hlasitym pohybem prilákala Ámosovu pozornost. ucitel se usmíval a neríkal nic. Usedl za svij stil a zadal si psát poznamky do sveho blodku. Vsude panovalo ticho, jen Sárdina propiska klouzala
-                 po papire.
-                 NESMÍM HÁZET KRÍDOU NA STEFANA A TÁÑU. AnO, uz
-                 to nikdy neprovede.
-                 presto je tohle lepsi, ne≥ poznámka do
-                 ≥ákovské knizky.
-                 Táta by ji asi pretrhi. Nejhorsi na tom
-                 je,
-                 Ze nikdo nevi, jak to bylo doopravdy. Táña hodila krídou jako prvni a to na Stefana. Stefan jí to oplatil, ale netrefil se a zasáhl Sárku. Sárka vzala krídu a hodila.
-                 Do tridy vstoupil Ámos a krida mu pristála prímo na jeho saku. Udiv na tvári pana uditele byl nepopsatelny. To se ob¿as stává. NESMÍM HAZET KRÍDOU NA STEFANA A TANU.
-                 `
+                 `Webpack je nástroj, který se používá pro sestavování a balení zdrojových souborů webových aplikací. Jeho hlavním úkolem je spravovat závislosti mezi soubory a vytvořit optimalizovaný výsledný balíček, který se načte do prohlížeče. Pracuje na principu modulů, což znamená, že rozděluje kód do menších částí a následně je spojuje do výsledného balíčku. To umožňuje efektivní správu závislostí a snadnou modularitu aplikace.`
                ],
  },
      {  
