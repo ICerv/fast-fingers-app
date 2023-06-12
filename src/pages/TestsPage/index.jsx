@@ -8,28 +8,28 @@ const TestsPage = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      {testsSections.map((section) => (
-        <div className="tests-container" key={section.id}>
-          <div className="tests-section">
-            <div className="section-info">
-              <div className="section-description">
-                <h2 className="title">{section.title}</h2>
-                <p className="amount">{section.amount}</p>
-              </div>
-              <img src={require(`${section.url}`)} className="section-image" />
+    <div className="tests-container">
+      <div className="tests-intro">
+        <h2 className="tests-title">Zkontroluj své dovednosti psaní</h2>
+        <h4 className="tests-description">
+          Absolvováním testu psaní získáte přehled o své aktuální rychlosti a přesnosti psaní.
+        </h4>
+      </div>
+      <div className="level-card">
+        {testsSections.map((section) => (
+          <div className="level-box" key={section.id}>
+            <div className="tests-info">
+              <h2 className="level-title">{section.title}</h2>
+              <p className="tests-amount">{section.amount}</p>
+              <img src={require(`${section.url}`)} className="level-image" />
+              <a className="start-test" onClick={() => navigate(`/section/${section.id}/test/1`)}>
+                Začít test
+              </a>
             </div>
-            <div className="section-icon icon-closed"></div>
           </div>
-          <a
-            className="start-test"
-            onClick={() => navigate(`/section/${section.id}/test/1`)}
-          >
-            Začít test
-          </a>
-        </div>
-      ))}
-    </>
+        ))}
+      </div>
+    </div>
   );
 };
 

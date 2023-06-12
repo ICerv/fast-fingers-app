@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
-
+  gap: 3%;
+  margin-bottom: 8rem;
 }
 
 .tests-intro {
@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  /* padding: 10px; */
   font-family: sans-serif;
   line-height: 1.7rem;
   opacity: 0.8;
@@ -30,35 +29,37 @@
   font-style: italic;
 }
 
-.tests-list {
+.level-card{
   display: flex;
-  flex-wrap: wrap;
-  margin: 30px auto;
-  gap: 15px;
+  align-items: center;
+  gap: 3%;
+  padding-top: 2rem;
 }
 
-.tests-card {
-  margin: 20px auto;
+.level-box {
+  display: flex;
+  gap: 20px;
+}
+
+.tests-info {
+  width: 40vw;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   background-color: rgba(231, 242, 245, 0.8);
-  width: 300px;
-  height: auto;
-  opacity: 0.8;
-}
-
-.test-level {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 2rem;
 }
 
 .level-title {
-  font-style: bold;
   font-size: 28px;
-  font-style: italic;
+  font-weight: 500;
+}
+
+.tests-amount {
+  text-align: center;
 }
 
 .level-image {
@@ -74,9 +75,8 @@
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   padding: 5px 10px;
-  font-style: bold;
+  font-weight: bold;
   cursor: pointer;
-  font-weight: 600;
 }
 
 @media (max-width: 480px) {
@@ -84,41 +84,52 @@
     height: auto;
   }
 
-  .tests-intro {
-    width: 100%;
-    padding: 20px;
-    font-size: 1rem;
-  }
-
-  .tests-title {
-    font-size: 2rem;
-  }
-
-  .tests-description {
-    padding: 10px;
-    font-size: 0.8rem;
-  }
-
-  .tests-list {
+  .level-card{
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
+  }
+
+  .tests-info{
+    width: 60vw;
     margin: 1rem;
   }
-
-  .tests-card {
-    width: 100%;
-    height: 12rem;
-  }
-
   .level-title {
     font-size: 1.5rem;
     margin: 5px;
   }
 
+  .level-image {
+    width: 50%;
+  }
+
   .start-test {
-    width: 80px;
-    padding: 5px;
-    margin: 10px;
+    width: 20vw;
+    padding: 0px;
+    margin: 5px;
     font-size: 0.8rem;
+    text-align: center;
+  }
+} 
+
+@media (min-width: 768px) {
+  .tests-container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .level-card{
+    display: flex;
+  }
+
+  .level-box {
+    display: flex;
+    gap: 20px;
+  }
+
+  .tests-info{
+    width: 20vw;
+    margin: 1rem;
   }
 }
