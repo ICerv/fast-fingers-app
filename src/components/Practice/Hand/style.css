@@ -1,3 +1,10 @@
 .s0 { fill: white } 
 .s1 { fill: none;stroke: white;stroke-linecap: square;stroke-width: 2.6 } 
 .s2 { fill: #3abbbb } 
+
+@media (min-width: 768px) {
+    .adaptive-svg {
+        width: 250px;
+        height: 250px;
+    }
+}

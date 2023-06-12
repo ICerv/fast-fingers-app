@@ -23,7 +23,7 @@ export const validKey = (keyCode) => {
   }
 
   const keyIsAvailableSymbol = (keyCode) => {
-    return [13, 32, 219, 220, 221, 222].includes(keyCode)
+    return [ 32, 219, 220, 221, 222].includes(keyCode)
 }
 
 export const rightShiftSymbol = ['°', '1', '2', '3', '4', '5', '6', 'V', 'W', 'E', 'R', 'T', 'Z', 'A', 'S', 'D', 'F', 'G', 'H', 'Y', 'X', 'C', 'V', 'B', 'N']

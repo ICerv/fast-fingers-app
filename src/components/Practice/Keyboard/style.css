@@ -2,60 +2,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex: 2 1 80%;
 }
 
 .row {
-  list-style: none;
   display: flex;
 }
 
-.row-1 {
-  padding-left: 0em;
-}
-
-.row-2 {
-  padding-left: 0.25em;
-}
-
-.row-3 {
-  padding-left: 0.5em;
-}
-
-.row-4 {
-  padding-left: 0em;
-}
-
-.row-5 {
-  padding-left: 0em;
-}
-
-ul {
-  display: block;
-}
-
 .key {
-  height: 3em;
-  width: 3em;
+  width: 5.5vw;
   color: rgba(0, 0, 0, 0.7);
   border-radius: 0.4em;
   line-height: 3em;
   letter-spacing: 1px;
   margin: 0.2em;
   text-align: center;
-  font-size: 1em;
+  font-size: 10px;
   font-family: sans-serif;
   font-weight: bold;
   opacity: 0.8;
   border: 2px solid #706d6d;
   background-color: white;
   cursor: pointer;
-
 }
 
 .special-key {
-  width: 6.2rem;
+  height: 34px;
+  width: 10vw;
+}
+
+.space {
+  height: 34px;
+  width: 40vw;
+  color: black;
+  font-family: sans-serif;
+  border-radius: 0.4em;
+  transition: 0.3s;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.key_two {
+  position: relative;
+}
+
+.top {
+  position: absolute;
+  left: 4px;
+  top: -10px
+}
+
+.bottom {
+  position: absolute;
+  right: 4px;
+  bottom: -10px
 }
 
 .key.active {
@@ -78,34 +77,27 @@ ul {
   100% {background-color:white;}
 }
 
-.space {
-  height: 3em;
-  width: 21em;
-  color: black;
-  font-family: sans-serif;
-  border-radius: 0.4em;
-  line-height: 3em;
-  letter-spacing: 1px;
-  margin: 0.4em;
-  transition: 0.3s;
-  text-align: center;
-  font-size: 1em;
-  background-color: white;
-  opacity: 0.8;
-}
-
-.key_two {
-  position: relative;
-}
-
-.top {
-  position: absolute;
-  left: 4px;
-  top: -10px
-}
-
-.bottom {
-  position: absolute;
-  right: 4px;
-  bottom: -10px
+@media (min-width: 768px) {
+  .keyboard {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .key {
+    height: 3em;
+    width: 3em;
+    font-size: 1em;
+  }
+  
+  .special-key {
+    width: 6.2rem;
+  }
+   
+  .space {
+    height: 3em;
+    width: 17em;
+    margin: 0.4em;
+    font-size: 1em;
+  }
+  
 }

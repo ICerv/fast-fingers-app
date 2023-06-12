@@ -466,26 +466,10 @@ export const exercisesSections = [
                 "Ztratil jsem svou tašku. Diskař dohodil daleko. K lékaři si vezměte skleničku s močí. Ta troška kávy nám nebude stačit. Přišij si knoflíček. Historický šerm má svůj šarm. Košíková je oblíbený sport. Ta šedá ti nesluší. Za rouškou byl schovaný Mikuláš. Natahoval uši, aby zaslechl, co si vedle šuškají. Varila myšička kašičku."
             ]
         },
+        
         {
             id: 30,
             number: 9,
-            title: "Diakritické znaménko ´ a ˇ",
-            amount: "8 úkolů",
-            exercises: 
-            [
-                "ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó ó Ú Ó Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Ú É Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý Í Ý ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ ÚÉ ÍÁ",
-                "gól, gólový, tón, tónina, pól, kód, pór, pórek, fór, fórek, sója, lóže, dóza, bójka, chór, jóga, zóna, móda, kóje, dóm, fórum, občanské fórum, fólie, flóra, štóla, chlór, kvóta, viskóza, celulóza, fazónka, balónek, citrónek, miliónek, Úsek. Ústa. Éther. Ámen. Úsek. Ústa. Éter. Ámen. Úsek. Ústa",
-                "ď, ť, ň, ď, ť, ň, ď, ť, ň, ď, ť, ň, ď, ť, ň, ď, ť, ň, ď, ť,  ďa, ťa, ňa, ďa, ťa, ňa, ďa, ťa, ňa, ďa, ťa, ňa, ďa, ťa, ňa Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ě Ď Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ť Č Ň Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř Ž Š Ř",
-                "Ť Ě Ď Č Ž Ť Ě Ď Č Ž Ť Ě Ď Č Ž Ť Ě Ď Č Ž Ť Ě Ď Č Ž Ť Ě Ď Č Ž ĚŠŘ ŽŠŤ ĚŠŘ ŽŠŤ ĚŠŘ ŽŠŤ ĚŠŘ ŽŠŤ ĚŠŘ ŽŠŤ ĚŠŘ ŽŠŤ ĚŠŘ zeď, teď, ďas, saň, huť, káď, záď, síň, míň, síť, drť, loď, Ťapka. Čapka. Ďula. Ťula. Čepice. Žena. Čína. Řím. Římsa. mlať, trať, žerď, déšť, sněť, sleď, pleť, plsť, pláň, dřeň,",
-                "óď óň óť óď óň óť óď óň óť óď óň óť óď óň óť óď óň óť óď óň Í Ě Ď É Í Ě Ď É Í Ě Ď É Í Ě Ď É Í Ě Ď É Í Ě Ď É Í Ě Ď É Í Ě Úkoly je třeba plnit. Řekové jsou milí a pohostinní. Češi a Slováci mají mnoho společného. Éter neexistuje. Karel Čapek je uznávaný spisovatel. Čína má více než miliardu obyvatel.",
-                "Češka je jméno mého kolegy z práce. Éra nové módy je tady. Balónový rukáv patří k novému módnímu směru. Za deštivého počasí je nutné nosit podzimní plášť. Struktura vykazovala pórovitý povrch. Z kohoutku přitekla chlorovaná voda. Čapek je můj oblíbený autor. Ódu na radost však bohužel nenapsal.",
-                "Óda na radost je znamenitá. Vyťukej svůj kód a můžeš jít. Ťapka je můj nový pejsek. Bajka se jmenovala Žába a princ. Čápi s oblibou hnízdí na vysokých komínech. Čáry a kouzla najdeš v knize o Harrym Potterovi. Úkolem ČR je obstát v EU. Život želvy může být velmi dlouhý. Šeptat si není dobré.",
-                "Babička říkala, že co je šeptem, to je s čertem. Únos Katriony ie kniha od Roberta Louise Sevensona. Čert nikdy nespí. Zůstaňte v klidu. Nechoďte ven. Odsuňte to auto. Zahoďte zbraň. Posaďte se. Řekni, jak to bylo. Ťuky ťuk. Spanilá modelka pózovala, jako by byla pod vlivem hypnózy."
-            ]
-        },
-        {
-            id: 31,
-            number: 10,
             title: "Písmeno ě",
             amount: "4 úkoly",
             exercises: 
@@ -497,8 +481,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 32,
-            number: 11,
+            id: 31,
+            number: 10,
             title: " Číslice 8",
             amount: "4 úkoly",
             exercises: 
@@ -510,8 +494,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 33,
-            number: 12,
+            id: 32,
+            number: 11,
             title: " Číslice 5",
             amount: "4 úkoly",
             exercises: 
@@ -523,8 +507,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 34,
-            number: 13,
+            id: 33,
+            number: 12,
             title: " Číslice 7",
             amount: "4 úkoly",
             exercises: 
@@ -536,8 +520,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 35,
-            number: 14,
+            id: 34,
+            number: 13,
             title: " Číslice 6",
             amount: "4 úkoly",
             exercises: 
@@ -549,8 +533,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 36,
-            number: 15,
+            id: 35,
+            number: 14,
             title: " Číslice 9",
             amount: "4 úkoly",
             exercises: 
@@ -562,8 +546,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 37,
-            number: 16,
+            id: 36,
+            number: 15,
             title: " Číslice 4",
             amount: "4 úkoly",
             exercises: 
@@ -575,8 +559,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 38,
-            number: 17,
+            id: 37,
+            number: 16,
             title: " Číslice 0",
             amount: "4 úkoly",
             exercises: 
@@ -588,8 +572,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 39,
-            number: 18,
+            id: 38,
+            number: 17,
             title: " Číslice 3",
             amount: "4 úkoly",
             exercises: 
@@ -601,8 +585,8 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 40,
-            number: 19,
+            id: 39,
+            number: 18,
             title: " Číslice 2",
             amount: "4 úkoly",
             exercises: 
@@ -621,7 +605,7 @@ export const exercisesSections = [
         url: "./img/signs.png",
         lessons: 
         [{
-            id: 41,
+            id: 40,
             number: 1,
             title: "Znaménko + a =",
             amount: "5 úkolů",
@@ -635,7 +619,7 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 42,
+            id: 41,
             number: 2,
             title: "Číslice 1 a znak %",
             amount: "7 úkolů",
@@ -651,7 +635,7 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 43,
+            id: 42,
             number: 3,
             title: `Lomítko /, uvozovky "" `,
             amount: "4 úkoly",
@@ -664,7 +648,7 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 44,
+            id: 43,
             number: 4,
             title: "Znaky ; a °",
             amount: "5 úkolů",
@@ -678,7 +662,7 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 45,
+            id: 44,
             number: 5,
             title: "Kulatá závorka ( )",
             amount: "3 úkoly",
@@ -690,7 +674,7 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 46,
+            id: 45,
             number: 6,
             title: "Paragraf § a vykřičník !",
             amount: "4 úkoly",
@@ -703,7 +687,7 @@ export const exercisesSections = [
             ] 
         },
         {
-            id: 47,
+            id: 46,
             number: 7,
             title: "Otazník ? a dvojtečka :",
             amount: "6 úkolů",
@@ -718,7 +702,7 @@ export const exercisesSections = [
             ]
         },
         {
-            id: 48,
+            id: 47,
             number: 8,
             title: "Spojovací čárka - a podtržítko _",
             amount: "4 úkoly",

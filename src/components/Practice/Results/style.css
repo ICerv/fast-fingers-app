@@ -1,19 +1,23 @@
 .result-item {
-  margin-bottom: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  line-height: 1.8;
   border-radius: 0.25rem;
+  font-size: 0.75rem;
   border: 1px solid white;
   box-shadow: 2px 2px 4px rgba(243, 241, 241);
-  width: 80px;
-  height: 70px;
+  width: 60px;
+  height: 50px;
 }
 
-.result-value {
-  display: block;
-  font-size: 1.5rem;
-}
-
-.result-value small {
-  font-size: 0.75rem;
+@media (min-width: 768px) {
+  .result-item {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 80px;
+    height: 70px;
+  }
+  
+  .result-value {
+    display: block;
+    font-size: 1.5rem;
+  }
 }

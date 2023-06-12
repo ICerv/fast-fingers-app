@@ -92,7 +92,7 @@ export const Keyboard = ({ targetText, inputText, isAlreadyError, exerciseMode }
           <div className="bottom">´</div>
         </div>
         <div className="key special-key" id="Backspace">
-          Backspace
+          Back
         </div>
       </div>
       <div className="row row-2">
@@ -227,19 +227,19 @@ export const Keyboard = ({ targetText, inputText, isAlreadyError, exerciseMode }
         </div>
       </div>
       <div className="row row-5">
-        <div className="key" id="Ctrl">
+        <div className="key special-key" id="Ctrl">
           Ctrl
         </div>
-        <div className="key" id="Alt">
+        <div className="key special-key" id="Alt">
           Alt
         </div>
         <div className={`space ${getClassName([' '])}`} id="space">
           SPACE
         </div>
-        <div className="key" id="AltGr">
+        <div className="key special-key" id="AltGr">
           AltGr
         </div>
-        <div className="key" id="Ctrl">
+        <div className="key special-key" id="Ctrl">
           Ctrl
         </div>
       </div>

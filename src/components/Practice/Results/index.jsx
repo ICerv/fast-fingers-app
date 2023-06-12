@@ -5,10 +5,10 @@ const Results = ({ name, data, symbol }) => {
   return (
     <div className="result-item">
       {name}
-      <span className="result-value">
+      <p className="result-value">
         {data}
         {symbol && data > 0 ? <small>{symbol}</small> : ''}
-      </span>
+      </p>
     </div>
   );
 };

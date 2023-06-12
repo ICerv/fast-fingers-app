@@ -1,6 +1,8 @@
 .letter {
     color: #706d6d;
     font-size: 28px;
+    line-height: 1.8;
+    padding-top: 5px;
     background: transparent;
     border: none;
     caret-color: #c62828;

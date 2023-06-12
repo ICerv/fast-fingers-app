@@ -7,6 +7,7 @@ import { Keyboard } from './Keyboard';
 import Timer from './Timer';
 import Hand from './Hand';
 import { left, right } from './fingerList';
+import { validKey } from '../../pages/generalConstants';
 
 const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const [isAlreadyError, setIsAlredyError] = useState(false);
@@ -68,7 +69,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     }
     const { key } = event;
 
-    if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18 && event.keyCode !== 20) {
+    if (validKey(event.keyCode)) {
       if (key === targetText.charAt(index)) {
         onKeyCorrect(event);
       } else {
@@ -169,16 +170,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
         </div>
 
         <div className="keyboard-container">
-          <div className="hand-image">
-            <Hand 
-              inputText={inputText} 
-              targetText={targetText} 
-              exerciseMode={exerciseMode} 
-              isAlreadyError={isAlreadyError}
-              useTransform={true}
-              fingers={left}/>
-          </div>
-
+        
           {/* KEYBOARD  */}
           <Keyboard
             targetText={targetText}
@@ -187,14 +179,28 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
             exerciseMode={exerciseMode}
           />
 
-          <div className="hand-image">
-            <Hand
-              inputText={inputText} 
-              targetText={targetText} 
-              exerciseMode={exerciseMode} 
-              isAlreadyError={isAlreadyError}
-              useTransform={false}
-              fingers={right}/>
+          <div className='hands-container'>
+
+            <div className="hand-image">
+              <Hand 
+                inputText={inputText} 
+                targetText={targetText} 
+                exerciseMode={exerciseMode} 
+                isAlreadyError={isAlreadyError}
+                useTransform={true}
+                fingers={left}/>
+            </div>
+
+            <div className="hand-image">
+              <Hand
+                inputText={inputText} 
+                targetText={targetText} 
+                exerciseMode={exerciseMode} 
+                isAlreadyError={isAlreadyError}
+                useTransform={false}
+                fingers={right}/>
+            </div>
+
           </div>
         </div>
       </div>

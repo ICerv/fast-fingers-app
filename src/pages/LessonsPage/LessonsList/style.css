@@ -48,6 +48,7 @@
 @media (min-width: 768px) {
     .lessons-list {
         width: 70vw;
+        justify-content: start;
     }
     
     .lesson-card {

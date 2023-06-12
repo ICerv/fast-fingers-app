@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import './style.css';
 import Practice from '../../components/Practice';
 import { exercisesSections } from '../exercisesSections';
 

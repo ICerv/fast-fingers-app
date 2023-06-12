@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    padding: 1rem;
-    grid: 1rem;
+    padding: 0.5rem;
 }
 
 .up-container {
@@ -13,46 +12,21 @@
     margin: 0 0 1rem 0;
     justify-content: space-between;
     align-items: center;
+    gap: 1%;
 }
 
 .button {
     color: white;
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 70px;
+    font-size: 12px;
     border-radius: 0.25rem;
     border: 1px solid white;
     background-color: rgba(243, 241, 241, 0.6);
     cursor: pointer;
 }
 
-.button.back {
-    margin-left: 2rem;
-}
-
-.button.next {
-    margin-right: 2rem;
-}
-
-.middle-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 2rem;
-    padding-top: 2rem;
-}
-
-.keyboard-container {
-    display: flex;
-    height: 40vh
-}
-
-img.hand {
-    width: 17rem;
-}
-
 .result-container {
-    margin-top: 50px;
-    margin-bottom: 20px;
     color: white;
     text-align: center;
   }
@@ -69,16 +43,74 @@ img.hand {
 .result-list small {
     font-size: small;
 }
-  
+
+.middle-container {
+    height: 70vh;
+}
+
 .input-container {
-    width: 650px;
+    width: 90vw;
     height: 40px;
     border: 1px solid white;
     box-shadow: 2px 2px 4px rgba(243, 241, 241);
     border-radius: 5px;
-    padding-left: 15px;
+    padding: 0 15px 0 15px;
     margin-bottom: 20px;
+    margin-left: 5vw;
     overflow: hidden;
 }
-  
-  
+
+.keyboard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hands-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .container-page {
+        padding: 1rem;
+    }
+    
+    .button {
+        height: 50px;
+        width: 100px;
+    }
+    
+    .button.back {
+        margin-left: 2rem;
+    }
+    
+    .button.next {
+        margin-right: 2rem;
+    }
+
+    .result-container {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .middle-container {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    .input-container {
+        width: 700px;
+        height: 40px;
+        margin-left: 0;
+    }
+    
+    .keyboard-container {
+        height: 40vh
+    }
+}
+    
+   
