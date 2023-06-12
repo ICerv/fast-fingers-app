@@ -6,52 +6,18 @@
   transition: transform 0.3s ease;
 }
 
-.btn {
-  width: 5vw;
-  height: 14vh;
-  border-radius: 50%;
-  opacity: 0.8;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.timer-start-btn {
-  color: green;
-}
-
-.timer-stop-btn {
-  color: #c62828;
-}
-
-
 .time {
   color: white;
   opacity: 0.8;
 }
 
+
+
+
 @media (max-width: 480px) {
   .timer-container {
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  .btn {
-    width: 18vw;
-    height: 10vh;
-    font-size: 1rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .btn:hover {
-    transform: scale(1.05);
   }
 
   .time {

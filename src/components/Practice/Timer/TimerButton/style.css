@@ -1,11 +1,17 @@
-/* .btn {
-  width: 70px;
-  height: 70px;
+.btn {
+  width: 5vw;
+  height: 9vh;
   border-radius: 50%;
   opacity: 0.8;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .timer-start-btn {
@@ -16,6 +22,17 @@
   color: #c62828;
 }
 
-.timer-reload-btn {
-  color: black;
-} */
+
+@media (max-width: 480px) {
+  .btn {
+    width: 18vw;
+    height: 10vh;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  }
