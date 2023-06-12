@@ -3,7 +3,7 @@ export const testsSections = [
        id: 1,
        title: "Začátečník",
        url: "./img/begginer.png",
-       amount: "13 testu",
+       amount: "11 testu",
        tests: 
        [{
            id: 1,
@@ -93,27 +93,6 @@ export const testsSections = [
                   "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou, Polsko, Rakousko, Slovensko, Slovinsko, Rumunsko, Rusko, Francie, Norsko, Portugalsko, Ukrajina, Bosna a Hercegovina, Monako, Lucembursko, Egypt, Libye, Angola, Maroko, Senegal, Mali, Niger, Etiopie, Kamerun, Ghana, Togo, Uganda, Kongo, Guinea,Gabon, Zambie,Malawi, Mosambik, Tanzanie, Burundi, Rwanda, Seychely, Madagaskar, Namibie, Botswana, Svazijsko, Lesotho, Eritrea, Tunisko, Brunej, Gruzie, Indie, Izrael, Japonsko, Jemen, Katar, Kuvajt, Laos, Libanon, Malajsie, Maledivy, Mongolsko, Singapur, Palestina, Uganda, Thajsko, Vietnam, Kiribati, Nauru, Palau, Samoa, Tonga, Tuvalu, Vanuatu, Argentina, Guyana, Chile, Kolumbie, Paraguay, Peru, Surinam, Trinidad a Tobago, Uruguay, Venezuela, Haiti, Antigua a Barbuda, Bahamy, Barbados, Belize, Dominika, Kuba, Grenada, Guatemala, Honduras, Jamajka, Kanada, Kostarika"
                ],
  },
-     {  
-           id: 12,
-           number: 12,
-           exercises: 
-               [
-                  `Jan Welzl je spisovatel. Romaneto je druh literatury. Kdo napsal Rukopisy, se dodnes nezjistilo. Negramotnost roste. Studovat jazyk je nutno s důrazem na praxi. Honza se vydal do Menzy vyplnit testy IQ. Jirka si testy nejprve koupil. Byla tam spousta studentů. Stoupl si za pult, kde jej oslovila obsluha. Koupil si knihu a rychle usedl na lavici. Uplynulo mnoho hodin. Druhou půlku knihy prostuduje jindy.
-                  Jan Neruda se narodil v Praze. Otec pracoval v trafice, matka posluhovala u geologa Barranda. Oba pracovali dlouho do noci. Byla chudoba, o chleba se muselo prosit. Po gymnasiu pracoval a potom studoval filozofii. Vedle studia publikoval u novin Tabesbote. Stal se autorem fejetonů a poezie. Tu ale tehdy nikdo nepochopil. Kritici psali o jeho almanachu. Fejetony psal i pro redakci Hlasu. Procestoval Evropu a dojmy zapsal do mnoha cestopisů.
-                  Oskar Wilde byl původem Ir. Jeho vzory byly J. Ruskin a W. Patera. Studoval v Oxfordu literaturu i filozofi. Ztratil dva roky svobody. Obraz Doriana Graye a drama Salome je jeho tvorba. Jakub Arbes psal romaneta. Narodil se v Praze, opustil studia. Potom vedl boj o svou existenci. Dostal vyhazov z redakce. `
-               ],
- },
-     {  
-           id: 13,
-           number: 13,
-           exercises: 
-               [
-                  `HTML je zkratka slov Hyper Text Markup Language. XML je zkratka slov eXtensible Markup Language. SGML je zkratka slov Standard Generalized Markup Language a je to norma ISO. SGML je tedy standard pro HTML a XML. Javascript NEVZNIKL Z Javy. XML NEOBSAHUJE CSS. XML OBSAHUJE tagy. XML je CASE SENSITIVE jazyk. XML dokument obsahuje DTD. DTD je zkratka slov Document Type Definition. Document Type
-                  Definition, Definice Typu Dokumentu. Je to vlastnost XML pro tvorbu elementů a atributů. XML bez DTD? Ano. Internet Explorer pracuje s DTD. Validace dokumentu XML je NUTNOST. Validita potvrzuje WELL FORMED dokumentu XML. CSS, Cascading Style Sheets. CSS je pro HTML i XML. CSS obsahuje SELEKTORY, DEKLARACE a VLASTNOSTI. Vlastnost obsahuje HODNOTU. Definice stylu obsahuje DEKLARACI. ARIAL, COURIER, HELVETICA, TIMES ROMAN jsou typy fontů. ITALIC A NORMAL
-                  jsou styly fontů. Styl textu obsahuje mnoho parametrů. V XML lze vyhotovit tiskopis pro tisk, dokument pro podnikatele i aplikaci. XML nenahrazuje HTML. XML existuje vedle HTML. Je to alternativa k tomuto jazyku. XHTML nahrazuje HTML. Pravidla jsou ZDOKONALENA. Dokumenty XHTML projdou VALIDITOU, a proto se jsou podle normy WELL FORMED.
-                  `
-               ],
- },
 ]},
   {
        id: 2,
@@ -126,8 +105,10 @@ export const testsSections = [
            number: 1,
            exercises: 
                [
-                  `Zikmund Winter byl spisovatel a historik. Pracoval jako profesor historie. Mezi jeho zájem spadala minulost národa a tvorba beletrie. V názvu knih se objevovalo slovo obrázky. Mistr Kampanus je román o historii. Pojednává o protireformaci. Román poznamenala archaizovaná tvorba slov a slovosledu. Julius Zeyer se narodil v Praze, byl synem majitele továrny. Dvakrát pracoval v Rusku jako vychovatel, procestoval celou Evropu. Napsal pár knih, známá je kniha Miss Olympia. Zeyerovy postavy spojuje ztracená láska. Julius Zeyer psal i o legendách z Irska a Japonska. Francouzská, anglická a ruská realistická tvorba zahrnovala autory jako je Dickens, Balzac, Zola, Flaubert, Tolstoj, nebo Dostojevskij. Charles Dickens musel ve dvanácti letech pracovat. Jeho tvorba následovala jeho osudy. Oliver Twist, David Copperfield a Malá Dorritka jsou romány s prvky autobiografie. Dickensův realismus obsahuje citovou lyriku. Balzac byl venkovan. Jeho otec ho poslal studovat práva.
-Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autorem sta románů o Francii. Znamá kniha je Otec Goriot. Emil Zola se inspiroval Balzacem. Nadchnul se ideou napsat cyklus knih, kde je tzv. lidská komedie.`
+                  `HTML je zkratka slov Hyper Text Markup Language. XML je zkratka slov eXtensible Markup Language. SGML je zkratka slov Standard Generalized Markup Language a je to norma ISO. SGML je tedy standard pro HTML a XML. Javascript NEVZNIKL Z Javy. XML NEOBSAHUJE CSS. XML OBSAHUJE tagy. XML je CASE SENSITIVE jazyk. XML dokument obsahuje DTD. DTD je zkratka slov Document Type Definition. Document Type
+                  Definition, Definice Typu Dokumentu. Je to vlastnost XML pro tvorbu elementů a atributů. XML bez DTD? Ano. Internet Explorer pracuje s DTD. Validace dokumentu XML je NUTNOST. Validita potvrzuje WELL FORMED dokumentu XML. CSS, Cascading Style Sheets. CSS je pro HTML i XML. CSS obsahuje SELEKTORY, DEKLARACE a VLASTNOSTI. Vlastnost obsahuje HODNOTU. Definice stylu obsahuje DEKLARACI. ARIAL, COURIER, HELVETICA, TIMES ROMAN jsou typy fontů. ITALIC A NORMAL
+                  jsou styly fontů. Styl textu obsahuje mnoho parametrů. V XML lze vyhotovit tiskopis pro tisk, dokument pro podnikatele i aplikaci. XML nenahrazuje HTML. XML existuje vedle HTML. Je to alternativa k tomuto jazyku. XHTML nahrazuje HTML. Pravidla jsou ZDOKONALENA. Dokumenty XHTML projdou VALIDITOU, a proto se jsou podle normy WELL FORMED.
+                  `
                ],
        },
      {  
@@ -135,8 +116,11 @@ Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autor
            number: 2,
            exercises: 
                [
-                  `Vojáci stáli vyrovnáni do řady. Vánek jim foukal do vlasů. Ve tváři se jim projevila bolest nad ztrátou velitele. Slzy padaly a nezůstala jediná suchá tvář. Jan, Martin i Richard řekli, jak to bylo. Nad planinou stále stoupal kouř. Spatřili jsme torza vozidel, která se srazila. Byla to druhá havárie v tomto roce. Vojenská mise je riziková. V tábore panoval dril a dřina. Brzy, za rok a půl půjdeme domů. Nad polem se přehnala bouřka. Sedlák popohnal své ore a vyrazil na cestu do statku. Seno bylo sklizeno, ale dřevo z pořezaných stromů dosud nebylo odvezeno. Pokud bouřka přejde rychle, práci do tmy odvedeme. Sluha dostane dobře zaplaceno. Selka nechala nasadit řepu. Ráno zapřáhne a odjede na trh. Natrhanou řeřichu je potřeba vystavit slunci. O bylinkách se řeklo mnoho nepravd. Pavel nastavil hořák a zkusil ho zapnout. Hořak nehořel a to Pavla trápilo. Dnes práci nestihne a nedostane zaplaceno. Jirka mu svůj hořák nepronajmul. Pokud hořák nebude hořet, práci provede Jirka, ale Pavel nedostane nic. Je třeba zajistit opravu hořáku. Cestou na Ořechov je nová opravna. Pavel tam hořák zanese a bude doufat. Bez hořáku se nedá pracovat.
-                  `
+                  `Webpack je nástroj pro sestavování a balení zdrojových souborů webové aplikace. Je často používán ve spojení s moderními frontendovými frameworky, jako je React nebo Vue, a umožňuje spravovat závislosti, kompilovat zdrojový kód, optimalizovat výstupní balíčky a mnoho dalšího.
+
+                  Webpack funguje na principu modulů, které jsou načítány a transformovány do výsledného balíčku. Podporuje různé typy souborů, jako jsou JavaScript, CSS, obrázky a další, a umožňuje jejich zpracování a optimalizaci.
+                  
+                  Díky Webpacku je možné efektivně spravovat a distribuovat zdrojový kód webové aplikace a zajišťovat vysokou výkonnost a rychlost na straně klienta.`
                ],
  },
      {  
@@ -144,8 +128,9 @@ Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autor
            number: 3,
            exercises: 
                [
-                 `Henryk Sienkiewicz je polsky autor. Je zastáncem pozitivismu a realismu. Velmi známy román je napr. Quo vadis. Boleslav Prus se doopravdy jmenoval Alexandr Glowacki. Napsal rozsáhlý román Loutka. Norský autor Henrik Ibsen vytvořil hry např. Stavitel Solness nebo Hedda Gablerová. V básni Peer Gynt nechal projevit vlivy romantismu. Jeho dramata jsou plná kritických výtek.
-                 Představitelem realismu byl u nás např.  Otakar Hostinský, dále Karel Václav Rais, Tereza Nováková, F. Xaver Svoboda nebo Jan Herben. Realistická tvorba vykreslovala situaci chudych a peskovala morálku bohatých. Z knih dýchala syrová realita, která apelovala na charakter svých postav. Vývoj byl zahájen patetickým romantickým dramatem a psychologickým realistickým obrazem. Realistická tvorba takto stála u obrody charakteru národa. Pro slovenský vývoj znamenal Bachův absolutismus útlum v tvorbě. Nepokoje byly významným způsobem zlikvidovány a autoři se dostali pod tvrdý dozor. Známý spisovatel byl např. Záborský, Gustav Laskomerský, Ján Palárik a L. Kubáni. Důraz byl kladen na morálnost a tradici národa. Historický román Valgatha, který napsal L. Kubáni, byl podobný Jiráskovu Bratrstvu.
+                 `React byl vyvinut společností Facebook a poprvé veřejně představen v roce 2013. Jeho tvůrci jsou Jordan Walke a tým vývojářů v Facebooku. React byl vytvořen jako knihovna pro tvorbu uživatelského rozhraní (UI) a zaměřuje se na jednoduchost, efektivitu a přehlednost při vývoji webových aplikací.
+
+                 Jedním z hlavních konceptů v Reactu je komponentní architektura. Aplikace v Reactu jsou postaveny na znovupoužitelných komponentách, které reprezentují různé části uživatelského rozhraní. Každá komponenta má svůj vlastní stav (state) a definuje, jak se má zobrazovat na základě tohoto stavu.
                  `
                ],
  },
@@ -154,9 +139,11 @@ Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autor
            number: 4,
            exercises: 
                [
-                  `Jeho žena mu vyžehlila prádlo. Prádlo se má žehlit ze dvou důvodů. Aby nebylo jakoby ho požvýkal, a aby se v prádle nedržely bacily. Každý, kdo chce žehlit, si má dávat pozor na správnou teplotu. Silon je na teplo citlivy, kdežto bavlna, vina a len již tolik ne. Je třeba prádlo vždy dobře poskládat. Mužům se žehlit nechce, ženám se zase nechce opravovat vadný bojler. V práci je nutno se respektovat.
-                  Reklama informuje, že pro zdravý chrup se má žvýkat. Aby byl chrup zdravý, žvýkat je potřeba tak jako kousat mrkev, jablko nebo kůrku chleba. Kdo nežvýka, má velkou smůlu.
-                  Nemá se žvýkat v práci, a když je potřeba mluvit před mnoha lidmi. Za to, že žvýkám, mohu dokonce dostat i pokutu. Třeba před soudem. Ale já chci pouze zdravý chrup. Proto nemluvit a žvýkat. S nezdravými zuby nejsou žerty. Pro úsporu el. energie je dobrá úsporná žárovka. Klasickou žárovku proto nekupujte. Má malou životnost a velkou spotřebu. Ceny úsporných žárovek klesly. Alternativou k úsporným žárovkám jsou zářivky. Zářivka dovede blikat, kdežto úsporná žárovka ne. Proto kupujte žárovku, která je úsporná. Nevýhoda je pouze ve velikosti. Nezoufejte, protože i na tuto nevýhodu přijde brzy řeč.
+                  `React využívá virtuální DOM (Document Object Model), což je abstrakce reálného DOM, která umožňuje efektivnější aktualizaci a vykreslování uživatelského rozhraní. React porovnává změny ve virtuálním DOM s reálným DOM a aktualizuje pouze ty části stránky, které se skutečně změnily.
+
+                  React je často kombinován s jinými nástroji a knihovnami, jako je například Redux pro správu stavu aplikace nebo React Router pro routování a správu navigace v aplikaci.
+                  
+                  Od svého vzniku se React stal velmi populárním nástrojem pro tvorbu webových aplikací a získal si širokou komunitu vývojářů. Je používán mnoha společnostmi a organizacemi při vývoji moderních a interaktivních webových aplikací.
                   `
                ],
  },
@@ -165,10 +152,9 @@ Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autor
            number: 5,
            exercises: 
                [
-                `Charles Baudelaire je považován za jednoho ze zakladatelů moderní poezie ve Francii.
-                Byl nepřítelem sentimentálního
-                pojetí básnickych vyjádření. Dílo se stalo velmi oblíbeným až po smrti básníka. Splín a ideál je prvni oddí1 básníkovy knihy. Paul Verlaine nebyl intelektuálním básníkem. Ve svých básních vyvolává smyslnost. Je bezprostřední a upřímný. Postřelil přítele Rimbauda a napsal básnickou sbírku Moudrost. Verlaine žil zhýrale, užíval si života. Celý život se pohyboval mezi hospodou, žalářem a nemocnicí. Jean Arthur Rimbaud byl básníkem pouze chvíli.Následoval život vojáka, tuláka, obchodnika. Jeho tvorba vyniká metaforami spojujícími zvuky a barvy. V básni Opilý koráb rozvíjí pásmo vidin, přízraků, barev a zvuků v jediný proud představ zanícených prudkou obrazotvorností.
-                Byli i takoví autoři, kteří se proti realismu obraceli zády. Oscar Wilde se ve svých divadelních hrach postavil proti etice užitkovosti díla. Známá je hra Ideální  manžel nebo jediný román Obraz Doriana Graye. Oscar Wilde byl dva roky v žaláři pro přestupky proti mravnosti. V žaláři naplnil dilo Baladou ze žaláře v Readingu a prozaickou DE PROFUNDIS.
+                `JavaScript je programovací jazyk používaný pro tvorbu interaktivního obsahu na webových stránkách. Byl vyvinut v roce 1995 Brendanem Eichem a původně se nazýval "LiveScript". Později byl přejmenován na "JavaScript" kvůli popularitě jazyka Java v té době.
+
+                JavaScript je interpretovaný jazyk, což znamená, že se kód vykonává v prohlížeči nebo v jiném prostředí, jako je například Node.js. Jeho hlavní využití spočívá v interakci s webovou stránkou, manipulaci s HTML a CSS, reagování na uživatelské akce a vytváření dynamických a interaktivních funkcionalit.
                 `
                ],
  },
@@ -177,11 +163,9 @@ Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autor
            number: 6,
            exercises: 
                [
-                 `Karel Havlidek Borovsky se do historie literatury zapsal jako satirik, básnik, kritik a novinár. Stal se autorem rady dlánku divajicich se kritickim pohledem na rakousky absolutismus. Z pobytu v Rusku byl velmi rozdarován.
-                 Následovaly kritické ¿lánky o tamnim absolutismu. Ve spolecnosti vnimal absurdity, zobrazoval je ve svych satirickych básnich a ¿láncich. Havlidek zalozil Národni noviny, kterymi informoval ¿tenáre o zásadách austroslavismu. Jeho novinarská ¿innost byla velmi tvonovAvas . nat 12 nao not nate поло зпео nova , 91о 1 satiridnost a útodnost.
-                 vláda se rozhodla Havlicka
-                 zastavit, a proto jej internovala v Brixenu v Tyrolsku. Tam jeho básnická cinnost dosáhla vrcholu. Havlídek byl
-                 odlouden od vlasti dtyri roky. Rok po návratu zemrel na souchotiny. Satirická skladba Král Lávra neni tolik útocná, vyuzivá pohádkovych motivi a je prostoupena ironií a humorem. V Tyrolskych elegiich Havlidek prudce útodí proti policejnimu státu. Básnik vyjadruje odmitavy postoj vici státni zvili. Krest sv. Vladimira vyuzivá ruskou legendu z Nestorova letopisu ke kritice státního zrízení a cirkve.
+                 `JavaScript je vysoce flexibilní jazyk, který umožňuje vytvářet různé typy aplikací, včetně webových aplikací, mobilních aplikací a desktopových aplikací. Má širokou škálu funkcí a knihoven, které usnadňují vývoj a umožňují programátorům vytvářet sofistikované aplikace.
+
+                 V průběhu let se JavaScript stal jedním z nejpoužívanějších programovacích jazyků na světě a má rozsáhlou komunitu vývojářů. Existuje mnoho nástrojů, rámců (frameworků) a knihoven postavených na JavaScriptu, které usnadňují vývoj a rozšiřují jeho možnosti.
                  `
                ],
  },
@@ -520,5 +504,121 @@ Balzac má mnoho dluhů, pracuje i v noci. Chudoba ho nikdy neopustila. Je autor
           ],
 },
 ]},
-]}
+]},
+{
+    id: 3,
+    title: "Expert",
+    url: "./img/expert.png",
+    amount: "13 testu",
+    tests: 
+    [{
+        id: 1,
+        number: 1,
+        exercises: 
+            [
+                "kazajka, fajfka, zira, zara, rifle, karel, kůrka, tretra, kafka, tuk, karafa, fara, kůl, lara, fara, kůl, lara, fara, kůl, lara, fara, kal, jas, sluka, dural, ural, frajer, ilja, karel, kůrka, jirka, deka, rejsek, drak, hůlka, luka, ruka, lusk, hluk, agro, hele, duha, hifi, hele, luka, lak, důl, sůl, kůl, hůl, elf, kůl, rek, drak, klid, hluk, rez, kaz, hůl, hala, gala, zrak, zira, zara, lara, kazajka,"
+            ],
+    },
+  {  
+        id: 2,
+        number: 2,
+        exercises: 
+            [
+               "wais, otrok, www, kotoul, luk, kůl, půl, whiska, fifle, wfw, rifle, oko, koko, ola, olga, gaga, weida, filuta, trata, dwarf, drak, whois, wifi, kazajka, dwarf, drak, hrad, hrot, waa, wais, sluj, rez, wf, wfw, elf, zrak, wide, wke, wrd, wks, hůl, wok, hůlka, word, gala, world, hala, dcerka, drak, wol, wosa, zrak, wri, wrd, wsh, www, wosa, wri, whs. whs, kazajka, wide, wade, whiska, ohrada, zahrada,"
+            ],
+},
+  {  
+        id: 3,
+        number: 3,
+        exercises: 
+            [
+               "jirka, ola, olga, pepa, josef, karel, karla, alda, alois, qwq. qoq, wow, waw, gsa, wzo, wlk, wtw, qtq, qat, squat, strop, plat, krop, zahrada, rostlina, trezor, zetor, lopata, rez jde dolů, traktor je zetor, sestra a teta, opel je auto, star trek, hrot, foto, klapka, alfa plus, klika, tretka, autor, politik, skladatel, pisatel, fotograf, doktor, zoolog, pizza, kohout, prase, osel, had, orel."
+            ],
+},
+  {  
+        id: 4,
+        number: 4,
+        exercises: 
+            [
+               "maska, marod, mord, mela, meta, mekka, vata, vosa, vatra, koule, kotoul, matula, vitamat, slalom, mikroskop, makro, otrava, potrava, varta, vatra, morek z kosti, plůda a humus, metro, semetrika, vosk, oves, sevo, vartovat, otravovat, moje je i tvoje, to je moje, moje je i tvoje, to je moje, moje teta je vanda, javor je strom, fik a je to hotovo, půlka pole je jeho, auto ford, vitana je firma, vimr, vuml,"
+            ],
+},
+  {  
+        id: 5,
+        number: 5,
+        exercises: 
+            [
+               "sada, brod, nudle, fena, bagr, zip, hon, zvon, mord, lord, raketa, maketa, nugeta, bageta, riziko, bard, nuda, bouda, nikl, fenikl, stavba, plavba, tavit, bavit, nosit, zdravit, plavba na podzim, let raketou, do kempu na kole nebo autem, orba pluhem, můj traktor, eroze svahu, nedostatek zdrojů, to je moje vůle, rebel z lidu, jubileum jeho matky, mnoho,"
+            ],
+},
+  {  
+        id: 6,
+        number: 6,
+        exercises: 
+            [
+               "cibule, cetka, cedr, cvok, coul, cmunda, citrus, citron, ocas, lekce, vůdce, strůjce, hladce, ocet, celer, pitomec, cedule, cejch, cifra, cudnost, choroba, charakter, chata, chaloupka u lesa, moje chlouba, charta pro lidi, deset coulů, charisma a charakter politika, ocejchujte toho chlapa, chata je u mostu, tvůj plat je hromada cifer, citrusy rostou v tropech, natrhej cibuli a celer, choroba,"
+            ],
+},
+  {  
+        id: 7,
+        number: 7,
+        exercises: 
+            [
+               "xenon, saxofon, oxid, xantipa, xenie, fax, taxa, jax, maxim, maximum, wax, rexie, hoax, vox, box, nix, fix, tix,  pixel, trax, xenofobie, xerox, pax, rex, max, lux, xena, taxi, fax, koupit semtex, maxipes je pes, praxe v bance, kodex cti, latex je hmota, mixer je na lince, ztratil text, asterix a obelix, nastav sextant, xaverov je na severu, martin maxa, sixta je prima, maxim maximov, můj pes je rex,"
+            ],
+},
+  {  
+        id: 8,
+        number: 8,
+        exercises: 
+            [
+               "lymfa, nymfa, pyl, kyj, vyj, byl, myj, gyro, wywern, zyxel, pytel, rypadlo, vykat, vylomit, vyrvat, bydlit, obyvatel, dobytek, bylina, byt, kobyla, polykat, plynout, vzlykat, myslit, hmyz, kopyto, zpytovat, pykat, syn, usychat, sypat, vydra v noci, brzy k jitru, jazyk hada, pytel brambor,  vykat profesorovi, vylomit okno, vyrvat pant, bydlit doma, dobytek se pase, bylina je na louce, můj byt i kobyla,"
+            ],
+},
+  {  
+        id: 9,
+        number: 9,
+        exercises: 
+            [
+               "úkol, úloha, úleva, útes, úzko, úaz, útrata, úplata, úkrok, úbor, úklad, úmor, úvoz, úklep, únava, úskok, úklad, útraty, ústroj, úsek, úroda, úrok, útok, úhor, úl, útroby, úhyn, úl, útrata, ústrk, úklid, úklad, úloha, únava, útrata, úplata, úbor z vesnice, úrok v bance, útok velryby, úhor na poli, útroby klokana, úhyn ryb v potoce, útrata na trhu, ústrk soka, úklid doma, úklad vraha, úplata v kufru,"
+            ],
+},
+  {  
+        id: 10,
+        number: 10,
+        exercises: 
+            [
+               "Zita, Urban, Ivana, Omar, Pavel, Helena, Jana, Karel, Lena, Norbert, Marie, Zuzana, Ivana, Petr, Hana, Katka, Marta, Olga, Helga, Magda, Nela, Jan, Libor, Igor, Marek, Ondra, Olga a Helga, Nela a Hela, Petr a Pavel, Marek a Lenka, Milan a Jan, Irena a Libor, Marcela a Ondra, Zita a Karel, Otylka a Matylda, Jirka a Lucie, Josef a Karla, Jindra a Olga, Pavel a Petr, Urban a Karel, Jan a Zita, Jaroslav,"
+            ],
+},
+  {  
+        id: 11,
+        number: 11,
+        exercises: 
+            [
+               "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou, Polsko, Rakousko, Slovensko, Slovinsko, Rumunsko, Rusko, Francie, Norsko, Portugalsko, Ukrajina, Bosna a Hercegovina, Monako, Lucembursko, Egypt, Libye, Angola, Maroko, Senegal, Mali, Niger, Etiopie, Kamerun, Ghana, Togo, Uganda, Kongo, Guinea,Gabon, Zambie,Malawi, Mosambik, Tanzanie, Burundi, Rwanda, Seychely, Madagaskar, Namibie, Botswana, Svazijsko, Lesotho, Eritrea, Tunisko, Brunej, Gruzie, Indie, Izrael, Japonsko, Jemen, Katar, Kuvajt, Laos, Libanon, Malajsie, Maledivy, Mongolsko, Singapur, Palestina, Uganda, Thajsko, Vietnam, Kiribati, Nauru, Palau, Samoa, Tonga, Tuvalu, Vanuatu, Argentina, Guyana, Chile, Kolumbie, Paraguay, Peru, Surinam, Trinidad a Tobago, Uruguay, Venezuela, Haiti, Antigua a Barbuda, Bahamy, Barbados, Belize, Dominika, Kuba, Grenada, Guatemala, Honduras, Jamajka, Kanada, Kostarika"
+            ],
+},
+  {  
+        id: 12,
+        number: 12,
+        exercises: 
+            [
+               `Jan Welzl je spisovatel. Romaneto je druh literatury. Kdo napsal Rukopisy, se dodnes nezjistilo. Negramotnost roste. Studovat jazyk je nutno s důrazem na praxi. Honza se vydal do Menzy vyplnit testy IQ. Jirka si testy nejprve koupil. Byla tam spousta studentů. Stoupl si za pult, kde jej oslovila obsluha. Koupil si knihu a rychle usedl na lavici. Uplynulo mnoho hodin. Druhou půlku knihy prostuduje jindy.
+               Jan Neruda se narodil v Praze. Otec pracoval v trafice, matka posluhovala u geologa Barranda. Oba pracovali dlouho do noci. Byla chudoba, o chleba se muselo prosit. Po gymnasiu pracoval a potom studoval filozofii. Vedle studia publikoval u novin Tabesbote. Stal se autorem fejetonů a poezie. Tu ale tehdy nikdo nepochopil. Kritici psali o jeho almanachu. Fejetony psal i pro redakci Hlasu. Procestoval Evropu a dojmy zapsal do mnoha cestopisů.
+               Oskar Wilde byl původem Ir. Jeho vzory byly J. Ruskin a W. Patera. Studoval v Oxfordu literaturu i filozofi. Ztratil dva roky svobody. Obraz Doriana Graye a drama Salome je jeho tvorba. Jakub Arbes psal romaneta. Narodil se v Praze, opustil studia. Potom vedl boj o svou existenci. Dostal vyhazov z redakce. `
+            ],
+},
+  {  
+        id: 13,
+        number: 13,
+        exercises: 
+            [
+               `HTML je zkratka slov Hyper Text Markup Language. XML je zkratka slov eXtensible Markup Language. SGML je zkratka slov Standard Generalized Markup Language a je to norma ISO. SGML je tedy standard pro HTML a XML. Javascript NEVZNIKL Z Javy. XML NEOBSAHUJE CSS. XML OBSAHUJE tagy. XML je CASE SENSITIVE jazyk. XML dokument obsahuje DTD. DTD je zkratka slov Document Type Definition. Document Type
+               Definition, Definice Typu Dokumentu. Je to vlastnost XML pro tvorbu elementů a atributů. XML bez DTD? Ano. Internet Explorer pracuje s DTD. Validace dokumentu XML je NUTNOST. Validita potvrzuje WELL FORMED dokumentu XML. CSS, Cascading Style Sheets. CSS je pro HTML i XML. CSS obsahuje SELEKTORY, DEKLARACE a VLASTNOSTI. Vlastnost obsahuje HODNOTU. Definice stylu obsahuje DEKLARACI. ARIAL, COURIER, HELVETICA, TIMES ROMAN jsou typy fontů. ITALIC A NORMAL
+               jsou styly fontů. Styl textu obsahuje mnoho parametrů. V XML lze vyhotovit tiskopis pro tisk, dokument pro podnikatele i aplikaci. XML nenahrazuje HTML. XML existuje vedle HTML. Je to alternativa k tomuto jazyku. XHTML nahrazuje HTML. Pravidla jsou ZDOKONALENA. Dokumenty XHTML projdou VALIDITOU, a proto se jsou podle normy WELL FORMED.
+               `
+            ],
+},
+]},
 ]
