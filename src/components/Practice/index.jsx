@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 import TextInput from './TextInput';
@@ -7,6 +6,7 @@ import Results from './Results';
 import { Keyboard } from './Keyboard';
 import Timer from './Timer';
 import Hand from './Hand';
+import { left, right } from './fingerList';
 
 const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const [isAlreadyError, setIsAlredyError] = useState(false);
@@ -62,7 +62,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     }
     const { key } = event;
 
-    if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18) {
+    if (event.keyCode !== 16 && event.keyCode !== 8 && event.keyCode !== 18 && event.keyCode !== 20) {
       if (key === targetText.charAt(index)) {
         onKeyCorrect(event);
       } else {
@@ -136,7 +136,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           </div>
         </div>
         {/* TIMER */}
-        <Timer
+          <Timer
           onStart={handleStart}
           onEnd={handleEnd}
           onReload={handleReload}
@@ -157,7 +157,13 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
         <div className="keyboard-container">
           <div className="hand-image">
-            <Hand isLeft={true} />
+            <Hand 
+              inputText={inputText} 
+              targetText={targetText} 
+              exerciseMode={exerciseMode} 
+              isAlreadyError={isAlreadyError}
+              useTransform={true}
+              fingers={left}/>
           </div>
 
           {/* KEYBOARD  */}
@@ -169,7 +175,13 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           />
 
           <div className="hand-image">
-            <Hand isLeft={false} />
+            <Hand
+              inputText={inputText} 
+              targetText={targetText} 
+              exerciseMode={exerciseMode} 
+              isAlreadyError={isAlreadyError}
+              useTransform={false}
+              fingers={right}/>
           </div>
         </div>
       </div>

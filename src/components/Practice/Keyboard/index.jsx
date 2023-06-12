@@ -3,10 +3,10 @@ import { lefttShiftSymbol } from '../../../pages/generalConstants';
 import { rightShiftSymbol } from '../../../pages/generalConstants';
 import './style.css';
 
-export const Keyboard = ({ targetText, inputText, isAlreadyError, exercisesMode }) => {
+export const Keyboard = ({ targetText, inputText, isAlreadyError, exerciseMode }) => {
   let char = targetText[inputText.length];
 
-  if (exercisesMode && isAlreadyError) {
+  if (exerciseMode && isAlreadyError) {
     char = targetText[inputText.length - 1];
   }
 
