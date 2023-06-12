@@ -23,27 +23,29 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText }) => {
   }, [isStarted, time]);
 
   useEffect(() => {
-    setTime(50);
+    setTime(60);
   }, [targetText]);
 
   const handleStopStart = (action) => {
     if (action === 'start') {
       onStart();
     } else if (action === 'reload') {
-      setTime(50);
+      setTime(60);
       onReload();
     } else {
       onEnd();
     }
   };
 
+  const formattedTime = time < 10 && time > 0 ? `0${time}` : time;
+
   return (
     <div className="timer-container">
       {/* START TIMER BUTTON */}
-      <TimerButton onClick={handleStopStart} isStarted={isStarted} isTimeUp={time === 0}></TimerButton>
+      <TimerButton onClick={handleStopStart} isStarted={isStarted} isTimeUp={time === 0} />
 
       {/* TIMER */}
-      <div className="time">Time: {time}</div>
+      <div className="time">Čas: {formattedTime}</div>
     </div>
   );
 };
