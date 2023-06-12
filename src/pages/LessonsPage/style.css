@@ -57,6 +57,40 @@
     background-image: url('./img/icon-opened.png');
 }
 
+.icon-to-top {
+    position: fixed;
+    width: 30px;
+    right: 5px;
+    bottom: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    animation: movebtn 3s ease-in-out infinite;
+    transition: all .5s ease-in-out;
+}
+
+.icon-to-top:hover {
+    opacity: 1;
+    animation: none
+}
+
+@keyframes movebtn {
+    0%{
+      transform: translateY(0px);
+    }
+    25%{
+      transform: translateY(20px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    75%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
 @media (min-width: 768px) {
     
     .lessons-section {
@@ -74,5 +108,11 @@
     .section-icon {
         margin-right: 1rem;
     }
+
+    .icon-to-top {
+        right: 20px;
+        width: 70px;
+    }
     
 }
+
