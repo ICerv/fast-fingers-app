@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import TrainingPage from './pages/TrainingPage';
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
+import { RulesPage } from './pages/RulesPage';
 import LessonsPage from './pages/LessonsPage';
 import TestsPage from './pages/TestsPage';
 import TestPage from './pages/TestPage';
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: '/section/:sectionId/test/:testId',
         element: <TestPage />,
+      },
+      {
+        path: '/rules',
+        element: <RulesPage />,
       },
     ],
   },
