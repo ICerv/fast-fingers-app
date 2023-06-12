@@ -55,7 +55,13 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const handleInputChange = (event) => {
     event.preventDefault();
 
-    if (!isTypingAllowed) return;
+    if (exerciseMode) {
+      setIsTypingAllowed(true)
+    } else {
+      if (!isTypingAllowed) return;
+    }
+
+   
 
     if (targetText.length === inputText.length) {
       handleEnd();
@@ -132,10 +138,15 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           <div className="result-list">
             <Results name="Chyby" data={errorCount} />
             <Results name="Přesnost" data={accuracy} symbol="%" />
-            <Results name="WPM" data={wpm} />
+            {!exerciseMode ?
+              <Results name="WPM" data={wpm} />
+              : null 
+            }
           </div>
         </div>
+
         {/* TIMER */}
+        {!exerciseMode ?
           <Timer
           onStart={handleStart}
           onEnd={handleEnd}
@@ -143,7 +154,9 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           isStarted={isTypingAllowed}
           targetText={targetText}
         />
-
+        : null
+        }
+        
         <button className="button next" onClick={() => navigate(`${nextLink}`)}>
           Pokračovat
         </button>
