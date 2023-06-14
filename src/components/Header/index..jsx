@@ -17,7 +17,7 @@ const Header = () => {
           <button className="nav-btn" onClick={toggleNav}></button>
           <div className={`rollout-nav ${!navOpen ? 'nav-closed' : ''}`}>
             <Link to="/">Domů</Link>
-            <Link to="/rules">Pravidla</Link>
+            <Link to="/introduction">Úvod</Link>
             <Link to="/lessons">Cvičení</Link>
             <Link to="/tests">Testy</Link>
           </div>
