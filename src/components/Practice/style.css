@@ -112,6 +112,10 @@
 }
 
 @media (min-width: 1024px) {
+    .middle-container {
+        height: auto;
+    }
+    
     .hand-image.left {
         bottom: 200px;
         right: 350px;

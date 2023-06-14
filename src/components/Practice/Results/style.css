@@ -8,6 +8,10 @@
   height: 50px;
 }
 
+.result-value {
+  padding-top: 0;
+}
+
 @media (min-width: 768px) {
   .result-item {
     margin-bottom: 1rem;

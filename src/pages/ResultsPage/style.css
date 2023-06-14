@@ -1,0 +1,57 @@
+.results-container { 
+    display: flex;
+    justify-content: center;
+}
+
+.results-section { 
+    height: 50vh;
+    width: 50vw;
+    max-width: 800px;
+    padding: 2rem;
+    color: #203A43;
+    text-align: center;
+    background-color: rgba(231, 242, 245, 0.8);
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.restart-button {
+    background-image: url('./img/restart\ button.png');
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.results-container {
+    font-size: 20px;
+}
+
+.results-value {
+    color: #235566;
+    font-weight: bold;
+}
+
+.results-links a {
+    text-decoration: none;
+}
+
+.results-links a:visited {
+    color: #203A43;
+}
+
+.results-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .results-section { 
+        height: 40vh;
+    }
+}

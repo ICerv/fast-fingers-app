@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate} from 'react-router-dom';
 import './style.css';
 import TextInput from './TextInput';
 import Results from './Results';
@@ -20,6 +20,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const [endTime, setEndTime] = useState(0);
   const [isTypingAllowed, setIsTypingAllowed] = useState(false);
   const [time, setTime] = useState(0);
+  const [currentUrl, setCurrentUrl] = useState(window.location.href);
   const navigate = useNavigate();
 
   const onKeyCorrect = (event) => {
@@ -62,18 +63,19 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       if (!isTypingAllowed) return;
     }
 
-   
-
     if (targetText.length === inputText.length) {
       handleEnd();
     }
+
     const { key } = event;
 
     if (validKey(event.keyCode)) {
       if (key === targetText.charAt(index)) {
         onKeyCorrect(event);
+        localStorage.setItem('accuracy', accuracy)
       } else {
         onKeyError(event);
+        localStorage.setItem('errorCount', errorCount)
       }
     }
 
@@ -90,6 +92,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   }, [correctCount, isTypingAllowed, errorCount]);
 
   useEffect(() => {
+    setCurrentUrl(window.location.href);
     handleReload();
   }, [targetText]);
 
@@ -122,13 +125,28 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     const numWords = words.length;
     const minutes = time / 60000;
     const wpm = Math.floor(numWords / minutes);
+    localStorage.setItem('wpm', wpm)
     return wpm;
   };
 
   const wpm = endTime > startTime ? calculateWPM() : 0;
 
+  localStorage.setItem('exerciseMode', exerciseMode);
+  localStorage.setItem('nextLink', nextLink);
+  localStorage.setItem('currentUrl', currentUrl);
+
   return (
-    <div className="container-page">
+    <div className="container-page"> 
+
+      {(exerciseMode && (targetText.length === inputText.length) )? 
+        <Navigate replace to="/results"/> 
+        : null
+      }
+      {/* {(!exerciseMode && ((targetText.length === inputText.length )|| (endTime > startTime)) ) 
+        ? <Navigate replace to="/section/:sectionId/test/:testId/results" /> 
+        : null
+      } */}
+
       <div className="up-container">
         <button className="button back" onClick={() => navigate(backUrl)}>
           Zpět

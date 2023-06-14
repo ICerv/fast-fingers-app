@@ -9,7 +9,6 @@ const Header = () => {
   };
   return (
     <header>
-      <div className="header__content container">
         <div className="site-logo_container">
           <div className="site-logo"></div>
         </div>
@@ -21,7 +20,6 @@ const Header = () => {
             <Link to="/lessons">Cvičení</Link>
             <Link to="/tests">Testy</Link>
           </div>
-        </div>
       </div>
     </header>
   );

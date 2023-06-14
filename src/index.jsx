@@ -11,6 +11,8 @@ import IntroductionPage from './pages/IntroductionPage';
 import LessonsPage from './pages/LessonsPage';
 import TestsPage from './pages/TestsPage';
 import TestPage from './pages/TestPage';
+import ResultesPage from './pages/ResultsPage';
+
 
 const App = () => {
   return (
@@ -52,6 +54,11 @@ const router = createBrowserRouter([
         path: '/introduction',
         element: <IntroductionPage />,
       },
+      {
+        path: '/results',
+        element: <ResultesPage/>,
+      },
+  
     ],
   },
 ]);
