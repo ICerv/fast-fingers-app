@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import TrainingPage from './pages/TrainingPage';
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
-import { ManualPage, RulesPage } from './pages/ManualPage';
+import IntroductionPage from './pages/IntroductionPage';
 import LessonsPage from './pages/LessonsPage';
 import TestsPage from './pages/TestsPage';
 import TestPage from './pages/TestPage';
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
         element: <TestPage />,
       },
       {
-        path: '/manual',
-        element: <ManualPage />,
+        path: '/introduction',
+        element: <IntroductionPage />,
       },
     ],
   },

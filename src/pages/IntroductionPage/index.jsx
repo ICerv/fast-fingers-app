@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const ManualPage = () => {
+const IntroductionPage = () => {
   return (
     <div className="introduction-container">
       {/* ABOUT APPLICATION */}
@@ -99,3 +99,4 @@ export const ManualPage = () => {
     </div>
   );
 };
+export default IntroductionPage;
