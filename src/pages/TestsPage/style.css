@@ -69,7 +69,7 @@
 
 .start-test {
   width: 100px;
-  color: #c62828;
+  color: var(--highlight-color);
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;

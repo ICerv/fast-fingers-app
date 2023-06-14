@@ -98,7 +98,7 @@ header {
     }
 
     .rollout-nav a:hover {
-      border-bottom: 3px solid #c62828;
+      border-bottom: var(--highlight-color);
       cursor: pointer;
     }
 

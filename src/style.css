@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root{
+  --background-linear:linear-gradient(105deg, #0F2027 0%, #203A43 59%, #2C5364 100%) fixed;
+  --font-text:'Open Sans', sans-serif;
+  --highlight-color: #c62828;
+}
+
 html {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -15,8 +21,8 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(105deg, #0F2027 0%, #203A43 59%, #2C5364 100%) fixed;
+  font-family: var(--font-text);
+  background: var(--background-linear);
   margin: 0;
 }
 
