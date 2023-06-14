@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Navigate} from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import './style.css';
 import TextInput from './TextInput';
 import Results from './Results';
@@ -77,10 +77,10 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     if (validKey(event.keyCode)) {
       if (key === targetText.charAt(index)) {
         onKeyCorrect(event);
-        localStorage.setItem('accuracy', accuracy)
+        localStorage.setItem('accuracy', accuracy);
       } else {
         onKeyError(event);
-        localStorage.setItem('errorCount', errorCount)
+        localStorage.setItem('errorCount', errorCount);
       }
     }
 
@@ -135,7 +135,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     const numWords = words.length;
     const minutes = time / 60000;
     const wpm = Math.floor(numWords / minutes);
-    localStorage.setItem('wpm', wpm)
+    localStorage.setItem('wpm', wpm);
     return wpm;
   };
 
@@ -146,12 +146,8 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   localStorage.setItem('currentUrl', currentUrl);
 
   return (
-    <div className="container-page"> 
-
-      {(exerciseMode && (targetText.length === inputText.length) )? 
-        <Navigate replace to="/results"/> 
-        : null
-      }
+    <div className="container-page">
+      {exerciseMode && targetText.length === inputText.length ? <Navigate replace to="/results" /> : null}
       {/* {(!exerciseMode && ((targetText.length === inputText.length )|| (endTime > startTime)) ) 
         ? <Navigate replace to="/section/:sectionId/test/:testId/results" /> 
         : null
@@ -180,7 +176,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
             isStarted={isTypingAllowed}
             targetText={targetText}
             currentProgress={currentProgress}
-            isFinished={isFinished}
           />
         ) : null}
 

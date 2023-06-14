@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const TimerButton = ({ onClick, isStarted, isTimeUp, isFinished }) => {
+const TimerButton = ({ onClick, isStarted, isFinished }) => {
   const handleClick = () => {
     if (isStarted) {
       onClick('stop');
@@ -26,8 +26,6 @@ const TimerButton = ({ onClick, isStarted, isTimeUp, isFinished }) => {
   return (
     <button className={buttonClass} onClick={handleClick}>
       {buttonText}
-
-      {/* {isStarted ? 'Stop' : isFinished ? <small className=" btn timer-reload-btn">Restart</small> : 'Start'} */}
     </button>
   );
 };

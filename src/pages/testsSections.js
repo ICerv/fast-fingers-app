@@ -13,7 +13,7 @@ export const testsSections = [
             "kazajka, fajfka,"
         ],
             //    [
-            //        "kazajka, fajfka, zira, zara, rifle, karel, kůrka, tretra, kafka, tuk, karafa, fara, kůl, lara, fara, kůl, lara, fara, kůl, lara, fara, kal, jas, sluka, dural, ural, frajer, ilja, karel, kůrka, jirka, deka, rejsek, drak, hůlka, luka, ruka, lusk, hluk, agro, hele, duha, hifi, hele, luka, lak, důl, sůl, kůl, hůl, elf, kůl, rek, drak, klid, hluk, rez, kaz, hůl, hala, gala, zrak, zira, zara, lara, kazajka,"
+            //        "kazajka fajfka zira zara rifle karel kůrka tretra kafka tuk karafa fara kůl lara fara kůl lara fara kůl lara fara kal jas sluka dural ural frajer ilja karel kůrka jirka deka rejsek drak hůlka luka ruka lusk hluk agro hele duha hifi hele luka lak důl sůl kůl hůl elf kůl rek drak klid hluk rez kaz hůl hala gala zrak zira zara lara kazajka"
             //    ],
        },
      {  
@@ -21,7 +21,7 @@ export const testsSections = [
            number: 2,
            exercises: 
                [
-                  "wais, otrok, www, kotoul, luk, kůl, půl, whiska, fifle, wfw, rifle, oko, koko, ola, olga, gaga, weida, filuta, trata, dwarf, drak, whois, wifi, kazajka, dwarf, drak, hrad, hrot, waa, wais, sluj, rez, wf, wfw, elf, zrak, wide, wke, wrd, wks, hůl, wok, hůlka, word, gala, world, hala, dcerka, drak, wol, wosa, zrak, wri, wrd, wsh, www, wosa, wri, whs. whs, kazajka, wide, wade, whiska, ohrada, zahrada,"
+                  "wais otrok www kotoul luk kůl půl whiska fifle wfw rifle oko koko ola olga gaga weida filuta trata dwarf drak whois wifi kazajka dwarf drak hrad hrot waa wais sluj rez wf wfw elf zrak wide wke wrd wks hůl wok hůlka word gala world hala dcerka drak wol wosa zrak wri wrd wsh www wosa wri whs whs kazajka wide wade whiska ohrada zahrada"
                ],
  },
      {  
@@ -29,7 +29,7 @@ export const testsSections = [
            number: 3,
            exercises: 
                [
-                  "jirka, ola, olga, pepa, josef, karel, karla, alda, alois, qwq. qoq, wow, waw, gsa, wzo, wlk, wtw, qtq, qat, squat, strop, plat, krop, zahrada, rostlina, trezor, zetor, lopata, rez jde dolů, traktor je zetor, sestra a teta, opel je auto, star trek, hrot, foto, klapka, alfa plus, klika, tretka, autor, politik, skladatel, pisatel, fotograf, doktor, zoolog, pizza, kohout, prase, osel, had, orel."
+                  "jirka ola olga pepa josef karel karla alda alois qwq qoq wow waw gsa wzo wlk wtw qtq qat squat strop plat krop zahrada rostlina trezor zetor lopata rez jde dolů traktor je zetor sestra a teta opel je auto star trek hrot foto klapka alfa plus klika tretka autor politik skladatel pisatel fotograf doktor zoolog pizza kohout prase osel had orel"
                ],
  },
      {  
@@ -37,7 +37,7 @@ export const testsSections = [
            number: 4,
            exercises: 
                [
-                  "maska, marod, mord, mela, meta, mekka, vata, vosa, vatra, koule, kotoul, matula, vitamat, slalom, mikroskop, makro, otrava, potrava, varta, vatra, morek z kosti, plůda a humus, metro, semetrika, vosk, oves, sevo, vartovat, otravovat, moje je i tvoje, to je moje, moje je i tvoje, to je moje, moje teta je vanda, javor je strom, fik a je to hotovo, půlka pole je jeho, auto ford, vitana je firma, vimr, vuml,"
+                  "maska marod mord mela meta mekka vata vosa vatra koule kotoul matula vitamat slalom mikroskop makro otrava potrava varta vatra morek z kosti plůda a humus metro semetrika vosk oves sevo vartovat otravovat moje je i tvoje to je moje moje je i tvoje to je moje moje teta je vanda javor je strom fik a je to hotovo půlka pole je jeho auto ford vitana je firma vimr vuml"
                ],
  },
      {  
@@ -45,7 +45,7 @@ export const testsSections = [
            number: 5,
            exercises: 
                [
-                  "sada, brod, nudle, fena, bagr, zip, hon, zvon, mord, lord, raketa, maketa, nugeta, bageta, riziko, bard, nuda, bouda, nikl, fenikl, stavba, plavba, tavit, bavit, nosit, zdravit, plavba na podzim, let raketou, do kempu na kole nebo autem, orba pluhem, můj traktor, eroze svahu, nedostatek zdrojů, to je moje vůle, rebel z lidu, jubileum jeho matky, mnoho,"
+                  "sada brod nudle fena bagr zip hon zvon mord lord raketa maketa nugeta bageta riziko bard nuda bouda nikl fenikl stavba plavba tavit bavit nosit zdravit plavba na podzim let raketou do kempu na kole nebo autem orba pluhem můj traktor eroze svahu nedostatek zdrojů to je moje vůle rebel z lidu jubileum jeho matky mnoho"
                ],
  },
      {  
@@ -53,7 +53,7 @@ export const testsSections = [
            number: 6,
            exercises: 
                [
-                  "cibule, cetka, cedr, cvok, coul, cmunda, citrus, citron, ocas, lekce, vůdce, strůjce, hladce, ocet, celer, pitomec, cedule, cejch, cifra, cudnost, choroba, charakter, chata, chaloupka u lesa, moje chlouba, charta pro lidi, deset coulů, charisma a charakter politika, ocejchujte toho chlapa, chata je u mostu, tvůj plat je hromada cifer, citrusy rostou v tropech, natrhej cibuli a celer, choroba,"
+                  "cibule cetka cedr cvok coul cmunda citrus citron ocas lekce vůdce strůjce hladce ocet celer pitomec cedule cejch cifra cudnost choroba charakter chata chaloupka u lesa moje chlouba charta pro lidi deset coulů charisma a charakter politika ocejchujte toho chlapa chata je u mostu tvůj plat je hromada cifer citrusy rostou v tropech natrhej cibuli a celer choroba"
                ],
  },
      {  
@@ -61,7 +61,7 @@ export const testsSections = [
            number: 7,
            exercises: 
                [
-                  "xenon, saxofon, oxid, xantipa, xenie, fax, taxa, jax, maxim, maximum, wax, rexie, hoax, vox, box, nix, fix, tix,  pixel, trax, xenofobie, xerox, pax, rex, max, lux, xena, taxi, fax, koupit semtex, maxipes je pes, praxe v bance, kodex cti, latex je hmota, mixer je na lince, ztratil text, asterix a obelix, nastav sextant, xaverov je na severu, martin maxa, sixta je prima, maxim maximov, můj pes je rex,"
+                  "xenon saxofon oxid xantipa xenie fax taxa jax maxim maximum wax rexie hoax vox box nix fix tix pixel trax xenofobie xerox pax rex max lux xena taxi fax koupit semtex maxipes je pes praxe v bance kodex cti latex je hmota mixer je na lince ztratil text asterix a obelix nastav sextant xaverov je na severu martin maxa sixta je prima maxim maximov můj pes je rex"
                ],
  },
      {  
@@ -69,7 +69,7 @@ export const testsSections = [
            number: 8,
            exercises: 
                [
-                  "lymfa, nymfa, pyl, kyj, vyj, byl, myj, gyro, wywern, zyxel, pytel, rypadlo, vykat, vylomit, vyrvat, bydlit, obyvatel, dobytek, bylina, byt, kobyla, polykat, plynout, vzlykat, myslit, hmyz, kopyto, zpytovat, pykat, syn, usychat, sypat, vydra v noci, brzy k jitru, jazyk hada, pytel brambor,  vykat profesorovi, vylomit okno, vyrvat pant, bydlit doma, dobytek se pase, bylina je na louce, můj byt i kobyla,"
+                  "lymfa nymfa pyl kyj vyj byl myj gyro wywern zyxel pytel rypadlo vykat vylomit vyrvat bydlit obyvatel dobytek bylina byt kobyla polykat plynout vzlykat myslit hmyz kopyto zpytovat pykat syn usychat sypat vydra v noci brzy k jitru jazyk hada pytel brambor vykat profesorovi vylomit okno vyrvat pant bydlit doma dobytek se pase bylina je na louce můj byt i kobyla"
                ],
  },
      {  
@@ -93,7 +93,7 @@ export const testsSections = [
            number: 11,
            exercises: 
                [
-                  "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou, Polsko, Rakousko, Slovensko, Slovinsko, Rumunsko, Rusko, Francie, Norsko, Portugalsko, Ukrajina, Bosna a Hercegovina, Monako, Lucembursko, Egypt, Libye, Angola, Maroko, Senegal, Mali, Niger, Etiopie, Kamerun, Ghana, Togo, Uganda, Kongo, Guinea,Gabon, Zambie,Malawi, Mosambik, Tanzanie, Burundi, Rwanda, Seychely, Madagaskar, Namibie, Botswana, Svazijsko, Lesotho, Eritrea, Tunisko, Brunej, Gruzie, Indie, Izrael, Japonsko, Jemen, Katar, Kuvajt, Laos, Libanon, Malajsie, Maledivy, Mongolsko, Singapur, Palestina, Uganda, Thajsko, Vietnam, Kiribati, Nauru, Palau, Samoa, Tonga, Tuvalu, Vanuatu, Argentina, Guyana, Chile, Kolumbie, Paraguay, Peru, Surinam, Trinidad a Tobago, Uruguay, Venezuela, Haiti, Antigua a Barbuda, Bahamy, Barbados, Belize, Dominika, Kuba, Grenada, Guatemala, Honduras, Jamajka, Kanada, Kostarika"
+                  "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou"
                ],
  },
 ]},
