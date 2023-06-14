@@ -181,7 +181,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
           <div className='hands-container'>
 
-            <div className="hand-image">
+            <div className="hand-image left">
               <Hand 
                 inputText={inputText} 
                 targetText={targetText} 
@@ -191,7 +191,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
                 fingers={left}/>
             </div>
 
-            <div className="hand-image">
+            <div className="hand-image right">
               <Hand
                 inputText={inputText} 
                 targetText={targetText} 

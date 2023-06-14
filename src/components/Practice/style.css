@@ -45,12 +45,12 @@
 }
 
 .middle-container {
-    height: 70vh;
+    height: 67vh;
 }
 
 .input-container {
     width: 90vw;
-    height: 40px;
+    height: 45px;
     border: 1px solid white;
     box-shadow: 2px 2px 4px rgba(243, 241, 241);
     border-radius: 5px;
@@ -94,22 +94,34 @@
     }
     
     .middle-container {
-        height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 2rem;
         padding-top: 2rem;
     }
 
     .input-container {
         width: 700px;
-        height: 40px;
         margin-left: 0;
     }
     
     .keyboard-container {
         height: 40vh
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hand-image.left {
+        bottom: 200px;
+        right: 350px;
+        position: relative;
+    }
+
+    .hand-image.right {
+        bottom: 200px;
+        left: 350px;
+        position: relative;
     }
 }
     

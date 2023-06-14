@@ -359,7 +359,7 @@ export const exercisesSections = [
     {
         id: 3,
         title: "Číselná řada kláves",
-        amount: "19 lekcí",
+        amount: "18 lekcí",
         url: "./img/numbers.png",
         lessons: 
         [{

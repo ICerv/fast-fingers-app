@@ -26,5 +26,5 @@ export const validKey = (keyCode) => {
     return [ 32, 219, 220, 221, 222].includes(keyCode)
 }
 
-export const rightShiftSymbol = ['°', '1', '2', '3', '4', '5', '6', 'V', 'W', 'E', 'R', 'T', 'Z', 'A', 'S', 'D', 'F', 'G', 'H', 'Y', 'X', 'C', 'V', 'B', 'N']
-export const lefttShiftSymbol = ['7', '8', '9', '0', '%', 'ˇ', 'U', 'I', 'O', 'P', '/', '(', "'", 'J', 'K', 'L', '"', '!', 'M', '?', ':', '_']
+export const rightShiftSymbol = ['°', '1', '2', '3', '4', '5', 'V', 'W', 'E', 'R', 'T', 'Z', 'A', 'S', 'D', 'F', 'G', 'H', 'Y', 'X', 'C', 'V', 'B', 'N']
+export const lefttShiftSymbol = ['6', '7', '8', '9', '0', '%', 'ˇ', 'U', 'I', 'O', 'P', '/', '(', "'", 'J', 'K', 'L', '"', '!', 'M', '?', ':', '_']
