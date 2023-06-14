@@ -20,11 +20,15 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const [endTime, setEndTime] = useState(0);
   const [isTypingAllowed, setIsTypingAllowed] = useState(false);
   const [time, setTime] = useState(0);
+  const [progress, setProgress] = useState(0);
+  const [currentProgress, setCurrentProgress] = useState(0);
+  const [isFinished, setIsFinished] = useState(false);
   const navigate = useNavigate();
 
   const onKeyCorrect = (event) => {
     setIndex(index + 1);
     setCorrectCount(correctCount + 1);
+    setProgress(progress + 1);
     if (exerciseMode) {
       if (isAlreadyError) {
         setInputText((prev) => prev.slice(0, -1) + event.key);
@@ -57,15 +61,14 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     event.preventDefault();
 
     if (exerciseMode) {
-      setIsTypingAllowed(true)
+      setIsTypingAllowed(true);
     } else {
-      if (!isTypingAllowed) return;
+      if (!isTypingAllowed || isFinished) return;
     }
-
-   
 
     if (targetText.length === inputText.length) {
       handleEnd();
+      setIsFinished(true);
     }
     const { key } = event;
 
@@ -93,6 +96,10 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     handleReload();
   }, [targetText]);
 
+  useEffect(() => {
+    setCurrentProgress(correctCount + errorCount);
+  }, [correctCount, errorCount]);
+
   const handleStart = () => {
     setStartTime(Date.now());
     setIsTypingAllowed(true);
@@ -115,6 +122,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     setIndex(0);
     setIsAlredyError(false);
     setIsTypingAllowed(false);
+    setIsFinished(false);
   };
 
   const calculateWPM = () => {
@@ -139,25 +147,23 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           <div className="result-list">
             <Results name="Chyby" data={errorCount} />
             <Results name="Přesnost" data={accuracy} symbol="%" />
-            {!exerciseMode ?
-              <Results name="WPM" data={wpm} />
-              : null 
-            }
+            {!exerciseMode ? <Results name="WPM" data={wpm} /> : null}
           </div>
         </div>
 
         {/* TIMER */}
-        {!exerciseMode ?
+        {!exerciseMode ? (
           <Timer
-          onStart={handleStart}
-          onEnd={handleEnd}
-          onReload={handleReload}
-          isStarted={isTypingAllowed}
-          targetText={targetText}
-        />
-        : null
-        }
-        
+            onStart={handleStart}
+            onEnd={handleEnd}
+            onReload={handleReload}
+            isStarted={isTypingAllowed}
+            targetText={targetText}
+            currentProgress={currentProgress}
+            isFinished={isFinished}
+          />
+        ) : null}
+
         <button className="button next" onClick={() => navigate(`${nextLink}`)}>
           Pokračovat
         </button>
@@ -170,7 +176,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
         </div>
 
         <div className="keyboard-container">
-        
           {/* KEYBOARD  */}
           <Keyboard
             targetText={targetText}
@@ -179,28 +184,28 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
             exerciseMode={exerciseMode}
           />
 
-          <div className='hands-container'>
-
+          <div className="hands-container">
             <div className="hand-image left">
-              <Hand 
-                inputText={inputText} 
-                targetText={targetText} 
-                exerciseMode={exerciseMode} 
+              <Hand
+                inputText={inputText}
+                targetText={targetText}
+                exerciseMode={exerciseMode}
                 isAlreadyError={isAlreadyError}
                 useTransform={true}
-                fingers={left}/>
+                fingers={left}
+              />
             </div>
 
             <div className="hand-image right">
               <Hand
-                inputText={inputText} 
-                targetText={targetText} 
-                exerciseMode={exerciseMode} 
+                inputText={inputText}
+                targetText={targetText}
+                exerciseMode={exerciseMode}
                 isAlreadyError={isAlreadyError}
                 useTransform={false}
-                fingers={right}/>
+                fingers={right}
+              />
             </div>
-
           </div>
         </div>
       </div>

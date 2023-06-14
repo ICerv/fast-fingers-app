@@ -9,9 +9,12 @@ export const testsSections = [
            id: 1,
            number: 1,
            exercises: 
-               [
-                   "kazajka, fajfka, zira, zara, rifle, karel, kůrka, tretra, kafka, tuk, karafa, fara, kůl, lara, fara, kůl, lara, fara, kůl, lara, fara, kal, jas, sluka, dural, ural, frajer, ilja, karel, kůrka, jirka, deka, rejsek, drak, hůlka, luka, ruka, lusk, hluk, agro, hele, duha, hifi, hele, luka, lak, důl, sůl, kůl, hůl, elf, kůl, rek, drak, klid, hluk, rez, kaz, hůl, hala, gala, zrak, zira, zara, lara, kazajka,"
-               ],
+           [
+            "kazajka, fajfka,"
+        ],
+            //    [
+            //        "kazajka, fajfka, zira, zara, rifle, karel, kůrka, tretra, kafka, tuk, karafa, fara, kůl, lara, fara, kůl, lara, fara, kůl, lara, fara, kal, jas, sluka, dural, ural, frajer, ilja, karel, kůrka, jirka, deka, rejsek, drak, hůlka, luka, ruka, lusk, hluk, agro, hele, duha, hifi, hele, luka, lak, důl, sůl, kůl, hůl, elf, kůl, rek, drak, klid, hluk, rez, kaz, hůl, hala, gala, zrak, zira, zara, lara, kazajka,"
+            //    ],
        },
      {  
            id: 2,

@@ -1,49 +1,64 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './style.css';
 import TimerButton from './TimerButton';
 
-export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText }) => {
-  const [time, setTime] = useState(50);
+export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText, currentProgress }) => {
+  const [time, setTime] = useState(0);
+  const [isFinished, setIsFinished] = useState(false);
+  const timerRef = useRef(null);
 
   useEffect(() => {
-    let timer;
-    if (isStarted && time > 0) {
-      timer = setInterval(() => {
-        setTime((prevTime) => prevTime - 1);
+    // let timer;
+    if (isStarted) {
+      timerRef.current = setInterval(() => {
+        setTime((prevTime) => prevTime + 1);
       }, 1000);
-    } else if (isStarted && time === 0) {
-      clearTimeout(timer);
-      onEnd();
-    } else if (!isStarted) {
-      clearTimeout(timer);
+    } else {
+      clearTimeout(timerRef.current);
     }
     return () => {
-      clearTimeout(timer);
+      clearTimeout(timerRef.current);
     };
-  }, [isStarted, time]);
+  }, [isStarted]);
 
   useEffect(() => {
-    setTime(60);
+    if (currentProgress >= targetText.length) {
+      clearInterval(timerRef.current);
+      setIsFinished(true);
+      onEnd();
+    }
+  }, [currentProgress, targetText.length, onEnd]);
+
+  useEffect(() => {
+    setTime(0);
   }, [targetText]);
 
   const handleStopStart = (action) => {
     if (action === 'start') {
+      setTime(0);
+      setIsFinished(false);
       onStart();
     } else if (action === 'reload') {
-      setTime(60);
+      setTime(0);
+      setIsFinished(false);
       onReload();
     } else {
+      clearInterval(timerRef.current);
       onEnd();
     }
   };
 
-  const formattedTime = time < 10 && time > 0 ? `0${time}` : time;
+  const formattedTime = time < 10 ? `0${time}` : time;
 
   return (
     <div className="timer-container">
       {/* START TIMER BUTTON */}
-      <TimerButton onClick={handleStopStart} isStarted={isStarted} isTimeUp={time === 0} />
-
+      <TimerButton
+        onClick={handleStopStart}
+        isStarted={isStarted}
+        isTimeUp={currentProgress >= targetText.length}
+        isFinished={isFinished}
+      />
       {/* TIMER */}
       <div className="time">Čas: {formattedTime}</div>
     </div>
