@@ -1,0 +1,138 @@
+.introduction-container{
+  width: 80%;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding-left: 6px;
+  color: #fff;
+  opacity: 0.8;
+  line-height: 1.8 ;
+}
+
+li{
+  padding-top: 15px;
+}
+
+.introduction-title{
+  text-align: center;
+}
+.introduction-intro{
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.introduction-section{
+  display: flex;
+}
+
+.introduction-subtitle{
+  padding-top: 20px;
+  display: inline-block;
+}
+
+p{
+padding-top: 15px;
+}
+
+.introduction-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.exercise-images{
+  max-width: 46vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 4px rgba(243, 241, 241);
+}
+
+.finger-exercise{
+  margin: 5px;
+}
+
+.keyboard-instruction{
+  display: flex;
+  justify-content: center;
+}
+
+.color-keyboard{
+  width: 65vw;
+  margin-top: 0.5rem;
+}
+
+.finger-placement{
+  display: flex;
+  justify-content: center;
+}
+
+.left-hand,
+.right-hand{
+  width: 18rem;
+  height: 18rem;
+}
+
+@media (max-width: 480px) {
+  .introduction-container{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.8;
+    line-height: 1.5;
+  }
+
+  .introduction-intro{
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .exercise-images{
+    max-width: 46vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 4px rgba(243, 241, 241);
+  }
+
+  .finger-exercise{
+    width: 100%;
+    margin: 5px;
+  }
+
+  .color-keyboard{
+    width: 80vw;
+    margin-top: 0.5rem;
+  }
+  
+
+  .left-hand,
+.right-hand{
+  width: 10rem;
+  height: 10rem;
+}
+
+}
+
+/* @media (min-width: 768px) {
+  .exercise-images{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 4px rgba(243, 241, 241);
+  }
+
+  .finger-exercise{
+    max-width: 100%;
+    margin: 5px;
+  }
+} */

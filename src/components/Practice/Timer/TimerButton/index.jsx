@@ -20,5 +20,4 @@ const TimerButton = ({ onClick, isStarted, isTimeUp }) => {
     </button>
   );
 };
-
 export default TimerButton;

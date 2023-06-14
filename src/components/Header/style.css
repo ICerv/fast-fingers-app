@@ -33,13 +33,14 @@ header {
 }
 
 .rollout-nav {
-  z-index: 10;
-  padding: 10px;
+  z-index: 2;
+  padding: 8px;
   margin-right: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   background: #203A43;
+  border: 1px solid white;
+  box-shadow: 2px 2px 4px rgba(243, 241, 241);
 }
 
 .nav-btn {
@@ -58,11 +59,11 @@ header {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   transition: 0.5s;
-  line-height: 40px;
-  opacity: 0.5;
+  line-height: 30px;
+  opacity: 0.6;
   margin: 0;
 }
 
@@ -89,6 +90,9 @@ header {
       display: flex;
       flex-direction: row;
       background: transparent;
+      border: none;
+      box-shadow: none;
+      margin-right: 30px;
     }
 
     .rollout-nav a {
@@ -98,7 +102,7 @@ header {
     }
 
     .rollout-nav a:hover {
-      border-bottom: 3px solid #c62828;
+      border-bottom:3px solid var(--highlight-color);
       cursor: pointer;
     }
 
