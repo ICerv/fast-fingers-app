@@ -9,7 +9,7 @@ export const SpeedMetrics = () => {
         <span className="col begginer">0 - 20 Začatečník</span>
         <span className="col average">20 - 40 Pruměrný</span>
         <span className="col advanced">40 - 60 Pokročily</span>
-        <span className="col top">60 - 80 Top</span>
+        <span className="col top-speed">60 - 80 Top</span>
         <span className="col expert">80 - 100+ Expert</span>
       </div>
     </div>
