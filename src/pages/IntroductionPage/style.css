@@ -89,7 +89,7 @@ padding-top: 15px;
   height: 10rem;
 }
 
-.metrics-description{
+.metrics-container{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -170,7 +170,7 @@ padding: 5px 10px;
   height: 18rem;
 }
 
-.metrics-description{
+.metrics-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between; 
