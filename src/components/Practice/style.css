@@ -29,6 +29,8 @@
 .result-container {
     color: white;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
   
 .result-list {
@@ -42,10 +44,6 @@
   
 .result-list small {
     font-size: small;
-}
-
-.middle-container {
-    height: 67vh;
 }
 
 .input-container {
@@ -89,8 +87,7 @@
     }
 
     .result-container {
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin: 0;
     }
     
     .middle-container {
@@ -104,14 +101,11 @@
         width: 700px;
         margin-left: 0;
     }
-    
-    .keyboard-container {
-        height: 40vh
-    }
 
 }
 
 @media (min-width: 1024px) {
+    
     .middle-container {
         height: auto;
     }
@@ -126,6 +120,10 @@
         bottom: 200px;
         left: 350px;
         position: relative;
+    }
+
+    .hands-container {
+        height: 0;
     }
 }
     

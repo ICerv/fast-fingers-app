@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Navigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 import TextInput from './TextInput';
 import Results from './Results';
@@ -68,8 +68,11 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     }
 
     if (targetText.length === inputText.length) {
+      localStorage.setItem('errorCount', errorCount)
+      localStorage.setItem('accuracy', accuracy)
       handleEnd();
       setIsFinished(true);
+      navigate('/results')
     }
 
     const { key } = event;
@@ -77,10 +80,8 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     if (validKey(event.keyCode)) {
       if (key === targetText.charAt(index)) {
         onKeyCorrect(event);
-        localStorage.setItem('accuracy', accuracy)
       } else {
         onKeyError(event);
-        localStorage.setItem('errorCount', errorCount)
       }
     }
 
@@ -135,27 +136,16 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     const numWords = words.length;
     const minutes = time / 60000;
     const wpm = Math.floor(numWords / minutes);
-    localStorage.setItem('wpm', wpm)
     return wpm;
   };
 
   const wpm = endTime > startTime ? calculateWPM() : 0;
 
-  localStorage.setItem('exerciseMode', exerciseMode);
   localStorage.setItem('nextLink', nextLink);
   localStorage.setItem('currentUrl', currentUrl);
 
   return (
-    <div className="container-page"> 
-
-      {(exerciseMode && (targetText.length === inputText.length) )? 
-        <Navigate replace to="/results"/> 
-        : null
-      }
-      {/* {(!exerciseMode && ((targetText.length === inputText.length )|| (endTime > startTime)) ) 
-        ? <Navigate replace to="/section/:sectionId/test/:testId/results" /> 
-        : null
-      } */}
+    <div className="container-page">
 
       <div className="up-container">
         <button className="button back" onClick={() => navigate(backUrl)}>

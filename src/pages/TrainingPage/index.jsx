@@ -27,6 +27,8 @@ const TrainingPage = () => {
         }
       }
     }
+    localStorage.setItem('sectionId', sectionId);
+    localStorage.setItem('lesson.id', lesson.id);
 
     return `/section/${sectionId}/lesson/${lesson.id}/exercise/${exerciseId + 1}`;
   };
