@@ -170,7 +170,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
             isStarted={isTypingAllowed}
             targetText={targetText}
             currentProgress={currentProgress}
-            isFinished={isFinished}
           />
         ) : null}
 

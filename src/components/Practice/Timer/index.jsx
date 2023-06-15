@@ -8,7 +8,6 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText, current
   const timerRef = useRef(null);
 
   useEffect(() => {
-    // let timer;
     if (isStarted) {
       timerRef.current = setInterval(() => {
         setTime((prevTime) => prevTime + 1);
@@ -27,7 +26,7 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText, current
       setIsFinished(true);
       onEnd();
     }
-  }, [currentProgress, targetText.length, onEnd]);
+  }, [currentProgress, targetText.length]);
 
   useEffect(() => {
     setTime(0);
@@ -35,7 +34,6 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText, current
 
   const handleStopStart = (action) => {
     if (action === 'start') {
-      setTime(0);
       setIsFinished(false);
       onStart();
     } else if (action === 'reload') {
@@ -59,12 +57,7 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText, current
   return (
     <div className="timer-container">
       {/* START TIMER BUTTON */}
-      <TimerButton
-        onClick={handleStopStart}
-        isStarted={isStarted}
-        isTimeUp={currentProgress >= targetText.length}
-        isFinished={isFinished}
-      />
+      <TimerButton onClick={handleStopStart} isStarted={isStarted} isFinished={isFinished} />
       {/* TIMER */}
       <div className="time">Čas: {formattedTime}</div>
     </div>
