@@ -1,0 +1,72 @@
+.gauge-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.gauge-title{
+  padding-left: 10px;
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 10px;}
+
+.wpm-gauge{
+  display: flex;
+  width: 100%;
+}
+
+.wpm-gauge > .col {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:35px;
+  font-size: 10px;
+  font-weight: bolder;
+  padding: 8px;
+}
+.col{
+  flex-grow: 1;
+
+}
+
+.begginer{
+  background-color: #eb4841;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.average{
+  background: #f48847;
+}
+.advanced{
+  background: #ffc84a;
+}
+
+.top{
+  background: #a6c34c;
+}
+.expert{
+  background: #4ec04e;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .gauge-title{
+    padding-left: 10px;
+    font-size: 14px;
+   }
+  
+  .wpm-gauge > .col {
+    height:25px;
+    font-size: 12px;
+
+  }
+  .col{
+    flex-grow: 1;
+  }
+
+}
