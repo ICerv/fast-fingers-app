@@ -1,17 +1,17 @@
-.lessonspage__page-container {
+.lessonspage__page--container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
 }
 
-.lessonspage__lessons-container {
+.lessonspage__lessons--container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.lessonspage__lessons-section {
+.lessonspage__lessons--section {
     width: 80vw;
     background-color: rgba(231, 242, 245, 0.8);
     color: #203A43;
@@ -24,30 +24,30 @@
     cursor: pointer;
 }
 
-.lessonspage__section-container {
+.lessonspage__section--container {
     width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.lessonspage__section-info {
+.lessonspage__section--info {
     width: 70%;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.lessonspage__section-title {
+.lessonspage__section--title {
     font-size: 22px;
     font-style: italic;
 }
 
-.lessonspage__section-amount {
+.lessonspage__section--amount {
     margin-top: 5px;
 }
 
-.lessonspage__section-icon {
+.lessonspage__section--icon {
     width: 40px;
     height: 40px;
     opacity: 0.8;
@@ -55,11 +55,11 @@
     background-size: contain;
 }
 
-.lessonspage__icon-closed {
+.lessonspage__icon--closed {
     background-image: url('./img/icon-closed.png');
 }
 
-.lessonspage__icon-opened {
+.lessonspage__icon--opened {
     background-image: url('./img/icon-opened.png');
 }
 
@@ -75,7 +75,7 @@
     z-index: 999;
 }
 
-.icon-to-top:hover {
+.lessonspage__icon-to-top:hover {
     opacity: 1;
     animation: none
 }
@@ -100,19 +100,19 @@
 
 @media (min-width: 768px) {
     
-    .lessonspage__lessons-section {
+    .lessonspage__lessons--section {
         width: 70vw;
     }
     
-    .lessonspage__section-info {
+    .lessonspage__section--info {
         gap: 2rem;
     }
     
-    .lessonspage__section-title {
+    .lessonspage__section--title {
         font-size: 28px;
     }
     
-    .lessonspage__section-icon {
+    .lessonspage__section--icon {
         margin-right: 1rem;
     }
 
