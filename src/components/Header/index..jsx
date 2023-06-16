@@ -7,18 +7,21 @@ const Header = () => {
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
+  const closeNav = () => {
+    setNavOpen(false);
+  };
   return (
     <header>
         <div className="site-logo_container">
           <div className="site-logo"></div>
         </div>
         <div className="navigation">
-          <button className="nav-btn" onClick={toggleNav}></button>
+          <button className={`nav-btn ${!navOpen ? 'menu' : 'cross'}`} onClick={toggleNav}></button>
           <div className={`rollout-nav ${!navOpen ? 'nav-closed' : ''}`}>
-            <Link to="/">Domů</Link>
-            <Link to="/introduction">Úvod</Link>
-            <Link to="/lessons">Cvičení</Link>
-            <Link to="/tests">Testy</Link>
+            <Link to="/" onClick={closeNav}>Domů</Link>
+            <Link to="/introduction" onClick={closeNav}>Úvod</Link>
+            <Link to="/lessons" onClick={closeNav}>Cvičení</Link>
+            <Link to="/tests" onClick={closeNav}>Testy</Link>
           </div>
       </div>
     </header>
