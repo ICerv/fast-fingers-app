@@ -22,14 +22,14 @@ const LessonsPage = () => {
             setShowTopBtn(false);
         }
     });
-    }, []);
+  }, []);
 
-    const goToTop = () => {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
-      });
-    };
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+  };
 
   return (
     <div className="page-container">
@@ -39,7 +39,7 @@ const LessonsPage = () => {
             <div className="section-container">
               <div className="section-info">
                 <img src={require(`${section.url}`)} className="section-image" />
-                <div className="section-description">
+                <div className="description">
                   <h2 className="title">{section.title}</h2>
                   <p className="amount">{section.amount}</p>
                 </div>
@@ -51,7 +51,7 @@ const LessonsPage = () => {
         </div>
       ))}
       {showTopBtn && 
-      (<img src={require('./img/icon-up.png')} className='icon-to-top' onClick={goToTop} />)}
+      (<img src={require('./img/icon-up.png')} className='icon-to-top' alt='icon-to-top' onClick={goToTop} />)}
     </div>
   );
 };

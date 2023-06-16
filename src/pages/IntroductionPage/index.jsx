@@ -1,8 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.css';
 import { SpeedMetrics } from './SpeedMetrics';
 
 const IntroductionPage = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            setShowTopBtn(true);
+        } else {
+            setShowTopBtn(false);
+        }
+    });
+  }, []);
+
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+  };
+
+
   return (
     <div className="introduction-container">
       <h2 className="introduction-title">ÚVOD</h2>{' '}
@@ -139,6 +159,8 @@ const IntroductionPage = () => {
         </div>
         <SpeedMetrics />
       </section>
+      {showTopBtn && 
+      (<img src={require('./img/icon-up.png')} className='icon-to-top' alt='icon-to-top' onClick={goToTop} />)}
     </div>
   );
 };
