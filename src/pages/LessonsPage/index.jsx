@@ -7,6 +7,7 @@ const LessonsPage = () => {
   const [showLists, setShowLists] = useState({});
   const [showTopBtn, setShowTopBtn] = useState(false);
 
+  //Function to toggle the list of lessons
   const toggleList = (sectionId) => {
     setShowLists((prevState) => ({
       ...prevState,
@@ -14,6 +15,7 @@ const LessonsPage = () => {
     }));
   };
 
+  //Event for the to top button
   useEffect(() => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 400) {
@@ -33,20 +35,20 @@ const LessonsPage = () => {
 
   return (
     <section className="lessonspage">
-    <div className="lessonspage__page-container">
+    <div className="lessonspage__page--container">
       {exercisesSections.map((section) => (
-        <div className="lessonspage__lessons-container" key={section.id}>
-          <div className="lessonspage__lessons-section" onClick={() => toggleList(section.id)}>
-            <div className="lessonspage__section-container">
-              <div className="lessonspage__section-info">
-                <img src={require(`${section.url}`)} className="lessonspage__section-image" alt='section icon'/>
-                <div className="lessonspage__section-description">
-                  <h2 className="lessonspage__section-title">{section.title}</h2>
-                  <p className="lessonspage__section-amount">{section.amount}</p>
+        <div className="lessonspage__lessons--container" key={section.id}>
+          <div className="lessonspage__lessons--section" onClick={() => toggleList(section.id)}>
+            <div className="lessonspage__section--container">
+              <div className="lessonspage__section--info">
+                <img src={require(`${section.url}`)} className="lessonspage__section--image" alt='section icon'/>
+                <div className="lessonspage__section--description">
+                  <h2 className="lessonspage__section--title">{section.title}</h2>
+                  <p className="lessonspage__section--amount">{section.amount}</p>
                 </div>
               </div>
               <div
-                className={`lessonspage__section-icon ${showLists[section.id] ? 'lessonspage__icon-opened' : 'lessonspage__icon-closed'}`}
+                className={`lessonspage__section--icon ${showLists[section.id] ? 'lessonspage__icon--opened' : 'lessonspage__icon--closed'}`}
               ></div>
             </div>
           </div>
