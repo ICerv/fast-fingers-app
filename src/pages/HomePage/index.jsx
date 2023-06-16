@@ -4,59 +4,73 @@ import './style.css';
 
 const HomePage = () => {
   const banner = 'Program pro trénink psaní na klávesnici';
-
+  const subHeadings = [
+    'Zlepši své psaní',
+    'Získej rychlost',
+    'Přesnost',
+    'Produktivitu',
+    'Psaní naslepo',
+    // 'Větší šancí na trhu práce',
+  ];
   const typingState = 'istyping';
   const deletingState = 'isdeleting';
 
   const [typing, setTyping] = useState(typingState);
-  const [text, setText] = useState('');
+  const [bannerText, setBannerText] = useState('');
+  const [subHeadingIndex, setSubHeadingIndex] = useState(0);
+  const [subHeading, setSubHeading] = useState('');
+  const [isBannerFinished, setIsBannerFinished] = useState(false);
 
-  //Funkce pro zpozdeni mezi psanim a mazanim textu
   const sleep = (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
 
   useEffect(() => {
-    //Efekt spusteny pri kazde zmene hodnoty 'text' nebo 'typing'
     const timeout = setTimeout(() => {
-      //Pokud probiha psani a text jeste nei cely, pridej dalsi znak
-      if (typing === typingState && text !== banner) {
-        setText((originalText) => banner.slice(0, originalText.length + 1));
-
-        //Pokud je text jiz cely a probiha psani, pockej 2sec a prepni do mazani
-      } else if (text === banner && typing === typingState) {
-        sleep(2000).then(() => {
+      if (!isBannerFinished) {
+        if (typing === typingState && bannerText !== banner) {
+          setBannerText((originalText) => banner.slice(0, originalText.length + 1));
+        } else if (bannerText === banner && typing === typingState) {
+          setIsBannerFinished(true);
+        }
+      } else if (typing === typingState && subHeading !== subHeadings[subHeadingIndex]) {
+        setSubHeading((originalText) => subHeadings[subHeadingIndex].slice(0, originalText.length + 1));
+      } else if (subHeading === subHeadings[subHeadingIndex] && typing === typingState) {
+        sleep(1000).then(() => {
           setTyping(deletingState);
         });
-
-        //Pokud probiha mazani a text neni prazdny, odeber posledni znak
-      } else if ((text === banner && typing === deletingState) || typing === deletingState) {
-        setText((originalText) => banner.slice(0, originalText.length - 1));
-
-        //Pokud je text zkracen na 2 nebo mene znaky, prepni do psani
-        if (text.length <= 2) {
+      } else if (
+        (subHeading === subHeadings[subHeadingIndex] && typing === deletingState) ||
+        typing === deletingState
+      ) {
+        setSubHeading((originalText) => subHeadings[subHeadingIndex].slice(0, originalText.length - 1));
+        if (subHeading.length <= 2) {
           setTyping(typingState);
+          setSubHeadingIndex((prevIndex) => (prevIndex + 1) % subHeadings.length);
         }
       }
     }, 100);
 
     return () => clearTimeout(timeout);
-  }, [text, typing]);
+  }, [bannerText, subHeading, typing, isBannerFinished]);
 
   return (
-    <section className="homepage-section active">
-      <div className="homepage">
-        <h1 className="homepage-heading">
-          <pre className="blinking-cursor" style={{ whiteSpace: 'pre-wrap' }}>
-            {text}
-          </pre>
-        </h1>
-        <p className="homepage-subheading">
-          Zlepši své psaní všemi deseti, získej rychlost, přesnost a schopnost psát naslepo...
-        </p>
-      </div>
-      <div className="homepage-image">
-        <img src={require('./img/laptop.png')} alt="Laptop image" />
+    <section className="homepage-section">
+      <div className="homepage-content">
+        <div className="homepage">
+          <h1 className="homepage-banner">
+            <pre className={isBannerFinished ? '' : 'blinking-cursor bannert-cursor'}>{bannerText}</pre>
+          </h1>
+          <p className="homepage-subheading">
+            <span className={isBannerFinished ? 'subheading-text subheading-cursor blinking-cursor' : ''}>
+              {subHeading}
+            </span>
+          </p>
+        </div>
+
+        <div className="homepage-image">
+          <img src={require('./img/laptop.png')} alt="Laptop image" />
+        </div>
       </div>
     </section>
   );
