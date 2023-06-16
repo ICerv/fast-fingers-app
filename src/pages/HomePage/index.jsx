@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
@@ -9,7 +10,6 @@ const HomePage = () => {
   const typingState = 'istyping';
   const deletingState = 'isdeleting';
   const navigate = useNavigate();
-
 
   const [typing, setTyping] = useState(typingState);
   const [bannerText, setBannerText] = useState('');
@@ -63,7 +63,7 @@ const HomePage = () => {
     <section className="homepage">
       <div className="homepage__content">
         <div className="homepage__wrapper">
-          <div className='homepage__info'>
+          <div className="homepage__info">
             <h1 className="homepage__banner">
               <pre className={isBannerFinished ? 'homepage__banner--text' : 'homepage__banner--blinking-cursor'}>
                 {bannerText}
@@ -77,10 +77,28 @@ const HomePage = () => {
               </span>
             </p>
           </div>
-          <div className='homepage__button'>
-            <button className='homepage__button--start' onClick={() => navigate('/introduction')}>Jak začít?</button>
-            <button className='homepage__button--lessons'  onClick={() => navigate('/lessons')}>K lekcím</button>
-        </div>
+          <div className="homepage__button">
+            <motion.button
+              className="homepage__button--start"
+              onClick={() => navigate('/introduction')}
+              whileHover={{ scale: 1.2 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              Jak začít?
+            </motion.button>
+            <motion.button
+              className="homepage__button--lessons"
+              onClick={() => navigate('/lessons')}
+              whileHover={{ scale: 1.2 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              K lekcím
+            </motion.button>
+          </div>
         </div>
         <div className="homepage__image">
           <img src={require('./img/laptop.png')} alt="Laptop image" />
