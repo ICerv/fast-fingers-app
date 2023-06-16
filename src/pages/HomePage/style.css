@@ -1,28 +1,30 @@
-.homepage-section {
+.homepage {
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 2rem;
+  
 }
 
-.homepage-content {
+.homepage__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
 
-.homepage{
+.homepage__wrapper{
   color: #fff;
   opacity: 0.8;
 }
 
-.homepage-banner {
+
+.homepage__banner {
   text-transform: uppercase;
 }
 
-pre{
+pre {
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -30,13 +32,13 @@ pre{
   line-height: 2rem;
 }
 
-.homepage-button {
+.homepage__button {
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
 
-.button {
+.homepage__button button {
   width: 10rem;
   height: 5rem;
   font-size: 1.5rem;
@@ -50,55 +52,49 @@ pre{
   cursor: pointer;
 }
 
-.homepage-image img {
+.homepage__image img {
   width: 100%;
   margin-top: 6rem;
   opacity: 0.8;
 }
 
-.blinking-cursor {
+.homepage__banner--blinking-cursor {
   margin-top: 7rem;
   text-transform: uppercase;
 }
 
-.blinking-cursor::after {
+.homepage__banner--blinking-cursor::after,
+.homepage__subheading--blinking-cursor::after {
   content: "|";
   animation: blink 1s step-end infinite;
 }
 
-.banner-text {
+.homepage__banner--text {
   color: #fff;
 }
 
-.banner-cursor::after {
-  color: #fff;
-}
-
-.subheading-text {
+.homepage__subheading--text {
   font-weight: bold;
   font-size: 1.6rem;
   padding-bottom: 20px;
   color: var(--highlight-color);
+  text-transform: uppercase;
 }
-
-.subheading-cursor::after {
-  color: var(--highlight-color);
-  font-weight: 600;
-}
-
 
 @media (min-width: 768px) {
-  .homepage-section {
+  .homepage {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .homepage-content {
+  .homepage__content {
     flex-direction: row;
     width: 100%;
   } 
 
-  .homepage{
+  .homepage__wrapper{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding-left: 30px;
     display: flex;
@@ -106,36 +102,29 @@ pre{
     justify-content: space-around;
   }
 
-  .homepage-banner {
-margin-top: 3rem;  
-}
+  .homepage__banner {
+    margin-top: 3rem;
+  }
   
-
-  .subheading-text {
+  .homepage__subheading--text {
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--highlight-color);
   }
   
-  .subheading-cursor::after {
-    color: var(--highlight-color);
-    font-weight: 600;
-  }
-  
-  pre{
+  pre {
     font-size: 2rem;
     line-height: 3rem;
   }
-  
-  .homepage-image  {
-    width: 100%;
-    /* opacity: 0.6; */
+
+
+  .homepage__image {
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 
 @keyframes blink {
-
   from,
   to {
     opacity: 1;
