@@ -63,7 +63,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
   const handleInputChange = (event) => {
     event.preventDefault();
-    handleKeyUp()
 
     if (exerciseMode) {
       setIsTypingAllowed(true);
@@ -72,11 +71,11 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     }
 
     if (targetText.length === inputText.length) {
-      localStorage.setItem('errorCount', errorCount)
-      localStorage.setItem('accuracy', accuracy)
+      localStorage.setItem('errorCount', errorCount);
+      localStorage.setItem('accuracy', accuracy);
       handleEnd();
       setIsFinished(true);
-      navigate('/results')
+      navigate('/results');
     }
 
     const { key } = event;
@@ -150,24 +149,21 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
   return (
     <div className="container-page">
-
       <CapsLockWarning />
 
       <div className="up-container">
-
-        <div className='links-container'>
+        <div className="links-container">
           <a href={backUrl} className="link back">
             ← Zpět
           </a>
-          {!exerciseMode &&
+          {!exerciseMode && (
             <a href={nextLink} className="link next">
               Pokračovat →
             </a>
-          }
+          )}
         </div>
 
-        <div className='statistics-container'>
-
+        <div className="statistics-container">
           {/* RESULTS  */}
           <div className="result-container">
             <div className="result-list">
@@ -188,7 +184,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
               currentProgress={currentProgress}
             />
           ) : null}
-
         </div>
       </div>
 

@@ -1,19 +1,20 @@
-import React from "react";
-import './style.css'
+import React from 'react';
+import './style.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className='footer-container'>
-        <div className='footer-title'>
-          FastFingers
-        </div>
-        <div className='footer-text'>
-          &copy;2023 - Czechitas, Digitální akademie: Web
+    <footer className="footer">
+      <div className="footer__container">
+        <div className="footer__title">FastFingers</div>
+        <div className="footer__text">
+          &copy;2023 -{' '}
+          <a href="https://www.czechitas.cz" target="_blank" rel="noopener noreferrer" className="footer__link">
+            Czechitas, Digitální akademie: Web
+          </a>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
