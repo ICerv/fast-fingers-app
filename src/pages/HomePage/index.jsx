@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 const HomePage = () => {
@@ -14,6 +15,8 @@ const HomePage = () => {
   ];
   const typingState = 'istyping';
   const deletingState = 'isdeleting';
+  const navigate = useNavigate();
+
 
   const [typing, setTyping] = useState(typingState);
   const [bannerText, setBannerText] = useState('');
@@ -58,14 +61,20 @@ const HomePage = () => {
     <section className="homepage-section">
       <div className="homepage-content">
         <div className="homepage">
-          <h1 className="homepage-banner">
-            <pre className={isBannerFinished ? '' : 'blinking-cursor bannert-cursor'}>{bannerText}</pre>
-          </h1>
-          <p className="homepage-subheading">
-            <span className={isBannerFinished ? 'subheading-text subheading-cursor blinking-cursor' : ''}>
-              {subHeading}
-            </span>
-          </p>
+          <div className='homepage-info'>
+            <h1 className="homepage-banner">
+              <pre className={isBannerFinished ? '' : 'blinking-cursor bannert-cursor'}>{bannerText}</pre>
+            </h1>
+            <p className="homepage-subheading">
+              <span className={isBannerFinished ? 'subheading-text subheading-cursor blinking-cursor' : ''}>
+                {subHeading}
+              </span>
+            </p>
+          </div>
+          <div className='homepage-button'>
+            <button className='button start' onClick={() => navigate('/introduction')}>Jak začít?</button>
+            <button className='button lessons'  onClick={() => navigate('/lessons')}>K lekcím</button>
+          </div>
         </div>
 
         <div className="homepage-image">

@@ -30,6 +30,26 @@ pre{
   line-height: 2rem;
 }
 
+.homepage-button {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.button {
+  width: 10rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  color: var(--highlight-color);
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .homepage-image img {
   width: 100%;
   margin-top: 6rem;
@@ -79,10 +99,11 @@ pre{
   } 
 
   .homepage{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .homepage-banner {

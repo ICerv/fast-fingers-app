@@ -28,7 +28,7 @@
     text-decoration: none;
 }
 
-.link:visited {
+.links-container a:visited {
     color: white;
 }
 
