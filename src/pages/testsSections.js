@@ -3,81 +3,69 @@ export const testsSections = [
        id: 1,
        title: "Začátečník",
        url: "./img/begginer.png",
-       amount: "11 testu",
+       amount: "12 testů",
        tests: 
        [{
            id: 1,
-           number: 1,
            exercises: 
-           [
-            "kazajka, fajfka,"
-        ],
-            //    [
-            //        "kazajka fajfka zira zara rifle karel kůrka tretra kafka tuk karafa fara kůl lara fara kůl lara fara kůl lara fara kal jas sluka dural ural frajer ilja karel kůrka jirka deka rejsek drak hůlka luka ruka lusk hluk agro hele duha hifi hele luka lak důl sůl kůl hůl elf kůl rek drak klid hluk rez kaz hůl hala gala zrak zira zara lara kazajka"
-            //    ],
+               [
+                   "proměnná funkce podmínka cyklus pole řetězec číslo boolean true false výstup vstup argument vrácení parametr konstanta třída objekt metoda dědičnost rozhraní inicializace destruktor inkrementace dekrementace srovnání operátor logický výraz podmíněný výraz cyklus while cyklus do-while"
+             ],
        },
      {  
            id: 2,
-           number: 2,
            exercises: 
                [
-                  "wais otrok www kotoul luk kůl půl whiska fifle wfw rifle oko koko ola olga gaga weida filuta trata dwarf drak whois wifi kazajka dwarf drak hrad hrot waa wais sluj rez wf wfw elf zrak wide wke wrd wks hůl wok hůlka word gala world hala dcerka drak wol wosa zrak wri wrd wsh www wosa wri whs whs kazajka wide wade whiska ohrada zahrada"
+                  "soubor klíč hodnota událost zpráva chyba chybová hláška podpora syntaxe logika cyklus rozšíření zásobník fronta algoritmus debugování refaktorování kompatibilita import export parsování šablona přetížení modulární programování kompilace interpretace konfigurace"
                ],
  },
      {  
            id: 3,
-           number: 3,
            exercises: 
                [
-                  "jirka ola olga pepa josef karel karla alda alois qwq qoq wow waw gsa wzo wlk wtw qtq qat squat strop plat krop zahrada rostlina trezor zetor lopata rez jde dolů traktor je zetor sestra a teta opel je auto star trek hrot foto klapka alfa plus klika tretka autor politik skladatel pisatel fotograf doktor zoolog pizza kohout prase osel had orel"
+                  "modul rozhraní typ struktura režim generování kolekce řízení toku přiřazení operátor podpora systém architektura standard dokumentace testování návrh údržba ladění optimalizace výjimka serializace deserializace abstraktní třída polymorfismus rozhraní"
                ],
  },
      {  
            id: 4,
-           number: 4,
            exercises: 
                [
-                  "maska marod mord mela meta mekka vata vosa vatra koule kotoul matula vitamat slalom mikroskop makro otrava potrava varta vatra morek z kosti plůda a humus metro semetrika vosk oves sevo vartovat otravovat moje je i tvoje to je moje moje je i tvoje to je moje moje teta je vanda javor je strom fik a je to hotovo půlka pole je jeho auto ford vitana je firma vimr vuml"
+                  "rozsah komponenta komentář slovník rozbor rozlišení sémantika abstrakce kompilace interpretace validace strukturování návratová hodnota aplikace vývoj log paměť inicializace ukazatel běh šablona dedikovaný server distribuovaný systém komponentní architektura rekurze lambda výraz"
                ],
  },
      {  
            id: 5,
-           number: 5,
            exercises: 
                [
-                  "sada brod nudle fena bagr zip hon zvon mord lord raketa maketa nugeta bageta riziko bard nuda bouda nikl fenikl stavba plavba tavit bavit nosit zdravit plavba na podzim let raketou do kempu na kole nebo autem orba pluhem můj traktor eroze svahu nedostatek zdrojů to je moje vůle rebel z lidu jubileum jeho matky mnoho"
+                  "tělo operace trvání argumenty vstupy výstupy verze náhodnost hierarchie objektorientované asynchronní synchronní konfigurace parametry složitost testování struktura rozhraní funkcionální kompozice aplikační server transakce garbage collector generické typy dědičný diagram"
                ],
  },
      {  
            id: 6,
-           number: 6,
            exercises: 
                [
-                  "cibule cetka cedr cvok coul cmunda citrus citron ocas lekce vůdce strůjce hladce ocet celer pitomec cedule cejch cifra cudnost choroba charakter chata chaloupka u lesa moje chlouba charta pro lidi deset coulů charisma a charakter politika ocejchujte toho chlapa chata je u mostu tvůj plat je hromada cifer citrusy rostou v tropech natrhej cibuli a celer choroba"
+                  "parsování dodatek kompatibilita vyjádření hodnocení kódování odeslání vytvoření generování získání načítání zobrazení vyhledávání zpracování ověření filtrace roztřídění hledání nahrazování úprava výjimky anonymní funkce šifrování dešifrování asercionální testování"
                ],
  },
      {  
            id: 7,
-           number: 7,
            exercises: 
                [
-                  "xenon saxofon oxid xantipa xenie fax taxa jax maxim maximum wax rexie hoax vox box nix fix tix pixel trax xenofobie xerox pax rex max lux xena taxi fax koupit semtex maxipes je pes praxe v bance kodex cti latex je hmota mixer je na lince ztratil text asterix a obelix nastav sextant xaverov je na severu martin maxa sixta je prima maxim maximov můj pes je rex"
+                  "škálovatelnost udržitelnost rozšiřitelnost modularita údržba struktura návrhový vzor návrhový princip výkon optimalizace algoritmus dekompozice integrace implementace znovupoužitelnost testování ladění dokumentace zabezpečení robustnost logování analýza návrh vývoj protokol"
                ],
  },
      {  
            id: 8,
-           number: 8,
            exercises: 
                [
-                  "lymfa nymfa pyl kyj vyj byl myj gyro wywern zyxel pytel rypadlo vykat vylomit vyrvat bydlit obyvatel dobytek bylina byt kobyla polykat plynout vzlykat myslit hmyz kopyto zpytovat pykat syn usychat sypat vydra v noci brzy k jitru jazyk hada pytel brambor vykat profesorovi vylomit okno vyrvat pant bydlit doma dobytek se pase bylina je na louce můj byt i kobyla"
+                  "migrace verzování verzovací systém repozitář větev slučování větvení konflikt commit pull push zálohování obnovení migrace nasazení archivace kontrola verze vývojový cyklus vývojová metodika agilní vývoj waterfall model kontinuální integrace kontinuální nasazení DevOps automatizace"
                ],
  },
      {  
            id: 9,
-           number: 9,
            exercises: 
                [
-                  "úkol, úloha, úleva, útes, úzko, úaz, útrata, úplata, úkrok, úbor, úklad, úmor, úvoz, úklep, únava, úskok, úklad, útraty, ústroj, úsek, úroda, úrok, útok, úhor, úl, útroby, úhyn, úl, útrata, ústrk, úklid, úklad, úloha, únava, útrata, úplata, úbor z vesnice, úrok v bance, útok velryby, úhor na poli, útroby klokana, úhyn ryb v potoce, útrata na trhu, ústrk soka, úklid doma, úklad vraha, úplata v kufru,"
+                  "struktura design model třída objekt abstrakce rozhraní dědičnost polymorfismus kompozice agregace asociace generalizace specializace zapouzdření modulárnost jednotkový test integrační test systémový test akceptační test testovací prostředí regresní testování uživatelské rozhraní GUI"
                ],
  },
      {  
@@ -85,31 +73,38 @@ export const testsSections = [
            number: 10,
            exercises: 
                [
-                  "Zita, Urban, Ivana, Omar, Pavel, Helena, Jana, Karel, Lena, Norbert, Marie, Zuzana, Ivana, Petr, Hana, Katka, Marta, Olga, Helga, Magda, Nela, Jan, Libor, Igor, Marek, Ondra, Olga a Helga, Nela a Hela, Petr a Pavel, Marek a Lenka, Milan a Jan, Irena a Libor, Marcela a Ondra, Zita a Karel, Otylka a Matylda, Jirka a Lucie, Josef a Karla, Jindra a Olga, Pavel a Petr, Urban a Karel, Jan a Zita, Jaroslav,"
+                  "JavaScript, Python, Java, C++, C#, Ruby, PHP, Swift, Go, Kotlin, Rust, TypeScript, R, Perl, Lua, Scala, Haskell, Shell, React.js, Angular, Vue.js, Django, Ruby on Rails, Flask, Spring Boot, Express.js, Laravel, ASP.NET, Hibernate, TensorFlow, PyTorch, jQuery, Bootstrap, Node.js, Ember.js, Redux, Xamarin, Flutter, Unity, Unreal Engine, Symfony, Backbone.js, Meteor.js, Git, GitHub"
+
                ],
  },
      {  
            id: 11,
-           number: 11,
            exercises: 
                [
-                  "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou"
+                  "HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), XML (Extensible Markup Language), JSON (JavaScript Object Notation),CRUD (Create, Read, Update, Delete), DOM (Document Object Model), API (Application Programming Interface), SQL (Structured Query Language), HTTPS (Hypertext Transfer Protocol Secure), FTP (File Transfer Protocol), SSL (Secure Sockets Layer), SSH (Secure Shell), IDE (Integrated Development Environment)"
+
                ],
  },
+     {  
+           id: 12,
+           exercises: 
+               [
+                  "UX (User Experience), UI (User Interface), QA (Quality Assurance), SEO (Search Engine Optimization), OOP (Object-Oriented Programming),URL (Uniform Resource Locator), RWD (Responsive Web Design), CRM (Customer Relationship Management), CPU (Central Processing Unit), GPU (Graphics Processing Unit), RAM (Random Access Memory), HDD (Hard Disk Drive), SSD (Solid State Drive), DNS (Domain Name System)"
+               ],
+ },
+     
 ]},
   {
        id: 2,
        title: "Pokročilý",
        url: "./img/advanced.png",
-       amount: "20 testu",
+       amount: "16 testů",
        tests: 
        [{
            id: 1,
-           number: 1,
            exercises: 
                [
-                  `HTML (HyperText Markup Language) je značkovací jazyk používaný pro tvorbu webových stránek a jejich strukturování. HTML definuje strukturu a obsah webové stránky pomocí různých značek a elementů, které jsou interpretovány webovým prohlížečem a zobrazovány uživatelům. S HTML můžete vytvářet různé prvky, jako jsou nadpisy, odstavce, odkazy, tabulky, formuláře a mnoho dalšího.
-                  `
+                  "Czechitas je organizace zaměřená na podporu digitální gramotnosti a technické kreativity u žen a dívek. Jejím cílem je snižovat nerovnosti mezi pohlavími v oblasti IT a zvýšit zastoupení žen ve světě technologií. Poskytuje vzdělávací aktivity, jako jsou školení, workshopy a kurzy v oblasti programování, webdesignu, datové analýzy, kybernetické bezpečnosti a dalších digitálních dovedností. Czechitas tak umožňuje ženám rozvíjet se v technických oborech a nabízí jim účast na akcích, soutěžích a mentoringových programech. Organizace se zaměřuje na posilování sebevědomí a osobního růstu žen v technických oblastech."
                ],
        },
      {  
@@ -117,8 +112,7 @@ export const testsSections = [
            number: 2,
            exercises: 
                [
-                  `CSS (Cascading Style Sheets) je jazyk používaný pro popis vzhledu a formátování webových stránek. CSS se používá k definování různých stylů, jako jsou barvy, velikosti písma, rozložení, pozadí a dalších vizuálních vlastností elementů na stránce. Pomocí CSS můžete měnit vzhled a rozvržení stránek, přidávat animace, responsivní design a další efekty.
-                  HTML a CSS spolu tvoří základní stavební kameny webových stránek, přičemž HTML se stará o strukturu a obsah a CSS o vzhled a formátování.`
+                "HTML (HyperText Markup Language) je značkovací jazyk používaný pro tvorbu webových stránek a jejich strukturování. HTML definuje strukturu a obsah webové stránky pomocí různých značek a elementů, které jsou interpretovány webovým prohlížečem a zobrazovány uživatelům. S HTML můžete vytvářet různé prvky, jako jsou nadpisy, odstavce, odkazy, tabulky, formuláře a mnoho dalšího."
                ],
  },
      {  
@@ -126,7 +120,7 @@ export const testsSections = [
            number: 3,
            exercises: 
                [
-                 `JavaScript je programovací jazyk používaný pro tvorbu interaktivního obsahu na webových stránkách. Byl vyvinut v roce 1995 Brendanem Eichem a původně se nazýval "LiveScript". Později byl přejmenován na "JavaScript" kvůli popularitě jazyka Java v té době.`
+               "CSS (Cascading Style Sheets) je jazyk používaný pro popis vzhledu webových stránek. S pomocí CSS můžete definovat barvy, fonty, rozložení, animace a další vizuální vlastnosti stránky. Používá selektory pro identifikaci HTML elementů a deklarace pro nastavení stylových vlastností. CSS umožňuje oddělit obsah od prezentace, což usnadňuje údržbu a změny ve vzhledu stránky. Je důležitou součástí webu a umožňuje vývojářům vytvářet atraktivní a responzivní design."
                ],
  },
      {  
@@ -134,7 +128,7 @@ export const testsSections = [
            number: 4,
            exercises: 
                [
-                  `JavaScript je interpretovaný jazyk, což znamená, že se kód vykonává v prohlížeči nebo v jiném prostředí, jako je například Node.js. Jeho hlavní využití spočívá v interakci s webovou stránkou, manipulaci s HTML a CSS, reagování na uživatelské akce a vytváření dynamických a interaktivních funkcionalit.`
+                  "JavaScript je interpretovaný jazyk, což znamená, že se kód vykonává v prohlížeči nebo v jiném prostředí, jako je například Node.js. Jeho hlavní využití spočívá v interakci s webovou stránkou, manipulaci s HTML a CSS, reagování na uživatelské akce a vytváření dynamických a interaktivních funkcionalit."
                ],
  },
      {  
@@ -142,7 +136,7 @@ export const testsSections = [
            number: 5,
            exercises: 
                [
-                `React byl vyvinut společností Facebook a poprvé veřejně představen v roce 2013. Jeho tvůrci jsou Jordan Walke a tým vývojářů v Facebooku. React byl vytvořen jako knihovna pro tvorbu uživatelského rozhraní (UI) a zaměřuje se na jednoduchost, efektivitu a přehlednost při vývoji webových aplikací.`
+                "React je populární JavaScriptová knihovna pro tvorbu uživatelského rozhraní. Je navržen tak, aby umožňoval efektivní vývoj interaktivních a responzivních webových aplikací. React používá komponenty, které jsou znovupoužitelné a samostatné části kódu, které obsahují logiku a vizuální strukturu.React používá virtuální DOM (Document Object Model), což umožňuje efektivní aktualizace pouze těch částí stránky, které se změnily. Tím se zvyšuje výkon a rychlost aplikace. "
                ],
  },
      {  
@@ -150,7 +144,7 @@ export const testsSections = [
            number: 6,
            exercises: 
                [
-                 `Jedním z hlavních konceptů v Reactu je komponentní architektura. Aplikace v Reactu jsou postaveny na znovupoužitelných komponentách, které reprezentují různé části uživatelského rozhraní. Každá komponenta má svůj vlastní stav (state) a definuje, jak se má zobrazovat na základě tohoto stavu.`
+                 "Var je původní způsob deklarace proměnných v JavaScriptu s funkčním dosahem a zdvižením na začátek svého dosahu. To znamená, že proměnná deklarovaná pomocí var je viditelná po celé funkci, bez ohledu na bloky kódu. Tím může docházet k nechtěným chybám a nekonzistencím v programu. Let je modernější alternativou k var, která nabízí blokový dosah, což znamená, že proměnná deklarovaná pomocí let je viditelná pouze uvnitř bloku, ve kterém byla deklarována. To přináší lepší předvídatelnost a zamezuje nežádoucím efektům zdvižení a nesprávnému použití proměnných. Proto se let stává preferovanou volbou v moderním JavaScriptu pro lepší správu dosahů proměnných a minimalizaci chyb."
                ],
  },
      {  
@@ -158,7 +152,7 @@ export const testsSections = [
            number: 7,
            exercises: 
                [
-                 `React využívá virtuální DOM (Document Object Model), což je abstrakce reálného DOM, která umožňuje efektivnější aktualizaci a vykreslování uživatelského rozhraní. React porovnává změny ve virtuálním DOM s reálným DOM a aktualizuje pouze ty části stránky, které se skutečně změnily.`
+                 "Asynchronní funkce je speciální typ funkce, který umožňuje provádět neblokující (non-blocking) operace, které mohou trvat déle než běžné operace. Když je asynchronní funkce volána, nečeká na dokončení dané operace, ale pokračuje v běhu programu a předává řízení dalším částem kódu. Tím se zajišťuje, že aplikace zůstává responsivní a schopná reagovat na další události. Asynchronní funkce v JavaScriptu je často implementována pomocí konstrukce async a await nebo pomocí použití Promise objektů a then řetězců."
                ],
  },
      {  
@@ -166,7 +160,7 @@ export const testsSections = [
            number: 8,
            exercises: 
                [
-                  `React využívá virtuální DOM (Document Object Model), což je abstrakce reálného DOM, která umožňuje efektivnější aktualizaci a vykreslování uživatelského rozhraní. React porovnává změny ve virtuálním DOM s reálným DOM a aktualizuje pouze ty části stránky, které se skutečně změnily.`
+                  "Anonymní funkce je funkce, která nemá pojmenovaný identifikátor. Anonymní funkce je definována přímo v místě svého použití, často jako argument jiné funkce nebo přiřazena do proměnné. Na rozdíl od pojmenovaných funkcí nemá anonymní funkce přístup k vlastnímu identifikátoru, což znamená, že nemůže být volána znovu jinými částmi kódu mimo svůj kontext. Anonymní funkce je užitečná, pokud potřebujete definovat jednorázovou funkci, která se nepoužívá jinde než v místě svého vytvoření."
                ],
  },
      {  
@@ -174,7 +168,7 @@ export const testsSections = [
            number: 9,
            exercises: 
                [
-                 `Webpack je nástroj, který se používá pro sestavování a balení zdrojových souborů webových aplikací. Jeho hlavním úkolem je spravovat závislosti mezi soubory a vytvořit optimalizovaný výsledný balíček, který se načte do prohlížeče. Pracuje na principu modulů, což znamená, že rozděluje kód do menších částí a následně je spojuje do výsledného balíčku. To umožňuje efektivní správu závislostí a snadnou modularitu aplikace.`
+                 "Callback je funkce, která je předána jako argument do jiné funkce a je volána později v určitém časovém okamžiku nebo po dokončení určitého úkolu. Slouží k asynchronnímu zpracování událostí a vykonání kódu v reakci na tyto události. Když je událost vyvolána, funkce callback je spuštěna a může provádět další operace nebo zpracovávat vrácená data. Callbacky jsou často používány v JavaScriptu pro obsluhu událostí, asynchronní volání API nebo pro paralelní zpracování dat. Pomocí callbacků je možné dosáhnout non-blocking chování programu a umožnit efektivní asynchronní programování."
                ],
  },
      {  
@@ -182,15 +176,7 @@ export const testsSections = [
            number: 10,
            exercises: 
                [
-                 `venecky se opravdu povedly. Sárdina maminka byla na své umèni obzvláste pysná. Po mistnosti vonelo cukroví a vsem se dona sbihaly sliny na mamindiny dobroty. Veprová pedené odpodívala na okné, zelí se na nás smálo z velkého hrnce a knedlíky Sárka práve krájela. Samozrejme niti. Tatínek jiz sedel nedockave za stolem a posilhával na maminku, kdy rekne jedno dilezité slovo. Obed. Byla mu dlouhá chvile, takze si nenápadne vzal do rukou noviny a pod stolem si je det1. Snad to maminka neuvidi. A je to tady. Obed. Celá rodina se sesla behem jediné minuty. U stolu bylo plno. vsichni se usmívali. Maminka nalévala polévku a Sárka také usedla za stül. Dnes byl mimorádny den. Prijeli dedecek s babickou. Veprové s knedlíky a se zelim mel deda velmi rád.
-                 Babidce to bylo jedno, ta se tesila hlavne na venecky, ale nedávala to znát. Její dcera varí tak dobre, protoze ji to sama naudila. Pripravit dobry obed, to je skutedné umeni.
-                 Sárka se rozhodla, ze se také naudi tak dobre varit. Proto pomáhala mamince s obedem. Po obede püjde s dédeckem na procházku, ale jestè predtim ochutná mamin&iny vene&ky.
-                 Dededek se za stolem tváril spokojene. Aby taky ne, kdyz si detl své oblíbené noviny.
-                 Skoda, Ze nemüze bafat fajfku.
-                 U
-                 obeda se to nedélá, prohlásila maminka a noviny mu vzala.
-                 Dededek si smutne povzdechl a uchopil licku. Alespon se dobre naji. Mrki na Sárku a pustil se do jídia
-                 `
+                 "XML (Extensible Markup Language) je značkovací jazyk pro strukturování a organizaci dat. Používá značky pro označení a hierarchické uspořádání prvků. XML umožňuje vytvářet vlastní značky a je hojně využíván pro výměnu dat mezi systémy nezávisle na platformě. Je čitelný pro lidi i počítače a je používán pro přenos informací na webu, serializaci dat a výměnu informací mezi webovými službami."
                ],
  },
      {  
@@ -198,17 +184,7 @@ export const testsSections = [
            number: 11,
            exercises: 
                [
-                  `Malá Jindriska se udila psát. Cislo 8. Dve briska, jedno velké a jedno malé. casto se jí pletlo, kde má to malé brísko vlastne byt, jestli nahore nebo dole. Presto má osmicku ráda. I kdyz je to takové obycejné cislo, müze v Zivote cloveka hodne znamenat. Jindriska se zamyslela, kolik osmicek vlastne zná. Do skoly to má celkem 8 kilometrü. Doma maji 8 slepic a 8 kacen.
-                  ve tríde je osmá v
-                  abecednim poradí a autobus jí jede presne v 8 hodin. Celkem má 8 panenek a 8 obleckü. Do zoologické zahrady pújdou v sobotu jiz po osmé. sestri¿ka Anezka má
-                  8 let a sestrenice
-                  Alzbeta chodi do 8. tridy. Ze psani Jindriska dostala celkem 8 znamek, ale nebyly to osmicky, nybrz samé jednicky. Tatinek za svij zivot pracoval celkem v osmi rüznych profesich.
-                  Maminka je naopak uz 8. roken v
-                  domácnosti. Jindriska prekvapenim vyskodila ze zidle.
-                  Tatínek má narozeniny osmého a to je zítra. Musí mu dát nejaky dárek. Mozná bude nejlepsim dárkem to, kdyz se naudí tu osmidku dobre psát. Takze znovu 8, 8, 8. Opet udelala chybu. Posledni osmicka je jinak bañatá, nez osmidky predchozi. A Jindriska si preje jako devátou známku dostat jednicku. Rozhodla se, Ze bude psát osmicky tak dlouho, dokud to nebude dobré. 8, 8,
-                  8 . Úsmev. Tyhle osmi&ky
-                  vypadaji dobre. Velké brisko dole, malé brísko nahore. A tak to má byt. Zítra dostane jednicku. Jindriska se uz rozhodla. Osmicka bude jeji oblíbené ¿íslo.
-                  `
+                "JSON (JavaScript Object Notation) je lehký formát pro výměnu dat, který je založený na syntaktických prvcích JavaScriptu. Formát JSON umožňuje reprezentovat strukturovaná data ve formě objektů, polek, čísel, řetězců, logických hodnot a null hodnot. Data jsou organizována hierarchicky a jsou snadno interpretovatelná různými programovacími jazyky. JSON se často používá pro přenos dat mezi klientem a serverem v rozhraních API, ukládání konfigurací, výměnu informací v aplikacích a pro zpracování dat v JavaScriptu i jiných jazycích."
                ],
  },
      {  
@@ -216,16 +192,7 @@ export const testsSections = [
            number: 12,
            exercises: 
                [
-                  `Jarda dnes nebyl stastny. Obloha zamracená, studeny vítr a Jarda jdoucí smerem domú, hlava sklonená. Jarda dnes nemá k úsmevu zádny düvod. V Zákovské kní¿ce se na nej usmivá velké císlo 5. Cervená pétka se v Jardove Zákovské knizce roztahuje na dvou rádcich a dává najevo, ¿e Jarda dnes neumel. Fyzika neni pro mè, rekl si Jarda. pri zkouseni se nedá na nic vymluvit, pri zkouseni nelze improvizovat. Bud
-                  umís nebo ne. Velké dislo 5 je toho dükazem. Radéji by sel hrát fotbal nebo sipky. Ale Jarda vi,
-                  Ze táta mu to
-                  nepovolí. Kdyz se naposledy v Zákovské kni¿ce ukázalo ¿íslo 5, tak Jarda dostal domáci vezeni a dokonce se nemohl dívat na televizi.
-                  Tyden nemohl sledovat svij oblíbeny seriál o
-                  robotovi ¿. 5. K tomu, aby si Jarda fyziku polepsil, by potreboval nejméne 5 jednicek. Z fyziky je na propadnuti a ucitel ho nemá rád. Ríká,
-                  Ze chce, aby si Jarda petku
-                  opravil, vyzkousi ho a dá mu znovu za pet. Takhle si fyziku nikdy nespravi. Mit v Zákovské knizce 5 pétek z jednoho predmetu, to neni dobrá vec. Do konce roku zbyvá uz jen pár mésicú a fyzika se nepohnula. V tom se Jarda rozhodi.
-                  Zákovskou knizku proste schová a doma nerekne nic. Fyziku se doudí a nechá se vyzkouset driv, nez ucitel znovu vyzkousi jeho. Je lepsi byt pripraven, ne~ se nechat zaskodit nenadálym zkousenim. Jak bylo to prislovi? Kdo brvá pripraven, nebyvá prekvapen.
-                   `
+                "Hook je pojem používaný v kontextu Reactu. Hook je funkce, která umožňuje komponentám v Reactu využívat stav (state) a další funkce spojené s životním cyklem komponenty. Hook umožňuje komponentám udržovat vnitřní stav a reagovat na události nebo provádět operace při aktualizaci komponenty. Nejznámějším hookem v Reactu je useState, který umožňuje komponentám uchovávat a aktualizovat stav. Existují také další hooky, jako useEffect, useContext, useRef a mnoho dalších, které přidávají další funkcionalitu a možnosti do komponent v Reactu. Používání hooků umožňuje psát kompaktnější, čitelnější a efektivnější kód v Reactu."
                ],
  },
      {  
@@ -233,10 +200,7 @@ export const testsSections = [
            number: 13,
            exercises: 
                [
-                  `V obou trídach bylo celkem 58 chlapcú a dívek. Do tohoto po¿tu patri celkem 7 záki nemocnych, 8 záki na zahranicnim zájezdu, 5 chlapcù na fotbalovém turnaji, 7 chlapcù v podítacovém krouzku, 8 dívek ve vitvarnem krouzku a 7 divek v hudebnim krouzku. Zjistete, kolik zbylo ve tridách deti. v obou tridách bylo celkem 58 chlapci a divek. ve tride A bylo • 5 chlapcü více nez ve tride B. ve tride B bylo o 7 divek méne nez ve tride A. ve tride A bylo o jednu pětinu vice žáki než ve třídě B. Kolik bylo v kazdé tride divek a kolik chlapcü. dislo 7 je Stastné číslo pro mnoho lidi.
-                  Sedmy den v trdnu slouzi pro odpodinek. v pohádce bylo 7 trpaslíkü a ve filmu 7 statednvch kovboiü. Sedmicka je odedávna skloñována ve vsech pádech jako ¿íslo prinásejíci Stésti a blahobyt. Ze Starého zákona známe 7 tucnych a 7 hladovych let. Krome sedmicky se obdas za dobré díslo povazuje i ¿íslo 5. Byvá symbolem nikoli stèsti, ale moudrosti a rovnováhy. Pétka je povazována za bozské díslo a kazdy, kdo se s ni potká, by mel byt odmenen. Tedy krome skoly. Cisla 5 a 7 jsou tedy ¿ísla, se kterymi müzeme poditat na cest₴ Zivotem. císlo 8 je tak trochu záhadné.
-                  Jeho bríska by mohla vypovídat o tucnosti, ale casto tomu
-                  tak neni. Osmicka symbolizuje chudobu a nedostatek finanenich prostredkü. Na druhou stranu ukazuje na silnou osobnost. Silná osobnost se slabou vilí peníze neprinese Pokud je osmicka provázána se znamením lva, dotycná osoba müze mít sklon k závislosti na alkoholu.`
+                  "useState() je hook v Reactu, který umožňuje komponentám uchovávat a aktualizovat vnitřní stav. Pomocí useState můžeme vytvořit proměnnou stavu a přidruženou funkci pro její aktualizaci. Při inicializaci useState poskytujeme počáteční hodnotu pro daný stav. Hook nám vrátí pole obsahující hodnotu stavu a funkci pro její aktualizaci. Při volání této aktualizační funkce se stav změní a komponenta se překreslí, aby zohlednila novou hodnotu."
                ],
  },
      {  
@@ -244,14 +208,7 @@ export const testsSections = [
            number: 14,
            exercises: 
                [
-                  `Císlo 6 je cislem zvlástnim, nekdy dobrym a ob¿as spatnym.
-                  Krestansky Novv zákon toto cislo ve spojeni s dalsimi dvéma sestkami povazuje za dislo zlé, vylozene negativni. Sestka sama o sobé jako jedno ¿íslo vypadá neskodnè. Nékteri lidé mají ¿íslo 6 rádi. Vezmème si treba takovou hru v kostky, kde kdyz hodime sestku, nebo dokonce tri sestky, ziskame solidni podet bodu. Cislo 6 si v kostkách vzdy povazujeme
-                  a nezatracujeme jej pri prvni prilezitosti. Taková sedmi¿ka je sice stastné díslo, ale na kostce bychom ji hledali marne. Krychle má pouze 6 stran a to se jiz nikdy nezm₴ní.
-                  Hodit Sestku ve hre, kde se pouzivá hraci kostka, vetsinou znamená rychly postup a snadné dosazeni cile. Oproti tomu v kartách cislo 6 neni vúbec uctiváno. Karta je to slabá a hodi se tak jedine k dopineni postupové rady nebo k
-                  rychlému odhozeni na spolednou hromádku karet. Sedmicka v kartách zári, zejména ve hre jménem Sedma. vylozit kartu s
-                  §íslem 6 na stül tedy lze, ale nejlépe v úvodu hry, abychom se tohoto disla rychle zbavili. U sestky je jediné stesti to, ze se nepouzivá ve skole jako dalsí hodnotící známka za dislem 5. UZ jsme mohli slyset názor leckterého rozlobeného uditele, ze kdyby bylo dislo 6 jako známka, za takovy
-                  hrozny vykon by ji urcite zkousenému Zákovi dal. Existuji v§ak zeme, kde je hodnoceni obrácené. Misto jednidek se dávají pétky a naopak. Záci v tëchto zemich by nejspis uvítali ziskat za vynikajici vykon u tabule nebo v proverce právé díslo 6.
-                  `
+                  "useEffect() je hook v Reactu, který umožňuje komponentám provádět určité akce v reakci na změny stavu nebo jiné události. Pomocí useEffect můžeme definovat funkci, která se spustí po vykreslení komponenty, a také v případě změny zadaných závislostí.Funkce, kterou předáme do useEffect, se spustí po vykreslení komponenty a při každé změně některé z uvedených závislostí (dependency1, dependency2). Můžeme zde provádět různé akce, například volání API, manipulaci s DOM, odběr událostí nebo aktualizaci stavu."
                ],
  },
      {  
@@ -259,13 +216,7 @@ export const testsSections = [
            number: 15,
            exercises: 
                [
-                  `Císlo 9 je svim zpúsobem magické dislo, které má svou dlouhou tradici. v Indii existuje jedna stará legenda o deviti mudrcich, jejich≥ moudrost prevysuje cely svet.
-                  Téchto 9 mudrcú velmi dobre strezi svá tajemstvi a jen jednou za tisic let se s dobrym ¿lovekem, kterého si sami vyberou, o jedno ze svych mnoha magickrch umení rozdelí.
-                  Kdyz se zamyslíme nad magii disla 9, obdrzime dve trojky,
-                  tri krat tri. Jestli trojka je stastné císlo, potom v devítce je násobena hned trikrát a umocnêna dvakrát. V numerologii je dislo 9 cislem intelektuálu a idealistü. Kdo je nositelem tohoto císla, dosahne splneni svych osobnich cílu. Císlo devet prinási úspech a napineni osobnich ambici. Lidé s císlem 9 se rádi ukazují na vereinosti miluií slávu a obdiv. Negativnimi vlastnostmi je zárlivost
-                  a nevèra. Pokud sklouzneme o tri dísla nize na císlo 6, zjistime, Ze sestka symbolizuje prosperitu, intuitivni myslení a zároven organizadni schopnosti. Lidé s tímto
-                  ¿íslem jsou pevni, silni a pracovne plodni. Úspech je postaven na tvrdé a usilovné práci, která se müze projevovat v pesimistickém charakteru nositelu císla 6. zdá se tedy, ze díslo 6 také prinási naplneni ambici, ale za cenu velkého osobního vypèti. Proto by nejspis pro mnoho lidí bylo prijatelné císlo 9, které neslibuje tolik práce, ale zato slibuje mnoho slávy. Osobni dislo lze vypodítat z krestního iména a príjmení nebo z data narození.
-                  Numerologie patri mezi okultni vestecké obory `
+                  "useRef() je hook v Reactu, který umožňuje vytvářet referenci na elementy DOM nebo jiné hodnoty v komponentě. Použití useRef je užitečné, když potřebujeme uchovat hodnotu mezi re-renderováním komponenty a/nebo potřebujeme přistupovat k metodám nebo vlastnostem elementu DOM.Při použití useRef můžeme vytvořit referenční objekt pomocí useRef(initialValue), kde initialValue je počáteční hodnota referencovaného objektu."
                ],
  },
      {  
@@ -273,307 +224,151 @@ export const testsSections = [
            number: 16,
            exercises: 
                [
-                  `Nase skola má celkovy rozpodet na tento rok 8 965 455 K&. Z tèchto prostredki je treba podítat ¿ástku 4 498 668 K& na mzdové prostredky a mimorádne ¿ástku 4 466 787 k& na opravu budovy. Chybi nám finance na provoz trid, beznou údrzbu, úhradu plynu, vody, elektfiny a tepla. Je treba tento defcit resit strednedobym úverem z Ceskoslovenské obchodní banky ve vysi 4 miliony k¿. Pracovní místa budou zajistêna, situace je pod kontrolou. Skolní jídelna hospodari samostatne jako spole¿nost s rudenim omezenym. Tento rok se její hospodareni ocitlo v mimorádném zisku 455 899 к& Dobry hospodársky vysledek je dán obchodni aktivitou smerem k obci, kdy jídelna zásobuie hotovimi jídly pecovatelsky dúm a také vsechny obdany, kteri o tuto sluzbu projevi zájem. Prísti rok plánujeme nákup 4 novych kapacitnich
-                  automatickych mixérü. Vzhledem k levnym jidlum ze skolni jidelny do$lo k mirnému prerozdéleni trhu v obci.
-                  Restauracim souhrnne poklesly trzby o 4 procenta a zdá se, ze trend bude jeste pokradovat. Ing. Ripa, ktery je starosta obce, ¿innost jídelny podporuie a sluZby zeiména pro obdany v düchodu schvaluje. Diky dobrym vysledkúm müze jídelna posilit svij provoz o 4 nové kucharky. Oproti tomu
-                  kazdá ze 4 restaurací v obci propusti právé jednu pracovnici kuchyne. Doslo k prerozdeleni pracovnich sil v rámci obce bez vyraznejsich následkü. Nezam@stnanost se v regionu udrzuje na deviti procentech. Cílem odpovèdnrch cinitelu je srazit ¿íslo o 4 procenta. Z tohoto divodu se pripravuje dotace ve vysi 45 milionü korun, která bude urcena pro zadinajici podnikatele zejména v oblasti potravinarskych sluzeb.
-                   `
-               ],
- },
-     {  
-           id: 17,
-           number: 17,
-           exercises: 
-               [
-                  `Dluzíte mi 500 000 K&.
-                  Podám na vás Zalobu, dekejte
-                  exekuci. Nula od nuly pojde. Nikdy neprodávejte na aluh.
-                  Celková vyse mych pohledávek dini 450 000 K&. Rád bych zjistil, kdo mi poslal na údet 60 000 K&. Je prijemné ziskat penize a nic pro to neudelat. Pan Cerny se zavázal zaplatit 78 000 K& na konto do rakouské Erste banky. Cástka bude blokována, dokud nedojde k naplneni závazku ze strany
-                  dodavatele.
-                  Ztráta nasi firmy za minulé údetni období
-                  cinila 854 000 K&. Situaci je treba vyresit. v tuto chvili máme 700 zaméstnancú a pouze 4 nové zakázky. Navrhuji z dúvodu úspory mzdovych nákladü propustit 400 pracovnikü.
-                  Neni jiná mo≥nost, podobné problémy má dalsich 50 firem.
-                  Zbyvajícim zamestnancum zvysime plat o 5 000 KC. Nyni je treba urdit pravidlo, podle kterého propustíme 400 zamestnancü. Kazdému vyplatime odstupné ve vysi 490 000 к&.
-                  Na trhu zavládla recese, kterou stále neni moné oznadit za hospodárskou krizi. I kdyz stoupá nezamestnanost, nase ména si vede velmi dobre. Je treba zalozit 5 novych pobodek ve velkych zahranidnich mestech a prijmout 60 kmenovych pracovnikú. Posilime zahrani¿ni obchod a vylepsíme nás rozpodet. Ing. Vocásek, obchodni manzer, jiz pripravil koncepci pro pristich 40 mesicú. Má moji plnou podporu. Do jeho tymu zaradíme pana Mgr. Cerného, ktery povede zahranidni sekci.
-                  Rozpodet zahrani¿ni sekce firmy bude
-                  dinit 50 455 000 K&. z têchto prostredkù je treba cástedne profinancovat provoz novych zahrani&nich pobodek. Odekávam, Ze dojde k nárüstu vynost nejméne o 20 procent. V prípade nesplnèní plánu si odpovední pracovníci ponesou patrioné následky.
-                  
-                   `
-               ],
- },
-     {  
-           id: 18,
-           number: 18,
-           exercises: 
-               [
-                  `Do nasi firmy nastoupili 3 noví pracovnici. Technolog pan Vorisek, provozni manazer pan Jaksa a údetní paní Hlavatá.
-                  Na zapracováni mají celkem 3 mésice. Nase firma bude integrovat informadni systém. vsichni tri tito pracovníci mají s informadnim systémem velké zkusenosti. Po ukoncené implementaci informacního systému dojde ke snizeni pracovníkü nasi firmy o 33 procent.
-                  Uspora mzdovych
-                  prostredkü se projevi na odmenách zbyvajicich zamestnanc®.
-                  Informadni systém zajisti vyssi efektivitu firmy. Zatímco dríve trvalo pêti úcetnim 3 dny zpracováni mezd. s novym informa¿nim systémem zvládne mzdy pouze jediná pracovnice a to za jeden den. Informacni systém bude nasi firmu stát 3 miliony korun. Investované prostredky se vráti bêhem pêti let. vedeni firmy je toho názoru, Ze implementaci informa¿ního systému je treba dát zelenou. Jiz byly podepsány klicové smlouvy s dodavatelskou a implementa&ni firmou. Po dobu 3 mesicu bude v nasi firmé püsobit tym 53 externich pracovnikü, kteri zajisti korektni funk&nost systému ve vsech pobo¿kách nasi firmy. Celková doba implementace by nemela presáhnout 5 mésícú. Takové podminky jsou ve smlouve ujednány. Realizaci informadního systému
-                  v nasí firme predcházelo dlouhodobé vybèrové rizeni. Do Wberového procesu se prihlásilo celkem 43 firem. Vybrat tu pravou bylo obtizné. Reditel firmy kladl diraz na cenu a také spolehlivost informa¿niho systému. z tohoto divodu isme zamerili pozornost na reference. Po zhodnoceni referenci a konedné cenové kalkuci züstaly ve vyberovém rizeni pouze 3 firmy.`
-               ],
- },
-     {  
-           id: 19,
-           number: 19,
-           exercises: 
-               [
-                  `V noci nekdo vyloupil banku. Podle setrení policie se událost prihodila ve 2 hodiny ráno mistniho ¿asu. Pachatelé byli velmi neopatrni. Jejich tváre zachytila bezpednostní kamera stejne jako poznávaci znacku ujizdejiciho vozidla.
-                  Jednalo se o známé firmy. z trezoru banky se jim podarilo sebrat 2 miliony korun. Dalsich 23 milionü züstalo na miste. Za poslednich pêt let se stalo 24 podobnych trestnich dinü. Ze 24 krádezi bylo objasneno celkem 20 trestnych dinü. Je treba posilit prevenci a dükladne zajistit objekty proti podobnym pripadim. Pachatelé se zameruji hlavne na mensi pobodky. Celkove doslo za poslednich pêt let ke krádezi dastky o hodnote 235 milioni korun. Majitelúm bylo vráceno 200 milionû, 35 milionü se nikdy nenaslo. Banky jsou proti krádezim pojistèné. Horsí situace panuje v domácnostech, kde lidé pojistêni nejsou.
-                  Docházi k pripadúm, kdy si pachatel odnese z rodinného domku i nekolik set tisic. Posledni podobná krádez se stala v Rüzové ulici v Praze 2 a ukradeno bylo celkem 200 tisíc korun ceskych. Policie doporucuje nedrzet doma vetsi hotovost a vhodnym zpüsobem zabezpedit objekt. Náklady na zabezpecení objektu se pohybují od 2 do 20 tisic korun.
-                  Stadi nainstalovat dektektor pohybu, bezpecnostní zámky do vsech vstupnich dveri, mrize na nízko polozená okna nebo maketu kamery na vnejsi zed. Nekdy postaci i nápis, ktery upozornuje na to, Ze objekt je hlídán velice ostrym a bystrym pejskem. Duverivi jsou zejména stari lidé, kteri do domu pusti i neznámé osoby. Nedávno takto jedna düchodkyne prisla • 2000 korun, které chytrákúm predala v domnêni, Ze hradi poplatek za telefon. Dodnes tito pachatelé nebyli dopadeni
-                  `
+                  "Ternární operátor je způsob zápisu podmínky ve formě jednoho výrazu, který umožňuje vybrat jednu z dvou hodnot na základě splnění podmínky. Ternární operátor se skládá z tří částí: podmínky, hodnoty pro případ, že je podmínka pravdivá, a hodnoty pro případ, že je podmínka nepravdivá. Výsledkem ternárního operátoru je vybraná hodnota závislá na splnění podmínky. Tento zápis je užitečný pro jednoduché podmíněné rozhodování a umožňuje zkrácený a čitelný kód."
                ],
  },
 
- {  
-  id: 20,
-  number: 20,
-  exercises: 
-      [
-         `V nekterych programovacich jazycich má znaménko = rüzny vyznam. V matematice by tyto nové vyznamy mozná neobstály.
-         Na zacátku zdrojového kódu si vetsinou deklarujeme globálni proménné. Napiseme vyraz typu c = 2. Promenné c priradime hodnotu 2. Jestlize v podmince uvedeme syntaxi с = 2, podmínka nebude fungovat z düvodu, ¿e znaménko = je bráno jako operátor prirazeni hodnoty promenné a nikoli porovnání
-         dvou hodnot. Pro porovnáni dvou hodnot se musi uvést dvè znaménka rovna se == za sebou. V podmínce tedy misto vyrazu c = 2 uvedeme c == 2. I znaménko plus + má v programování rúzny viznam. Samozrejme zálezí na typu programovacího jazyka. Standardne u znaménka plus + predpokládame secteni dvou hodnot napriklad vyrazem c + 2, kdy promennou c navysime o hodnotu dva. Ob¿as mizeme v kódu narazit na tzv. operátor inkrementace, kterym se hodnota promenné navysuje
-         • ¿íslo jedna. Stací zapsat vyraz c++ a je vymalováno.
-         Proménná c si navysi hodnotu o jeden bodik. Kromè tohoto zpúsobu u≥ití si znaménko plus dobre vede i ve spojováni textovich retezci a promennych. Tímto zpúsobem se pouzivá napríklad ve skriptovacim jazyku Javascript. Oproti tomu se v PHP ke spojeni odlisnych typù pouzívá jednoduse tecka. AZ
-         tedy nekdy uvidite zvlástni zápis, kde jsou dve znaménka +
-         nebo = vedle sebe,
-         mize se jednat o vypis zdrojového kódu
-         nekterého z uvedenych programovacich jazykü. Nyni tedy nebudete zmateni a jednoznadne urdite, kdy se jedná o inkrementaci, prirazeni hodnoty nebo porováni dvou hodnot .  `
-      ],
-},
-
-{
-  id: 3,
-  title: "Expert",
-  url: "./img/exper.png",
-  amount: "13 testu",
-  tests: 
-  [{
-      id: 1,
-      number: 1,
-      exercises: 
-          [
-              "kazajka, fajfka, zira, zara, rifle, karel, kůrka, tretra, kafka, tuk, karafa, fara, kůl, lara, fara, kůl, lara, fara, kůl, lara, fara, kal, jas, sluka, dural, ural, frajer, ilja, karel, kůrka, jirka, deka, rejsek, drak, hůlka, luka, ruka, lusk, hluk, agro, hele, duha, hifi, hele, luka, lak, důl, sůl, kůl, hůl, elf, kůl, rek, drak, klid, hluk, rez, kaz, hůl, hala, gala, zrak, zira, zara, lara, kazajka,"
-          ],
-  },
-{  
-      id: 2,
-      number: 2,
-      exercises: 
-          [
-             "wais, otrok, www, kotoul, luk, kůl, půl, whiska, fifle, wfw, rifle, oko, koko, ola, olga, gaga, weida, filuta, trata, dwarf, drak, whois, wifi, kazajka, dwarf, drak, hrad, hrot, waa, wais, sluj, rez, wf, wfw, elf, zrak, wide, wke, wrd, wks, hůl, wok, hůlka, word, gala, world, hala, dcerka, drak, wol, wosa, zrak, wri, wrd, wsh, www, wosa, wri, whs. whs, kazajka, wide, wade, whiska, ohrada, zahrada,"
-          ],
-},
-{  
-      id: 3,
-      number: 3,
-      exercises: 
-          [
-             "jirka, ola, olga, pepa, josef, karel, karla, alda, alois, qwq. qoq, wow, waw, gsa, wzo, wlk, wtw, qtq, qat, squat, strop, plat, krop, zahrada, rostlina, trezor, zetor, lopata, rez jde dolů, traktor je zetor, sestra a teta, opel je auto, star trek, hrot, foto, klapka, alfa plus, klika, tretka, autor, politik, skladatel, pisatel, fotograf, doktor, zoolog, pizza, kohout, prase, osel, had, orel."
-          ],
-},
-{  
-      id: 4,
-      number: 4,
-      exercises: 
-          [
-             "maska, marod, mord, mela, meta, mekka, vata, vosa, vatra, koule, kotoul, matula, vitamat, slalom, mikroskop, makro, otrava, potrava, varta, vatra, morek z kosti, plůda a humus, metro, semetrika, vosk, oves, sevo, vartovat, otravovat, moje je i tvoje, to je moje, moje je i tvoje, to je moje, moje teta je vanda, javor je strom, fik a je to hotovo, půlka pole je jeho, auto ford, vitana je firma, vimr, vuml,"
-          ],
-},
-{  
-      id: 5,
-      number: 5,
-      exercises: 
-          [
-             "sada, brod, nudle, fena, bagr, zip, hon, zvon, mord, lord, raketa, maketa, nugeta, bageta, riziko, bard, nuda, bouda, nikl, fenikl, stavba, plavba, tavit, bavit, nosit, zdravit, plavba na podzim, let raketou, do kempu na kole nebo autem, orba pluhem, můj traktor, eroze svahu, nedostatek zdrojů, to je moje vůle, rebel z lidu, jubileum jeho matky, mnoho,"
-          ],
-},
-{  
-      id: 6,
-      number: 6,
-      exercises: 
-          [
-             "cibule, cetka, cedr, cvok, coul, cmunda, citrus, citron, ocas, lekce, vůdce, strůjce, hladce, ocet, celer, pitomec, cedule, cejch, cifra, cudnost, choroba, charakter, chata, chaloupka u lesa, moje chlouba, charta pro lidi, deset coulů, charisma a charakter politika, ocejchujte toho chlapa, chata je u mostu, tvůj plat je hromada cifer, citrusy rostou v tropech, natrhej cibuli a celer, choroba,"
-          ],
-},
-{  
-      id: 7,
-      number: 7,
-      exercises: 
-          [
-             "xenon, saxofon, oxid, xantipa, xenie, fax, taxa, jax, maxim, maximum, wax, rexie, hoax, vox, box, nix, fix, tix,  pixel, trax, xenofobie, xerox, pax, rex, max, lux, xena, taxi, fax, koupit semtex, maxipes je pes, praxe v bance, kodex cti, latex je hmota, mixer je na lince, ztratil text, asterix a obelix, nastav sextant, xaverov je na severu, martin maxa, sixta je prima, maxim maximov, můj pes je rex,"
-          ],
-},
-{  
-      id: 8,
-      number: 8,
-      exercises: 
-          [
-             "lymfa, nymfa, pyl, kyj, vyj, byl, myj, gyro, wywern, zyxel, pytel, rypadlo, vykat, vylomit, vyrvat, bydlit, obyvatel, dobytek, bylina, byt, kobyla, polykat, plynout, vzlykat, myslit, hmyz, kopyto, zpytovat, pykat, syn, usychat, sypat, vydra v noci, brzy k jitru, jazyk hada, pytel brambor,  vykat profesorovi, vylomit okno, vyrvat pant, bydlit doma, dobytek se pase, bylina je na louce, můj byt i kobyla,"
-          ],
-},
-{  
-      id: 9,
-      number: 9,
-      exercises: 
-          [
-             "úkol, úloha, úleva, útes, úzko, úaz, útrata, úplata, úkrok, úbor, úklad, úmor, úvoz, úklep, únava, úskok, úklad, útraty, ústroj, úsek, úroda, úrok, útok, úhor, úl, útroby, úhyn, úl, útrata, ústrk, úklid, úklad, úloha, únava, útrata, úplata, úbor z vesnice, úrok v bance, útok velryby, úhor na poli, útroby klokana, úhyn ryb v potoce, útrata na trhu, ústrk soka, úklid doma, úklad vraha, úplata v kufru,"
-          ],
-},
-{  
-      id: 10,
-      number: 10,
-      exercises: 
-          [
-             "Zita, Urban, Ivana, Omar, Pavel, Helena, Jana, Karel, Lena, Norbert, Marie, Zuzana, Ivana, Petr, Hana, Katka, Marta, Olga, Helga, Magda, Nela, Jan, Libor, Igor, Marek, Ondra, Olga a Helga, Nela a Hela, Petr a Pavel, Marek a Lenka, Milan a Jan, Irena a Libor, Marcela a Ondra, Zita a Karel, Otylka a Matylda, Jirka a Lucie, Josef a Karla, Jindra a Olga, Pavel a Petr, Urban a Karel, Jan a Zita, Jaroslav,"
-          ],
-},
-{  
-      id: 11,
-      number: 11,
-      exercises: 
-          [
-             "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou, Polsko, Rakousko, Slovensko, Slovinsko, Rumunsko, Rusko, Francie, Norsko, Portugalsko, Ukrajina, Bosna a Hercegovina, Monako, Lucembursko, Egypt, Libye, Angola, Maroko, Senegal, Mali, Niger, Etiopie, Kamerun, Ghana, Togo, Uganda, Kongo, Guinea,Gabon, Zambie,Malawi, Mosambik, Tanzanie, Burundi, Rwanda, Seychely, Madagaskar, Namibie, Botswana, Svazijsko, Lesotho, Eritrea, Tunisko, Brunej, Gruzie, Indie, Izrael, Japonsko, Jemen, Katar, Kuvajt, Laos, Libanon, Malajsie, Maledivy, Mongolsko, Singapur, Palestina, Uganda, Thajsko, Vietnam, Kiribati, Nauru, Palau, Samoa, Tonga, Tuvalu, Vanuatu, Argentina, Guyana, Chile, Kolumbie, Paraguay, Peru, Surinam, Trinidad a Tobago, Uruguay, Venezuela, Haiti, Antigua a Barbuda, Bahamy, Barbados, Belize, Dominika, Kuba, Grenada, Guatemala, Honduras, Jamajka, Kanada, Kostarika"
-          ],
-},
-{  
-      id: 12,
-      number: 12,
-      exercises: 
-          [
-             `Jan Welzl je spisovatel. Romaneto je druh literatury. Kdo napsal Rukopisy, se dodnes nezjistilo. Negramotnost roste. Studovat jazyk je nutno s důrazem na praxi. Honza se vydal do Menzy vyplnit testy IQ. Jirka si testy nejprve koupil. Byla tam spousta studentů. Stoupl si za pult, kde jej oslovila obsluha. Koupil si knihu a rychle usedl na lavici. Uplynulo mnoho hodin. Druhou půlku knihy prostuduje jindy.
-             Jan Neruda se narodil v Praze. Otec pracoval v trafice, matka posluhovala u geologa Barranda. Oba pracovali dlouho do noci. Byla chudoba, o chleba se muselo prosit. Po gymnasiu pracoval a potom studoval filozofii. Vedle studia publikoval u novin Tabesbote. Stal se autorem fejetonů a poezie. Tu ale tehdy nikdo nepochopil. Kritici psali o jeho almanachu. Fejetony psal i pro redakci Hlasu. Procestoval Evropu a dojmy zapsal do mnoha cestopisů.
-             Oskar Wilde byl původem Ir. Jeho vzory byly J. Ruskin a W. Patera. Studoval v Oxfordu literaturu i filozofi. Ztratil dva roky svobody. Obraz Doriana Graye a drama Salome je jeho tvorba. Jakub Arbes psal romaneta. Narodil se v Praze, opustil studia. Potom vedl boj o svou existenci. Dostal vyhazov z redakce. `
-          ],
-},
-{  
-      id: 13,
-      number: 13,
-      exercises: 
-          [
-             `HTML je zkratka slov Hyper Text Markup Language. XML je zkratka slov eXtensible Markup Language. SGML je zkratka slov Standard Generalized Markup Language a je to norma ISO. SGML je tedy standard pro HTML a XML. Javascript NEVZNIKL Z Javy. XML NEOBSAHUJE CSS. XML OBSAHUJE tagy. XML je CASE SENSITIVE jazyk. XML dokument obsahuje DTD. DTD je zkratka slov Document Type Definition. Document Type
-             Definition, Definice Typu Dokumentu. Je to vlastnost XML pro tvorbu elementů a atributů. XML bez DTD? Ano. Internet Explorer pracuje s DTD. Validace dokumentu XML je NUTNOST. Validita potvrzuje WELL FORMED dokumentu XML. CSS, Cascading Style Sheets. CSS je pro HTML i XML. CSS obsahuje SELEKTORY, DEKLARACE a VLASTNOSTI. Vlastnost obsahuje HODNOTU. Definice stylu obsahuje DEKLARACI. ARIAL, COURIER, HELVETICA, TIMES ROMAN jsou typy fontů. ITALIC A NORMAL
-             jsou styly fontů. Styl textu obsahuje mnoho parametrů. V XML lze vyhotovit tiskopis pro tisk, dokument pro podnikatele i aplikaci. XML nenahrazuje HTML. XML existuje vedle HTML. Je to alternativa k tomuto jazyku. XHTML nahrazuje HTML. Pravidla jsou ZDOKONALENA. Dokumenty XHTML projdou VALIDITOU, a proto se jsou podle normy WELL FORMED.
-             `
-          ],
-},
-]},
 ]},
 {
     id: 3,
     title: "Expert",
     url: "./img/expert.png",
-    amount: "13 testu",
+    amount: "9 testů",
     tests: 
     [{
         id: 1,
-        number: 1,
         exercises: 
             [
-                "kazajka, fajfka, zira, zara, rifle, karel, kůrka, tretra, kafka, tuk, karafa, fara, kůl, lara, fara, kůl, lara, fara, kůl, lara, fara, kal, jas, sluka, dural, ural, frajer, ilja, karel, kůrka, jirka, deka, rejsek, drak, hůlka, luka, ruka, lusk, hluk, agro, hele, duha, hifi, hele, luka, lak, důl, sůl, kůl, hůl, elf, kůl, rek, drak, klid, hluk, rez, kaz, hůl, hala, gala, zrak, zira, zara, lara, kazajka,"
+                `Flexbox je moderní CSS layoutový modul, který poskytuje flexibilní způsob uspořádání prvků uvnitř kontejneru. Flexbox je navržen tak, aby řešil problémy s umisťováním a zarovnáváním prvků v rámci responzivních webových designů.
+
+                Flexbox funguje pomocí kontejneru a prvků uvnitř něj. Kontejner se označuje jako flexový kontejner (flex container) a prvky uvnitř jsou flexové prvky (flex items). Flexbox poskytuje různé vlastnosti a pravidla, která umožňují ovlivňovat chování a rozložení těchto prvků.
+                
+                Některé z hlavních vlastností Flexboxu zahrnují:
+                - Možnost definovat orientaci prvků pomocí vlastnosti "flex-direction", která určuje, zda se prvky řadí horizontálně nebo vertikálně.
+                - Flexibilní přizpůsobování velikosti prvků pomocí vlastnosti "flex-grow", "flex-shrink" a "flex-basis", které určují, jak se prvky rozdělují v prostoru.
+                - Možnost zarovnávat prvky v rámci kontejneru pomocí vlastností "justify-content" (horizontální zarovnání) a "align-items" (vertikální zarovnání).
+                - Možnost měnit pořadí prvků pomocí vlastnosti "order", která určuje, v jakém pořadí se prvky zobrazují.
+                
+                Flexbox je výkonný nástroj pro vytváření responzivních a flexibilních rozložení prvků ve webových designech. Jeho jednoduchá syntaxe a podpora ve většině moderních prohlížečů ho činí oblíbeným nástrojem pro vývojáře.`
             ],
     },
   {  
         id: 2,
-        number: 2,
         exercises: 
             [
-               "wais, otrok, www, kotoul, luk, kůl, půl, whiska, fifle, wfw, rifle, oko, koko, ola, olga, gaga, weida, filuta, trata, dwarf, drak, whois, wifi, kazajka, dwarf, drak, hrad, hrot, waa, wais, sluj, rez, wf, wfw, elf, zrak, wide, wke, wrd, wks, hůl, wok, hůlka, word, gala, world, hala, dcerka, drak, wol, wosa, zrak, wri, wrd, wsh, www, wosa, wri, whs. whs, kazajka, wide, wade, whiska, ohrada, zahrada,"
+               `CSS Grid je mocný layoutový modul v CSS, který umožňuje vytvářet kompletní mřížková rozložení webových stránek. S CSS Gridem můžete snadno a flexibilně rozdělit obsah na sloupce a řádky, které se přizpůsobují velikosti okna prohlížeče.
+
+               Hlavní prvky CSS Gridu jsou mřížkový kontejner (grid container) a mřížkové prvky (grid items). Mřížkový kontejner definuje mřížku pomocí vlastnosti "display: grid" a určuje počet sloupců, řádků a jejich velikosti. Mřížkové prvky jsou umístěny uvnitř kontejneru a mohou být přiděleny do jednoho nebo více sloupců a řádků.
+               
+               CSS Grid poskytuje širokou škálu vlastností, které umožňují ovlivňovat rozložení prvků:
+               - "grid-template-columns" a "grid-template-rows" určují počet a velikost sloupců a řádků.
+               - "grid-gap" definuje mezery mezi sloupci a řádky.
+               - "grid-column" a "grid-row" určují, do kterých sloupců a řádků patří daný prvek.
+               - "grid-area" umožňuje pojmenovat oblasti mřížky a přiřadit prvky do těchto oblastí.
+               
+               Díky CSS Gridu můžete snadno vytvářet složité a responzivní mřížkové rozložení, které se automaticky přizpůsobuje různým zařízením a velikostem obrazovek. CSS Grid je podporován ve většině moderních prohlížečů a poskytuje výkonný a efektivní způsob, jak spravovat rozložení prvků ve webovém designu.`
             ],
 },
   {  
         id: 3,
-        number: 3,
         exercises: 
             [
-               "jirka, ola, olga, pepa, josef, karel, karla, alda, alois, qwq. qoq, wow, waw, gsa, wzo, wlk, wtw, qtq, qat, squat, strop, plat, krop, zahrada, rostlina, trezor, zetor, lopata, rez jde dolů, traktor je zetor, sestra a teta, opel je auto, star trek, hrot, foto, klapka, alfa plus, klika, tretka, autor, politik, skladatel, pisatel, fotograf, doktor, zoolog, pizza, kohout, prase, osel, had, orel."
+              `Responzivní design je přístup k vývoji webových stránek, který se zaměřuje na tvorbu rozložení a designu, které se automaticky přizpůsobuje různým zařízením a velikostem obrazovek. Cílem responzivního designu je zajistit optimální uživatelský zážitek a čitelnost obsahu na mobilních zařízeních, tabletech a desktopových počítačích.
+
+              Responzivní design se opírá o použití flexibilních a fluidních jednotek pro rozmístění prvků, jako jsou procenta, em nebo viewport units (vw, vh). Kombinace CSS media queries umožňuje nastavovat různá rozložení, styly a vlastnosti na základě velikosti obrazovky. Tím lze například skrýt nebo přesunout určité prvky na menších obrazovkách, upravit velikost textu nebo změnit uspořádání sloupců.
+              
+              Díky responzivnímu designu se stránky automaticky přizpůsobují velikosti obrazovky a zajišťují, že obsah zůstává čitelný a dobře strukturovaný. To přináší výhody v oblastech uživatelského zážitku, konverzí, SEO (optimalizace pro vyhledávače) a snadné správy obsahu. Uživatelé mají možnost pohodlně procházet stránky bez nutnosti přibližování nebo posouvání a mají k dispozici jednotný a konzistentní zážitek na různých zařízeních.`
             ],
 },
   {  
         id: 4,
-        number: 4,
         exercises: 
             [
-               "maska, marod, mord, mela, meta, mekka, vata, vosa, vatra, koule, kotoul, matula, vitamat, slalom, mikroskop, makro, otrava, potrava, varta, vatra, morek z kosti, plůda a humus, metro, semetrika, vosk, oves, sevo, vartovat, otravovat, moje je i tvoje, to je moje, moje je i tvoje, to je moje, moje teta je vanda, javor je strom, fik a je to hotovo, půlka pole je jeho, auto ford, vitana je firma, vimr, vuml,"
+               `Webpack je populární nástroj pro správu balíčků a sestavování kódu ve webových aplikacích. Jeho hlavním účelem je zpracování modulárního JavaScriptu, ale je také schopný pracovat s dalšími typy souborů, jako jsou styly, obrázky a další prostřednictvím tzv. "loaderů".
+
+               Webpack funguje na principu vytváření závislostního grafu všech souborů v projektu a jejich transformace do podoby, kterou lze snadno nasadit v prohlížeči. Pomocí konfiguračního souboru (typicky webpack.config.js) lze definovat různá pravidla a pluginy, které upravují chování a výstupní balíčky Webpacku.
+               
+               Mezi hlavní vlastnosti a funkce Webpacku patří:
+               
+               Modulární sestavování: Webpack umožňuje rozdělit kód do modulů a spravovat jejich závislosti. Tím umožňuje organizovat a sdílet kód mezi různými soubory a balíčky.
+               
+               Loader systém: Webpack využívá loadery pro zpracování různých typů souborů. Loadery jsou řetězené transformace, které umožňují převádět soubory na moduly, které jsou srozumitelné pro prohlížeč. Můžete použít loadery například pro kompilaci a optimalizaci JavaScriptu (Babel), zpracování stylů (CSS, SASS) nebo optimalizaci obrázků.
+               
+               Code Splitting: Webpack podporuje rozdělení kódu do menších částí nazývaných "chunks". Tím umožňuje načítat pouze potřebný kód pro danou stránku nebo funkci, což vede k rychlejšímu načítání a optimalizaci výkonu aplikace.
+               
+               Horká aktualizace (Hot Module Replacement - HMR): Tato funkce umožňuje okamžitou aktualizaci kódu v prohlížeči bez nutnosti znovu načítat celou stránku. HMR zajišťuje rychlé iterace během vývoje, kdy můžete okamžitě vidět změny ve své aplikaci.
+               
+               Optimalizace a minifikace: Webpack nabízí různé pluginy pro optimalizaci a minifikaci kódu. Tyto pluginy snižují velikost a zvýšení výkonu vaší aplikace tím, že odstraňují nepotřebný kód, komprimují soubory a provádějí další optimalizační postupy.`
             ],
 },
   {  
         id: 5,
-        number: 5,
         exercises: 
             [
-               "sada, brod, nudle, fena, bagr, zip, hon, zvon, mord, lord, raketa, maketa, nugeta, bageta, riziko, bard, nuda, bouda, nikl, fenikl, stavba, plavba, tavit, bavit, nosit, zdravit, plavba na podzim, let raketou, do kempu na kole nebo autem, orba pluhem, můj traktor, eroze svahu, nedostatek zdrojů, to je moje vůle, rebel z lidu, jubileum jeho matky, mnoho,"
+               `CRUD je základní sada operací, které se používají pro manipulaci s daty v aplikacích nebo databázových systémech. Každá CRUD operace zajišťuje určitý typ interakce s daty a umožňuje vývojářům provádět různé akce nad daty, jako je vytváření, čtení, aktualizace a mazání.
+
+               Zde je podrobnější výklad jednotlivých CRUD operací:
+               
+               1. Create (Vytvoření): Create operace slouží k vytvoření nových datových záznamů nebo entit. Při vytváření nového záznamu se specifikuje struktura dat a přiřazují se jim hodnoty. Například v případě relační databáze by se jednalo o vložení nového řádku do tabulky.
+               
+               2. Read (Čtení): Read operace umožňuje získávání existujících dat nebo záznamů. Tímto způsobem můžete získat potřebná data z databáze nebo jiného úložiště a použít je v aplikaci. Příklady zahrnují čtení řádků z databázové tabulky nebo načítání souborů z disku.
+               
+               3. Update (Aktualizace): Update operace slouží k modifikaci existujících dat nebo záznamů. Tím umožňuje vývojářům aktualizovat informace uložené v databázi či jiném úložišti. Například můžete upravit určité pole v řádku tabulky nebo změnit hodnotu v souboru.
+               
+               4. Delete (Mazání): Delete operace slouží k odstranění dat nebo záznamů. Tímto způsobem můžete odstranit nepotřebné nebo zastaralé informace z databáze nebo jiného úložiště. Příkladem je mazání řádků z tabulky nebo odstranění souborů ze systému.
+               
+               CRUD operace jsou základem pro vytváření a správu dat v aplikacích. Použití těchto operací umožňuje vývojářům interagovat s daty, udržovat je aktuální, provádět změny a zajistit konzistenci datového modelu. CRUD operace jsou také často používány při práci s API, kde se pomocí HTTP metod (POST, GET, PUT, DELETE) realizují odpovídající CRUD operace.`
             ],
 },
   {  
         id: 6,
-        number: 6,
         exercises: 
             [
-               "cibule, cetka, cedr, cvok, coul, cmunda, citrus, citron, ocas, lekce, vůdce, strůjce, hladce, ocet, celer, pitomec, cedule, cejch, cifra, cudnost, choroba, charakter, chata, chaloupka u lesa, moje chlouba, charta pro lidi, deset coulů, charisma a charakter politika, ocejchujte toho chlapa, chata je u mostu, tvůj plat je hromada cifer, citrusy rostou v tropech, natrhej cibuli a celer, choroba,"
-            ],
+                `API (Application Programming Interface) je sada definic, protokolů a nástrojů, které umožňují komunikaci a interakci mezi různými softwarovými komponentami. API poskytuje specifikace, jaké operace a funkce jsou k dispozici a jak je použít.
+
+                API slouží jako rozhraní, které umožňuje komunikaci mezi dvěma nebo více softwarovými systémy, aplikacemi nebo službami. Poskytuje jednotné a standardizované rozhraní, které umožňuje přístup a výměnu dat a funkcionalit mezi různými komponentami.
+                
+                Existuje několik typů API, včetně:
+                
+                1. Web API: Web API je specifickým typem API, které umožňuje komunikaci mezi webovými aplikacemi. Web API je obvykle založeno na protokolu HTTP a využívá URL adresy pro definování konkrétních zdrojů nebo operací, ke kterým mohou klientské aplikace přistupovat.
+                
+                2. REST API: REST (Representational State Transfer) je architektonický styl pro návrh API. REST API využívá standardních HTTP metod (GET, POST, PUT, DELETE) pro manipulaci s daty a komunikaci mezi klientem a serverem. REST API se často používá v webových aplikacích a poskytuje jednoduché a rozšiřitelné rozhraní pro přístup k datům.
+                
+                3. SOAP API: SOAP (Simple Object Access Protocol) je protokol pro výměnu strukturovaných zpráv mezi webovými službami. SOAP API je založeno na XML a poskytuje robustní a formální rozhraní pro komunikaci mezi aplikacemi, které mohou být napsány v různých jazycích a provozovány na různých platformách.
+                
+                API mohou poskytovat různé typy funkcionalit, jako je získávání dat (čtení), vytváření nových dat (vytvoření), aktualizace dat (aktualizace) a mazání dat (mazání). Díky API mohou aplikace komunikovat mezi sebou, sdílet data, využívat služby třetích stran a rozšiřovat svou funkcionalitu pomocí externích zdroj`            ],
 },
   {  
         id: 7,
-        number: 7,
         exercises: 
             [
-               "xenon, saxofon, oxid, xantipa, xenie, fax, taxa, jax, maxim, maximum, wax, rexie, hoax, vox, box, nix, fix, tix,  pixel, trax, xenofobie, xerox, pax, rex, max, lux, xena, taxi, fax, koupit semtex, maxipes je pes, praxe v bance, kodex cti, latex je hmota, mixer je na lince, ztratil text, asterix a obelix, nastav sextant, xaverov je na severu, martin maxa, sixta je prima, maxim maximov, můj pes je rex,"
-            ],
+                `Supabase je moderní open-source platforma, která nabízí kompletní sadu nástrojů pro vývoj a správu webových aplikací a backendů. Jejím hlavním cílem je poskytnout vývojářům jednoduchý a efektivní způsob, jak stavět a spravovat své aplikace s využitím databází a autentizace.
+
+                Jedním z hlavních prvků Supabase je jejich plně spravovaná PostgreSQL databáze v cloudu. S využitím tohoto databázového řešení mohou vývojáři rychle vytvářet, nasazovat a škálovat své aplikace. Díky použití PostgreSQL mohou vývojáři využít všechny pokročilé funkce a dotazovací možnosti, které tato databáze nabízí.
+                
+                Supabase také poskytuje autentizační službu, která umožňuje vývojářům snadno implementovat přihlašování a registraci uživatelů do svých aplikací. S využitím různých poskytovatelů identity, jako je Google, Facebook nebo GitHub, mohou uživatelé pohodlně přistupovat ke svým účtům.
+                
+                Dalším důležitým prvkem Supabase je serverless funkce. S tímto nástrojem mohou vývojáři vytvářet a nasazovat vlastní backendové funkce bez nutnosti spravovat vlastní serverovou infrastrukturu. Tímto způsobem mohou snadno přidávat funkcionalitu do svých aplikací bez složité konfigurace a nasazení.`           
+             ],
 },
   {  
         id: 8,
-        number: 8,
         exercises: 
             [
-               "lymfa, nymfa, pyl, kyj, vyj, byl, myj, gyro, wywern, zyxel, pytel, rypadlo, vykat, vylomit, vyrvat, bydlit, obyvatel, dobytek, bylina, byt, kobyla, polykat, plynout, vzlykat, myslit, hmyz, kopyto, zpytovat, pykat, syn, usychat, sypat, vydra v noci, brzy k jitru, jazyk hada, pytel brambor,  vykat profesorovi, vylomit okno, vyrvat pant, bydlit doma, dobytek se pase, bylina je na louce, můj byt i kobyla,"
+                `Git je distribuovaný systém správy verzí, který slouží k sledování změn v kódu softwarového projektu. Jedná se o výkonný nástroj, který umožňuje efektivní spolupráci v týmu a umožňuje vývojářům pracovat s různými verzemi kódu. Git uchovává kompletní historii změn, což usnadňuje zpětné vyhledávání, řešení konfliktů a správu projektu. Systém je distribuovaný, což znamená, že každý člen týmu má svou vlastní kopii repozitáře a může pracovat offline, což přispívá k flexibilitě a nezávislosti při vývoji.
+
+                Git umožňuje vývojářům pracovat s větvemi (branches), což jsou paralelní vývojové linie, které umožňují oddělenou práci na změnách bez ovlivnění hlavního kódu. Tím se zajišťuje organizovanost a bezpečnost při vývoji, protože větve mohou být sloučeny zpět do hlavního projektu (merge) po ověření jejich funkčnosti. Git poskytuje také možnosti sledování změn v souborech (diff), vytváření a správu odnoží (forks) projektu a podporu pro vzdálené repozitáře (remote repositories) pro snadnou spolupráci a sdílení kódu s ostatními.`
             ],
 },
   {  
         id: 9,
-        number: 9,
         exercises: 
             [
-               "úkol, úloha, úleva, útes, úzko, úaz, útrata, úplata, úkrok, úbor, úklad, úmor, úvoz, úklep, únava, úskok, úklad, útraty, ústroj, úsek, úroda, úrok, útok, úhor, úl, útroby, úhyn, úl, útrata, ústrk, úklid, úklad, úloha, únava, útrata, úplata, úbor z vesnice, úrok v bance, útok velryby, úhor na poli, útroby klokana, úhyn ryb v potoce, útrata na trhu, ústrk soka, úklid doma, úklad vraha, úplata v kufru,"
-            ],
-},
-  {  
-        id: 10,
-        number: 10,
-        exercises: 
-            [
-               "Zita, Urban, Ivana, Omar, Pavel, Helena, Jana, Karel, Lena, Norbert, Marie, Zuzana, Ivana, Petr, Hana, Katka, Marta, Olga, Helga, Magda, Nela, Jan, Libor, Igor, Marek, Ondra, Olga a Helga, Nela a Hela, Petr a Pavel, Marek a Lenka, Milan a Jan, Irena a Libor, Marcela a Ondra, Zita a Karel, Otylka a Matylda, Jirka a Lucie, Josef a Karla, Jindra a Olga, Pavel a Petr, Urban a Karel, Jan a Zita, Jaroslav,"
-            ],
-},
-  {  
-        id: 11,
-        number: 11,
-        exercises: 
-            [
-               "Werich, Erich, Rita, Tina, Alois, Sandra, Dagmar, Fanynka, Gabriela, Yvona, Xena, Cecilka, Vratislav, Bohdan, Quarta, Wratislaw, Elen, Robert, Tereza, Alena, Simona, Dalimil, Franta, Gustav, Xenie, Cyril, Vojta, Bohuslava, Roman, Tom, sestra Alena, Anna Marie, Helena a Vojta, Robert s Pavlem, Jan, Karel a Simon, Venca s Margitou, Cyril Svoboda, Josef a Gabriela, Olga a Pavel, Jan a Marek, Erik s matkou, Polsko, Rakousko, Slovensko, Slovinsko, Rumunsko, Rusko, Francie, Norsko, Portugalsko, Ukrajina, Bosna a Hercegovina, Monako, Lucembursko, Egypt, Libye, Angola, Maroko, Senegal, Mali, Niger, Etiopie, Kamerun, Ghana, Togo, Uganda, Kongo, Guinea,Gabon, Zambie,Malawi, Mosambik, Tanzanie, Burundi, Rwanda, Seychely, Madagaskar, Namibie, Botswana, Svazijsko, Lesotho, Eritrea, Tunisko, Brunej, Gruzie, Indie, Izrael, Japonsko, Jemen, Katar, Kuvajt, Laos, Libanon, Malajsie, Maledivy, Mongolsko, Singapur, Palestina, Uganda, Thajsko, Vietnam, Kiribati, Nauru, Palau, Samoa, Tonga, Tuvalu, Vanuatu, Argentina, Guyana, Chile, Kolumbie, Paraguay, Peru, Surinam, Trinidad a Tobago, Uruguay, Venezuela, Haiti, Antigua a Barbuda, Bahamy, Barbados, Belize, Dominika, Kuba, Grenada, Guatemala, Honduras, Jamajka, Kanada, Kostarika"
-            ],
-},
-  {  
-        id: 12,
-        number: 12,
-        exercises: 
-            [
-               `Jan Welzl je spisovatel. Romaneto je druh literatury. Kdo napsal Rukopisy, se dodnes nezjistilo. Negramotnost roste. Studovat jazyk je nutno s důrazem na praxi. Honza se vydal do Menzy vyplnit testy IQ. Jirka si testy nejprve koupil. Byla tam spousta studentů. Stoupl si za pult, kde jej oslovila obsluha. Koupil si knihu a rychle usedl na lavici. Uplynulo mnoho hodin. Druhou půlku knihy prostuduje jindy.
-               Jan Neruda se narodil v Praze. Otec pracoval v trafice, matka posluhovala u geologa Barranda. Oba pracovali dlouho do noci. Byla chudoba, o chleba se muselo prosit. Po gymnasiu pracoval a potom studoval filozofii. Vedle studia publikoval u novin Tabesbote. Stal se autorem fejetonů a poezie. Tu ale tehdy nikdo nepochopil. Kritici psali o jeho almanachu. Fejetony psal i pro redakci Hlasu. Procestoval Evropu a dojmy zapsal do mnoha cestopisů.
-               Oskar Wilde byl původem Ir. Jeho vzory byly J. Ruskin a W. Patera. Studoval v Oxfordu literaturu i filozofi. Ztratil dva roky svobody. Obraz Doriana Graye a drama Salome je jeho tvorba. Jakub Arbes psal romaneta. Narodil se v Praze, opustil studia. Potom vedl boj o svou existenci. Dostal vyhazov z redakce. `
-            ],
-},
-  {  
-        id: 13,
-        number: 13,
-        exercises: 
-            [
-               `HTML je zkratka slov Hyper Text Markup Language. XML je zkratka slov eXtensible Markup Language. SGML je zkratka slov Standard Generalized Markup Language a je to norma ISO. SGML je tedy standard pro HTML a XML. Javascript NEVZNIKL Z Javy. XML NEOBSAHUJE CSS. XML OBSAHUJE tagy. XML je CASE SENSITIVE jazyk. XML dokument obsahuje DTD. DTD je zkratka slov Document Type Definition. Document Type
-               Definition, Definice Typu Dokumentu. Je to vlastnost XML pro tvorbu elementů a atributů. XML bez DTD? Ano. Internet Explorer pracuje s DTD. Validace dokumentu XML je NUTNOST. Validita potvrzuje WELL FORMED dokumentu XML. CSS, Cascading Style Sheets. CSS je pro HTML i XML. CSS obsahuje SELEKTORY, DEKLARACE a VLASTNOSTI. Vlastnost obsahuje HODNOTU. Definice stylu obsahuje DEKLARACI. ARIAL, COURIER, HELVETICA, TIMES ROMAN jsou typy fontů. ITALIC A NORMAL
-               jsou styly fontů. Styl textu obsahuje mnoho parametrů. V XML lze vyhotovit tiskopis pro tisk, dokument pro podnikatele i aplikaci. XML nenahrazuje HTML. XML existuje vedle HTML. Je to alternativa k tomuto jazyku. XHTML nahrazuje HTML. Pravidla jsou ZDOKONALENA. Dokumenty XHTML projdou VALIDITOU, a proto se jsou podle normy WELL FORMED.
-               `
+               `GitHub je webová platforma založená na systému Git, která slouží jako hostingová služba pro správu verzí a sdílení kódu. Je to jeden z nejpopulárnějších a nejrozšířenějších nástrojů pro vývoj softwaru a spolupráci v týmu. Na GitHubu mohou vývojáři vytvářet repozitáře, které obsahují jejich projekty a sledují jejich historii změn.
+
+               GitHub poskytuje uživatelům možnost sledovat změny v kódu, provádět revize, řešit konflikty a spolupracovat s ostatními vývojáři prostřednictvím větví a žádostí o začlenění (pull requests). Díky tomu se zlepšuje organizace práce, recenze kódu a týmová spolupráce. GitHub umožňuje také vytvářet problémy (issues) a sledovat jejich řešení, spravovat projekty a dává prostor pro dokumentaci a diskuse kódu.
+               
+               Další výhodou GitHubu je jeho široká komunita a veřejný charakter mnoha repozitářů. Uživatelé mohou volně procházet a přispívat do veřejných projektů, což umožňuje sdílení znalostí, učení se a spolupráci na open-source projektech. GitHub je také oblíbený pro správu dokumentace, vytváření portfolií a prezentaci projektního kódu.`
             ],
 },
 ]},
