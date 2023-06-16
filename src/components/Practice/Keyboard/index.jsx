@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { lefttShiftSymbol } from '../../../pages/generalConstants';
-import { rightShiftSymbol } from '../../../pages/generalConstants';
+import React from 'react';
+import { lefttShiftSymbol, rightShiftSymbol  } from '../../../pages/generalConstants';
 import './style.css';
 
 export const Keyboard = ({ targetText, inputText, isAlreadyError, exerciseMode }) => {
+  
   let char = targetText[inputText.length];
 
   if (exerciseMode && isAlreadyError) {
@@ -13,6 +13,7 @@ export const Keyboard = ({ targetText, inputText, isAlreadyError, exerciseMode }
   const getClassName = (keyArray) => {
     const errorChar = inputText.slice(-1);
     if (isAlreadyError && keyArray.includes(errorChar.toLowerCase())) {
+      console.log(errorChar)
       return 'key wrong';
     }
 

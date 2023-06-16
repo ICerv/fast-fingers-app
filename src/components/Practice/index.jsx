@@ -8,9 +8,10 @@ import Timer from './Timer';
 import Hand from './Hand';
 import { left, right } from './fingerList';
 import { validKey } from '../../pages/generalConstants';
+import CapsLockWarning from './CapsLockWarning';
 
 const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
-  const [isAlreadyError, setIsAlredyError] = useState(false);
+  const [isAlreadyError, setIsAlreadyError] = useState(false);
   const [inputText, setInputText] = useState('');
   const [index, setIndex] = useState(0);
   const [errorCount, setErrorCount] = useState(0);
@@ -33,13 +34,13 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     if (exerciseMode) {
       if (isAlreadyError) {
         setInputText((prev) => prev.slice(0, -1) + event.key);
-        setIsAlredyError(false);
+        setIsAlreadyError(false);
       } else {
         setInputText((prev) => prev + event.key);
       }
     } else {
       setInputText((prev) => prev + event.key);
-      setIsAlredyError(false);
+      setIsAlreadyError(false);
     }
   };
 
@@ -48,11 +49,14 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       if (!isAlreadyError) {
         setErrorCount(errorCount + 1);
         setInputText((prev) => prev + event.key);
-        setIsAlredyError(true);
+        setIsAlreadyError(true);
+      } else {
+        setInputText((prev) => prev.slice(0, -1) + event.key);
+        // setErrorCount(errorCount + 1);
       }
     } else {
       setIndex(index + 1);
-      setIsAlredyError(true);
+      setIsAlreadyError(true);
       setErrorCount(errorCount + 1);
       setInputText((prev) => prev + event.key);
     }
@@ -90,6 +94,21 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     setAccuracy(_accuracy);
   };
 
+  const handleKeyUp = () => {
+    const wrongKey = document.querySelector('div.wrong');
+
+    if (wrongKey) {
+      wrongKey.classList.remove('wrong');
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('keyup', handleKeyUp);
+    return () => {
+      window.removeEventListener('keyup', handleKeyUp);
+    };
+  }, [correctCount, errorCount])
+
   useEffect(() => {
     window.addEventListener('keydown', handleInputChange);
     return () => {
@@ -126,7 +145,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     setStartTime(0);
     setTime(0);
     setIndex(0);
-    setIsAlredyError(false);
+    setIsAlreadyError(false);
     setIsTypingAllowed(false);
     setIsFinished(false);
   };
@@ -147,35 +166,45 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   return (
     <div className="container-page">
 
-      <div className="up-container">
-        <button className="button back" onClick={() => navigate(backUrl)}>
-          Zpět
-        </button>
+      <CapsLockWarning />
 
-        {/* RESULTS  */}
-        <div className="result-container">
-          <div className="result-list">
-            <Results name="Chyby" data={errorCount} />
-            <Results name="Přesnost" data={accuracy} symbol="%" />
-            {!exerciseMode ? <Results name="WPM" data={wpm} /> : null}
-          </div>
+      <div className="up-container">
+
+        <div className='links-container'>
+          <a href={backUrl} className="link back">
+            ← Zpět
+          </a>
+          {!exerciseMode &&
+            <a href={nextLink} className="link next">
+              Pokračovat →
+            </a>
+          }
         </div>
 
-        {/* TIMER */}
-        {!exerciseMode ? (
-          <Timer
-            onStart={handleStart}
-            onEnd={handleEnd}
-            onReload={handleReload}
-            isStarted={isTypingAllowed}
-            targetText={targetText}
-            currentProgress={currentProgress}
-          />
-        ) : null}
+        <div className='statistics-container'>
 
-        <button className="button next" onClick={() => navigate(`${nextLink}`)}>
-          Pokračovat
-        </button>
+          {/* RESULTS  */}
+          <div className="result-container">
+            <div className="result-list">
+              <Results name="Chyby" data={errorCount} />
+              <Results name="Přesnost" data={accuracy} symbol="%" />
+              {!exerciseMode ? <Results name="WPM" data={wpm} /> : null}
+            </div>
+          </div>
+
+          {/* TIMER */}
+          {!exerciseMode ? (
+            <Timer
+              onStart={handleStart}
+              onEnd={handleEnd}
+              onReload={handleReload}
+              isStarted={isTypingAllowed}
+              targetText={targetText}
+              currentProgress={currentProgress}
+            />
+          ) : null}
+
+        </div>
       </div>
 
       <div className="middle-container">

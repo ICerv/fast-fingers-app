@@ -61,20 +61,27 @@
   background-color: #3abbbb;
 }
 
-
 .key.wrong {
-  -webkit-animation:name 2s;
-  animation:name 2s;
+  -webkit-animation: 2s;
+  animation:blinkKey 2s;
 }
 
-@-webkit-keyframes name
-{
-0% {background-color:#df3138;}
-100% {background-color:white;}
+@-webkit-keyframes blinkKey{
+  0% {
+    background-color:#df3138;
+  }
+  100% {
+    background-color:white;
+  }
 }
-@keyframes name {
-  0% {background-color:#df3138;}
-  100% {background-color:white;}
+
+@keyframes blinkKey {
+  0% {
+    background-color:#df3138;
+  }
+  100% {
+    background-color:white;
+  }
 }
 
 @media (min-width: 768px) {
