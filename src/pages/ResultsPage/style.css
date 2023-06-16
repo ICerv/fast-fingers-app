@@ -1,9 +1,10 @@
-.results-container { 
+.results__container { 
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }
 
-.results-section { 
+.results__container--section { 
     height: 50vh;
     width: 90vw;
     max-width: 50rem;
@@ -19,7 +20,27 @@
     justify-content: space-between;
 }
 
-.restart-button {
+.results__container--value {
+    color: #235566;
+    font-weight: bold;
+}
+
+.results__container--links {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results__container--links a {
+    text-decoration: none;
+}
+
+.results__container--links a:visited {
+    color: #203A43;
+}
+
+.results__container--restart-link {
     background-image: url('./img/restart\ button.png');
     height: 40px;
     width: 40px;
@@ -27,36 +48,12 @@
     cursor: pointer;
 }
 
-.results-container {
-    font-size: 20px;
-}
-
-.results-value {
-    color: #235566;
-    font-weight: bold;
-}
-
-.results-links {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.results-links a {
-    text-decoration: none;
-}
-
-.results-links a:visited {
-    color: #203A43;
-}
-
-.exercises-list {
+.results__container--exercises-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.exercise-item {
+.results__container--exercise-item {
     width: 20%;
     background: #abc6ca;
     border-radius: 0.25rem;
@@ -67,18 +64,18 @@
 }
 
 @media (min-width: 768px) {
-    .results-section { 
+    .results__container--section { 
         height: 40vh;
         width: 50vw;
         padding: 2rem;
     }
 
-    .restart-button {
-        height: 60px;
-        width: 60px;
+    .results__container--links {
+        font-size: 1.5rem;
     }
 
-    .results-links {
-        font-size: 1.5rem;
+    .results__container--restart-link {
+        height: 60px;
+        width: 60px;
     }
 }

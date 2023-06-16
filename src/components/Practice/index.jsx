@@ -75,7 +75,10 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       localStorage.setItem('accuracy', accuracy);
       handleEnd();
       setIsFinished(true);
-      navigate('/results');
+      
+      if (exerciseMode) {
+        navigate('/results');
+      }
     }
 
     const { key } = event;
