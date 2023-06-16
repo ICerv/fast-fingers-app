@@ -1,11 +1,17 @@
-.lessons-container {
+.lessonspage__page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
 }
 
-.lessons-section {
+.lessonspage__lessons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lessonspage__lessons-section {
     width: 80vw;
     background-color: rgba(231, 242, 245, 0.8);
     color: #203A43;
@@ -18,30 +24,30 @@
     cursor: pointer;
 }
 
-.section-container {
+.lessonspage__section-container {
     width: 70vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.section-info {
+.lessonspage__section-info {
     width: 70%;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.title {
+.lessonspage__section-title {
     font-size: 22px;
     font-style: italic;
 }
 
-.amount {
+.lessonspage__section-amount {
     margin-top: 5px;
 }
 
-.section-icon {
+.lessonspage__section-icon {
     width: 40px;
     height: 40px;
     opacity: 0.8;
@@ -49,15 +55,15 @@
     background-size: contain;
 }
 
-.icon-closed {
+.lessonspage__icon-closed {
     background-image: url('./img/icon-closed.png');
 }
 
-.icon-opened {
+.lessonspage__icon-opened {
     background-image: url('./img/icon-opened.png');
 }
 
-.icon-to-top {
+.lessonspage__icon-to-top {
     position: fixed;
     width: 30px;
     right: 5px;
@@ -94,26 +100,25 @@
 
 @media (min-width: 768px) {
     
-    .lessons-section {
+    .lessonspage__lessons-section {
         width: 70vw;
     }
     
-    .section-info {
+    .lessonspage__section-info {
         gap: 2rem;
     }
     
-    .title {
+    .lessonspage__section-title {
         font-size: 28px;
     }
     
-    .section-icon {
+    .lessonspage__section-icon {
         margin-right: 1rem;
     }
 
-    .icon-to-top {
+    .lessonspage__icon-to-top{
         right: 20px;
         width: 70px;
-    }
-    
+    } 
 }
 

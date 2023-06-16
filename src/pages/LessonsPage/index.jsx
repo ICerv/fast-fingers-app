@@ -32,27 +32,30 @@ const LessonsPage = () => {
   };
 
   return (
-    <div className="page-container">
+    <section className="lessonspage">
+    <div className="lessonspage__page-container">
       {exercisesSections.map((section) => (
-        <div className="lessons-container" key={section.id}>
-          <div className="lessons-section"  onClick={() => toggleList(section.id)}>
-            <div className="section-container">
-              <div className="section-info">
-                <img src={require(`${section.url}`)} className="section-image" />
-                <div className="description">
-                  <h2 className="title">{section.title}</h2>
-                  <p className="amount">{section.amount}</p>
+        <div className="lessonspage__lessons-container" key={section.id}>
+          <div className="lessonspage__lessons-section" onClick={() => toggleList(section.id)}>
+            <div className="lessonspage__section-container">
+              <div className="lessonspage__section-info">
+                <img src={require(`${section.url}`)} className="lessonspage__section-image" alt='section icon'/>
+                <div className="lessonspage__section-description">
+                  <h2 className="lessonspage__section-title">{section.title}</h2>
+                  <p className="lessonspage__section-amount">{section.amount}</p>
                 </div>
               </div>
-              <div className={`section-icon ${showLists[section.id] ? 'icon-opened' : 'icon-closed'}`}></div>
+              <div
+                className={`lessonspage__section-icon ${showLists[section.id] ? 'lessonspage__icon-opened' : 'lessonspage__icon-closed'}`}
+              ></div>
             </div>
           </div>
           {showLists[section.id] && <LessonsList lessons={section.lessons} sectionId={section.id} />}
         </div>
       ))}
-      {showTopBtn && 
-      (<img src={require('./img/icon-up.png')} className='icon-to-top' alt='icon-to-top' onClick={goToTop} />)}
+      {showTopBtn && <img src={require('./img/icon-up.png')} className="lessonspage__icon-to-top" alt="icon-to-top" onClick={goToTop} />}
     </div>
+  </section>
   );
 };
 
