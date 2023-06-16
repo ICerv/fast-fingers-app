@@ -52,7 +52,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
         setIsAlreadyError(true);
       } else {
         setInputText((prev) => prev.slice(0, -1) + event.key);
-        // setErrorCount(errorCount + 1);
       }
     } else {
       setIndex(index + 1);
@@ -64,6 +63,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
   const handleInputChange = (event) => {
     event.preventDefault();
+    handleKeyUp()
 
     if (exerciseMode) {
       setIsTypingAllowed(true);
@@ -93,21 +93,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       correctCount + errorCount !== 0 ? Math.floor((correctCount / (correctCount + errorCount)) * 100) : 0;
     setAccuracy(_accuracy);
   };
-
-  const handleKeyUp = () => {
-    const wrongKey = document.querySelector('div.wrong');
-
-    if (wrongKey) {
-      wrongKey.classList.remove('wrong');
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('keyup', handleKeyUp);
-    return () => {
-      window.removeEventListener('keyup', handleKeyUp);
-    };
-  }, [correctCount, errorCount])
 
   useEffect(() => {
     window.addEventListener('keydown', handleInputChange);

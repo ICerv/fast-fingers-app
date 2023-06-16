@@ -33,9 +33,10 @@ pre {
 }
 
 .homepage__button {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .homepage__button button {
@@ -99,7 +100,7 @@ pre {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .homepage__banner {
@@ -117,6 +118,10 @@ pre {
     line-height: 3rem;
   }
 
+  .homepage__button {
+    margin-top: 5rem;
+    gap: 3rem;
+  }
 
   .homepage__image {
     margin-bottom: 20px;

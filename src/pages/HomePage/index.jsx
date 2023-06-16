@@ -63,18 +63,20 @@ const HomePage = () => {
     <section className="homepage">
       <div className="homepage__content">
         <div className="homepage__wrapper">
-          <h1 className="homepage__banner">
-            <pre className={isBannerFinished ? 'homepage__banner--text' : 'homepage__banner--blinking-cursor'}>
-              {bannerText}
-            </pre>
-          </h1>
-          <p className="homepage__subheading">
-            <span
-              className={isBannerFinished ? 'homepage__subheading--text homepage__subheading--blinking-cursor' : ''}
-            >
-              {subHeading}
-            </span>
-          </p>
+          <div className='homepage__info'>
+            <h1 className="homepage__banner">
+              <pre className={isBannerFinished ? 'homepage__banner--text' : 'homepage__banner--blinking-cursor'}>
+                {bannerText}
+              </pre>
+            </h1>
+            <p className="homepage__subheading">
+              <span
+                className={isBannerFinished ? 'homepage__subheading--text homepage__subheading--blinking-cursor' : ''}
+              >
+                {subHeading}
+              </span>
+            </p>
+          </div>
           <div className='homepage__button'>
             <button className='homepage__button--start' onClick={() => navigate('/introduction')}>Jak začít?</button>
             <button className='homepage__button--lessons'  onClick={() => navigate('/lessons')}>K lekcím</button>

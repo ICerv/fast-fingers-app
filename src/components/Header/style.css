@@ -111,11 +111,15 @@ header {
     }
 
     .rollout-nav a:hover {
-      border-bottom:3px solid var(--highlight-color);
       cursor: pointer;
     }
 
     .nav-btn {
       display: none;
+    }
+
+    .rollout-nav a.active {
+      opacity: 1;
+      border-bottom:2px solid var(--highlight-color);
     }
 }

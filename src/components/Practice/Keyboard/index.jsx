@@ -13,7 +13,6 @@ export const Keyboard = ({ targetText, inputText, isAlreadyError, exerciseMode }
   const getClassName = (keyArray) => {
     const errorChar = inputText.slice(-1);
     if (isAlreadyError && keyArray.includes(errorChar.toLowerCase())) {
-      console.log(errorChar)
       return 'key wrong';
     }
 
