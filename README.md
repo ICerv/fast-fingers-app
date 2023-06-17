@@ -1,2 +1,1 @@
-# fast-fingers-app
-Závěrečný projekt "FastFingers" od Czechitas v rámci Digitální akademie: WEB
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=FastFingers;Keyboard+Typing+Training+Program)](https://git.io/typing-svg)
