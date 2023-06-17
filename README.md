@@ -1,1 +1,1 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=FastFingers;Keyboard+Typing+Training+Program)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=27&duration=4000&pause=100&color=23789E&background=FFF85900&center=true&multiline=true&width=850&height=110&lines=%F0%9F%99%8CFastFingers%F0%9F%99%8C;Keyboard+Typing+Training+Program)](https://git.io/typing-svg)
