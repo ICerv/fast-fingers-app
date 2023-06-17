@@ -48,6 +48,18 @@
     background-size: cover;
     cursor: pointer;
 }
+.results__container--exercises-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.progress__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+}
 
 .results__container--exercises-list {
     display: flex;
@@ -62,6 +74,10 @@
     border: 1px solid white;
     box-shadow: 2px 2px 4px rgba(243, 241, 241);
     cursor: pointer;
+}
+
+.results__container--exercise-item.active {
+    background: #e9f4f6;
 }
 
 @media (min-width: 768px) {
