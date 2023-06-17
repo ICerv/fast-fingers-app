@@ -25,8 +25,8 @@ const Header = () => {
           onClick={toggleNav}
         ></button>
         <div className={`header__rollout-nav ${!navOpen ? 'header__nav-closed' : ''}`}>
-          <Link to="/" className={activePage === '/' ? 'header__active' : ''} onClick={closeNav}>
-            {/* <Link to="/" className={header__link ${activePage === '/' ? 'header__active' : ''}} onClick={closeNav}> */}
+          {/* <Link to="/" className={activePage === '/' ? 'header__active' : ''} onClick={closeNav}> */}
+            <Link to="/" className={header__link ${activePage === '/' ? 'header__active' : ''}} onClick={closeNav}>
             Domů
           </Link>
           <Link
