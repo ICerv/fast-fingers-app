@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
   gap: 1rem;
   transition: transform 0.3s ease;
-  gap: 0.5rem;
 }
 
 .time {
@@ -17,5 +17,10 @@
   
   .time {
     font-size: 1.4rem;
+  }
+
+  .timer-container {
+    margin-top: -1.5rem;
+    gap: 1.8rem;
   }
 }
