@@ -12,10 +12,27 @@ A variety of exercises that cover entering lower/uppercase letters, numbers and 
 ## Key Features
 #### 1.Interactive Interface
 User-friendly interface with intuitive controls, ensuring a comfortable and enjoyable user experience.
+
 ![Exercise page](./public/githubcontent1.png)
 #### 2.Performance Evaluation
 After completing an exercise or test, users receive a comprehensive evaluation of their performance, including the number of errors, accuracy and WPM (Word Per Minutes)
+
 ![Exercise page](./public/githubcontent2.png)
 #### 3.Customizable Exercises
 Users have the flexibility to customize exercises according to their preferences, adjusting the difficulty level to match their skill level.
+
 ![Exercise page](./public/githubcontent3.png)
+
+## Installation
+1. Clone this repository to your local device.
+2. Navigate to the project folder in your terminal.
+3. Run the command `npm install` to install the required dependencies.
+4. Run the command `npm start` to launch the FastFingers application.
+
+## Feedback
+We value your feedback! If you have any ideas for improvements or encounter any issues while using the FastFingers application, please feel free to provide your feedback and suggestions.
+
+## Authors
+FastFingers application is created by a team of passionate frontend web enthusiasts who share a love for typing and aim to help others improve their typing skills. The team was supported by dedicated mentors Martin Havel and Lam Tran.
+- Nataliia Hladii: [GitHub](https://github.com/nhladii)
+- Inna Červenková: [GitHub](https://github.com/username)
