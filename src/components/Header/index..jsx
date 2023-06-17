@@ -3,14 +3,20 @@ import { Link, useLocation } from 'react-router-dom';
 import './style.css';
 
 const Header = () => {
+  // State for navigation toggle
   const [navOpen, setNavOpen] = useState(false);
+
+  // Toggle navigation
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
+
+  // Close navigation
   const closeNav = () => {
     setNavOpen(false);
   };
 
+  // Get current location
   const location = useLocation();
   const activePage = location.pathname;
 
@@ -25,8 +31,7 @@ const Header = () => {
           onClick={toggleNav}
         ></button>
         <div className={`header__rollout-nav ${!navOpen ? 'header__nav-closed' : ''}`}>
-          {/* <Link to="/" className={activePage === '/' ? 'header__active' : ''} onClick={closeNav}> */}
-            <Link to="/" className={header__link ${activePage === '/' ? 'header__active' : ''}} onClick={closeNav}>
+          <Link to="/" className={activePage === '/' ? 'header__active' : ''} onClick={closeNav}>
             Domů
           </Link>
           <Link
@@ -34,23 +39,12 @@ const Header = () => {
             className={activePage === '/introduction' ? 'header__active' : ''}
             onClick={closeNav}
           >
-            {/* className={header__link ${activePage === '/introduction' ? 'header__active' : ''}} */}
             Úvod
           </Link>
-          <Link
-            to="/lessons"
-            className={activePage === '/lessons' ? 'header__active' : ''}
-            // className={header__link ${activePage === '/lessons' ? 'header__active' : ''}}
-            onClick={closeNav}
-          >
+          <Link to="/lessons" className={activePage === '/lessons' ? 'header__active' : ''} onClick={closeNav}>
             Cvičení
           </Link>
-          <Link
-            to="/tests"
-            className={activePage === '/tests' ? 'header__active' : ''}
-            //  className={header__link ${activePage === '/tests' ? 'header__active' : ''}}
-            onClick={closeNav}
-          >
+          <Link to="/tests" className={activePage === '/tests' ? 'header__active' : ''} onClick={closeNav}>
             Testy
           </Link>
         </div>
