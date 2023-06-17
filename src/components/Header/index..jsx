@@ -44,10 +44,10 @@ const Header = () => {
           >
             Úvod
           </Link>
-          <Link to="/lessons" className={activePage === '/lessons' ? 'header__active' : ''} onClick={closeNav}>
+          <Link to="/lessons" className={(activePage === '/lessons' || activePage.includes('lesson')) ? 'header__active' : ''} onClick={closeNav}>
             Cvičení
           </Link>
-          <Link to="/tests" className={activePage === '/tests' ? 'header__active' : ''} onClick={closeNav}>
+          <Link to="/tests" className={(activePage === '/tests' || activePage.includes('test')) ? 'header__active' : ''} onClick={closeNav}>
             Testy
           </Link>
         </div>
