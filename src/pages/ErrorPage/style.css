@@ -1,23 +1,54 @@
-.error_container {
+.error__container {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 60px;
     text-align: center;
-    margin-top: 2rem;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     opacity: 0.8;
 }
 
-.error_title {
+.error__number{
+    font-size: 4rem;
+    color: var(--highlight-color);
+}
+
+.error__title {
     font-size: 2rem;
     text-transform: uppercase;
+    color: var(--highlight-color);
 }
 
-.error_text {
-    margin-bottom: 1rem;
+.error__text {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
 }
 
-
-.error_container a {
+.error__container a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #fff;
 }
+
+.error__container a:hover {
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    color: #fff;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    
+    .error__text {
+        margin-bottom: 1rem;
+    }
+    
+    .error__container a {
+        font-size: 1.2rem;
+    }
+    
+
+}
+
