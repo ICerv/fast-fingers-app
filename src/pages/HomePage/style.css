@@ -106,6 +106,7 @@ pre {
   }
   
   .homepage__subheading--text {
+    padding-left: 170px;
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--highlight-color);
