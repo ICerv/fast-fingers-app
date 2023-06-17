@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import { SpeedMetrics } from './SpeedMetrics';
 
@@ -8,34 +8,39 @@ const IntroductionPage = () => {
   //Event for to top button
   useEffect(() => {
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 400) {
-            setShowTopBtn(true);
-        } else {
-            setShowTopBtn(false);
-        }
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
     });
   }, []);
 
   const goToTop = () => {
     window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
+      top: 0,
+      behavior: 'smooth',
     });
   };
 
-
   return (
     <div className="introduction__container">
-      <h2 className="introduction__container--title">ÚVOD</h2>{' '}
+      <h1 className="introduction__container--title">ÚVOD</h1>{' '}
       <section className="introduction__container--section">
         <h4 className="introduction__container--section-intro">
-          Pro efektivní využití aplikace FastFingers a dosaženi nejlepších výsledků, doporučujeme dodržovat následující
-          tipy a postupy.
+          Fast Fingers je interaktivní program navržený pro výuku a trénink psaní na klávesnici všemi deseti. Pro
+          efektivní využití aplikace a dosaženi nejlepších výsledků, doporučujeme dodržovat následující tipy a postupy.
         </h4>
-        <h3 className="introduction__container--subtitle">Seznámení s klávesnicí</h3>
+
+        {/* INTRODUCTION TO KEYBOARD */}
+        <h2 className="introduction__container--subtitle">Seznámení s klávesnicí</h2>
         <p> Ilustrace obrázku ukazuje, které prsty jsou zodpovědné za stisk jednotlivých kláves.</p>
         <div className="introduction__container--keyboard-instruction">
-          <img className="introduction__container--color-keyboard" src={require('./img/keyboard-color.png')} alt="Color keyboard" />
+          <img
+            className="introduction__container--color-keyboard"
+            src={require('./img/keyboard-color.png')}
+            alt="Color keyboard"
+          />
         </div>
         <div className="introduction__container--finger-placement">
           <img className="left-hand" src={require('./img/left-hand.png')} alt="Left hand" />
@@ -44,20 +49,28 @@ const IntroductionPage = () => {
       </section>
       {/* CORRECT FINGER PLACEMENT */}
       <section className="introduction__container--section">
-        <h3 className="introduction__container--subtitle">Správný prstoklad</h3>
+        <h2 className="introduction__container--subtitle">Správný prstoklad</h2>
         <p>
           {' '}
           Správný prstoklad je základním předpokladem pro efektivní a rychlé psaní. Zvláštní zarážky na klávesách F a J
-          slouží jako navigační průvodci pro psaní poslepu. Tyto zarážky označují základní pozici prstů, kdy levá ruka
-          odpovídá za klávesy F-D-S-A a pravá ruka za klávesy J-K-L-Ů.
+          slouží jako navigační průvodci pro psaní poslepu. Tyto zarážky označují{' '}
+          <strong>
+            {' '}
+            <em>základní pozici prstů</em>{' '}
+          </strong>
+          , kdy levá ruka odpovídá za klávesy F-D-S-A a pravá za klávesy J-K-L-Ů.
         </p>
         <div className="introduction__container--keyboard-instruction">
-          <img className="introduction__container--color-keyboard" src={require('./img/home-keys.png')} alt="Home keys keyboard" />
+          <img
+            className="introduction__container--color-keyboard"
+            src={require('./img/home-keys.png')}
+            alt="Home keys keyboard"
+          />
         </div>
       </section>
       {/* FINGER EXERCISES */}
       <section className="introduction__container--section">
-        <h3 className="introduction__container--subtitle">Prstové cviky</h3>
+        <h2 className="introduction__container--subtitle">Prstové cviky</h2>
         <p>
           Pohyblivé prsty jsou základem pro rychlé a bezchybné psaní. Příprava spočívá v procvičování prstů před každým
           psaním a dodržováním pravidelného rytmu úhozů.
@@ -70,11 +83,31 @@ const IntroductionPage = () => {
           nejistotě v psaní a chybám.
         </p>
         <div className="introduction__container--exercise-images">
-          <img className="introduction__container--finger-exercise" src={require('./img/finger-exercise1.png')} alt="Finger exercise" />
-          <img className="introduction__container--finger-exercise" src={require('./img/finger-exercise2.png')} alt="Finger exercise" />
-          <img className="introduction__container--finger-exercise" src={require('./img/finger-exercise3.png')} alt="Finger exercise" />
-          <img className="introduction__container--finger-exercise" src={require('./img/finger-exercise4.png')} alt="Finger exercise" />
-          <img className="introduction__container--finger-exercise" src={require('./img/finger-exercise5.png')} alt="Finger exercise" />
+          <img
+            className="introduction__container--finger-exercise"
+            src={require('./img/finger-exercise1.png')}
+            alt="Finger exercise"
+          />
+          <img
+            className="introduction__container--finger-exercise"
+            src={require('./img/finger-exercise2.png')}
+            alt="Finger exercise"
+          />
+          <img
+            className="introduction__container--finger-exercise"
+            src={require('./img/finger-exercise3.png')}
+            alt="Finger exercise"
+          />
+          <img
+            className="introduction__container--finger-exercise"
+            src={require('./img/finger-exercise4.png')}
+            alt="Finger exercise"
+          />
+          <img
+            className="introduction__container--finger-exercise"
+            src={require('./img/finger-exercise5.png')}
+            alt="Finger exercise"
+          />
         </div>
         <p>
           Je také důležité dodržovat správnou polohu těla a zápěstí pro udržení rychlosti a přesnosti. Sedněte si rovně
@@ -83,7 +116,7 @@ const IntroductionPage = () => {
       </section>
       {/* TYPING SPEED METRICS */}
       <section className="introduction__container--section">
-        <h3 className="introduction__container--subtitle">Hodnocení cvičení a testů</h3>
+        <h2 className="introduction__container--subtitle">Hodnocení cvičení a testů</h2>
         <div className="introduction__container--metrics-description">
           <p>
             Pro komplexní vyhodnocení schopností psaní se vychází ze tří klíčových kritérií:{' '}
@@ -92,36 +125,41 @@ const IntroductionPage = () => {
           </p>
           <div className="introduction__container--metrics-container">
             <div className="introduction__container--metric-item">
-              <h4>Chyby</h4>
-              <p>
-                Počet chyb, které jednotlivec udělá při psaní, je důležitým ukazatelem jeho schopnosti psaní. Při
-                hodnocení je třeba se zaměřit na to, jak často dochází k překlepům, špatnému použití interpunkčních
-                znamének nebo nesprávnému psaní slov. Menší počet chyb znamená vyšší kvalitu psaní a větší kontrolu nad
-                klávesnicí.
+              <h3 className="introduction__container--metric-title">Chyby</h3>
+              <p className="introduction__container--content">
+                Počet chyb, které uživatel udělá při psaní, je důležitým ukazatelem jeho schopnosti psaní. Při hodnocení
+                je třeba se zaměřit na to, jak často dochází k překlepům, špatnému použití interpunkčních znamének nebo
+                nesprávnému psaní slov. Menší počet chyb znamená vyšší kvalitu psaní a větší kontrolu nad klávesnicí.
               </p>
             </div>
             <div className="introduction__container--metric-item">
-              <h4>Přesnost</h4>
-              <p>
+              <h3 className="introduction__container--metric-title">Přesnost</h3>
+              <p className="introduction__container--content">
                 Přesnost je měřena jako procento správně napsaných znaků z celkového počtu pokusů. Toto kritérium je
-                klíčové pro hodnocení, jak dobře je jednotlivec schopen správně a přesně psát text. Vyšší přesnost
-                znamená, že jednotlivec je schopen psát efektivněji a s menším počtem chyb.
+                klíčové pro hodnocení, jak je uživatel schopen správně a přesně psát text. Vyšší procento samozřejmě
+                znamená, že je schopen psát efektivněji a s menším počtem chyb.
               </p>
             </div>
             <div className="introduction__container--metric-item">
-              <h4> WPM (Words Per Minute - slov za minutu)</h4>
-              <p>
-                WPM je metrika, která měří, kolik slov je jednotlivec schopný napsat za jednu minutu. Vyšší WPM obvykle
+              <h3 className="introduction__container--metric-title"> WPM (Počet Slov za Minutu)</h3>
+              <p className="introduction__container--content">
+                WPM je metrika, která měří, kolik slov je uživatel schopný napsat za jednu minutu. Vyšší WPM obvykle
                 značí vyšší rychlost a efektivitu psaní. Tato hodnota je důležitá pro určení, jak rychle a plynule může
-                jednotlivec psát.
+                uživatel psát. Svůj pokrok muže uživatel sledovat dle níže uvedeného diagramu.
               </p>
             </div>
           </div>
         </div>
       </section>
       <SpeedMetrics />
-      {showTopBtn && 
-      (<img src={require('./img/icon-up.png')} className='introduction__container--icon-to-top' alt='icon-to-top' onClick={goToTop} />)}
+      {showTopBtn && (
+        <img
+          src={require('./img/icon-up.png')}
+          className="introduction__container--icon-to-top"
+          alt="icon-to-top"
+          onClick={goToTop}
+        />
+      )}
     </div>
   );
 };
