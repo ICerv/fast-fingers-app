@@ -42,7 +42,7 @@ pre {
 .homepage__button button {
   width: 10rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--highlight-color);
   background: transparent;
   border-radius: 5px;
@@ -55,7 +55,7 @@ pre {
 
 .homepage__image img {
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 2rem;
   opacity: 0.8;
 }
 
@@ -124,7 +124,7 @@ pre {
   .homepage__button {
     margin-top: 5rem;
     gap: 3rem;
-  }
+  }  
 
   .homepage__image {
     margin-bottom: 20px;
