@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { exercisesSections } from '../exercisesSections';
 import './style.css';
 
-const ResultesPage = () => {
+const ResultsPage = () => {
 
     const navigate = useNavigate();
     //Getting id for navigation
@@ -36,4 +36,4 @@ const ResultesPage = () => {
     )
 }
 
-export default ResultesPage; 
+export default ResultsPage; 

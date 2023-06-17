@@ -15,7 +15,7 @@ const LessonsPage = () => {
     }));
   };
 
-  //Event for the to top button
+  //Event for to top button
   useEffect(() => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 400) {
