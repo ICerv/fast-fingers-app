@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate  } from 'react-router-dom';
 import './style.css';
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
   // State for navigation toggle
   const [navOpen, setNavOpen] = useState(false);
 
@@ -23,7 +26,7 @@ const Header = () => {
   return (
     <header>
       <div className="header__logo-container">
-        <div className="header__logo"></div>
+        <div className="header__logo" onClick={() => navigate('/')}></div>
       </div>
       <div className="header__navigation">
         <button

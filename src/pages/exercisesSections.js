@@ -12,6 +12,7 @@ export const exercisesSections = [
             amount: "5 úkolů",
             exercises: 
                 [
+                    "f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff f ff f ff f ff",
                     "f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f ff f",
                     "j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj j jj",
                     "j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j f j jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf jf j", 
