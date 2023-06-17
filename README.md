@@ -12,7 +12,7 @@ A variety of exercises that cover entering lower/uppercase letters, numbers and 
 ## Key Features
 #### 1.Interactive Interface
 User-friendly interface with intuitive controls, ensuring a comfortable and enjoyable user experience.
-[!Exercise page] (./public/githubcontent1.png)
+![Exercise page](./public/githubcontent1.png)
 #### 2.Performance Evaluation
 After completing an exercise or test, users receive a comprehensive evaluation of their performance, including the number of errors, accuracy and WPM (Word Per Minutes)
 #### 3.Customizable Exercises
