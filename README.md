@@ -23,6 +23,17 @@ Users have the flexibility to customize exercises according to their preferences
 
 ![Exercise page](./public/githubcontent3.png)
 
+## Technologies
+
+- [React](https://react.dev/)
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+- [BEM](https://getbem.com/)
+- [Photoshop](https://www.adobe.com/products/photoshop.html?promoid=RBS7NL7F&mv=other)
+- [Figma](https://www.figma.com/files/recent?fuid=1118150087554297669)
+- [Trello](https://trello.com/u/icx944/boards)
+
 ## Installation
 1. Clone this repository to your local device.
 2. Navigate to the project folder in your terminal.
