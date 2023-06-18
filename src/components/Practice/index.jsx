@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 import TextInput from './TextInput';
@@ -60,7 +61,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       setErrorCount(errorCount + 1);
       setInputText((prev) => prev + event.key);
     }
-    console.log(inputText)
+    console.log(inputText);
   };
 
   const handleInputChange = (event) => {
@@ -78,7 +79,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       localStorage.setItem('accuracy', accuracy);
       handleEnd();
       setIsFinished(true);
-      
+
       if (exerciseMode) {
         navigate('/results');
       }
@@ -86,7 +87,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
     const { key } = event;
 
-    if (validKey(event.keyCode)) { 
+    if (validKey(event.keyCode)) {
       if (event.keyCode === 192 && shiftKey === true) {
         event.key = '°';
       }
@@ -163,13 +164,27 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
 
       <div className="up-container">
         <div className="links-container">
-          <a href={backUrl} className="link back">
+          <motion.a
+            href={backUrl}
+            className="link back"
+            whileHover={{ scale: 1.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             ← Zpět
-          </a>
+          </motion.a>
           {!exerciseMode && (
-            <a href={nextLink} className="link next">
+            <motion.a
+              href={nextLink}
+              className="link next"
+              whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               Pokračovat →
-            </a>
+            </motion.a>
           )}
         </div>
 
