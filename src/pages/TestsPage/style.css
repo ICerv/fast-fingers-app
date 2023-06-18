@@ -20,7 +20,6 @@
 .tests__container--title {
   padding: 10px;
   font-size: 28px;
-  font-style: italic;
 }
 
 .tests__container--description {
@@ -110,7 +109,13 @@
   .tests__container {
     align-items: center;
     padding: 2rem;
+    padding-top: 0;
   }
+
+  .tests__container--description {
+    font-size: 1.2rem;
+  }
+
 
   .tests__container--level-card {
     display: flex;
