@@ -81,7 +81,7 @@ const HomePage = () => {
             <motion.button
               className="homepage__button--start"
               onClick={() => navigate('/introduction')}
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -91,7 +91,7 @@ const HomePage = () => {
             <motion.button
               className="homepage__button--lessons"
               onClick={() => navigate('/lessons')}
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}

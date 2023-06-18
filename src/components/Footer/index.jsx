@@ -5,10 +5,15 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <div className="footer__title">FastFingers</div>
+        <div className="footer__title">
+          <a href="#" className="footer__link-home">
+            FastFingers
+          </a>
+        </div>
         <div className="footer__text">
-          &copy;2023 -{' '}
-          <a href="https://www.czechitas.cz" target="_blank" rel="noopener noreferrer" className="footer__link">
+          <p className="footer__copyright"> &copy;2023</p>
+          <span className="footer__separator"> - </span>
+          <a href="https://www.czechitas.cz" target="_blank" className="footer__link-czechitas">
             Czechitas, Digitální akademie: Web
           </a>
         </div>

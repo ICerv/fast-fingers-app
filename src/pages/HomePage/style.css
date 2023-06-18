@@ -84,6 +84,8 @@ pre {
   .homepage {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
+
   }
 
   .homepage__content {
@@ -95,7 +97,7 @@ pre {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +108,7 @@ pre {
   }
   
   .homepage__subheading--text {
+    padding-left: 170px;
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--highlight-color);
