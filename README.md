@@ -17,11 +17,11 @@ User-friendly interface with intuitive controls, ensuring a comfortable and enjo
 #### 2.Performance Evaluation
 After completing an exercise or test, users receive a comprehensive evaluation of their performance, including the number of errors, accuracy and WPM (Word Per Minutes)
 
-![Exercise page](./public/githubcontent2.png)
+![Results page](./public/githubcontent2.png)
 #### 3.Customizable Exercises
 Users have the flexibility to customize exercises according to their preferences, adjusting the difficulty level to match their skill level.
 
-![Exercise page](./public/githubcontent3.png)
+![Tests page](./public/githubcontent3.png)
 
 ## Installation
 1. Clone this repository to your local device.

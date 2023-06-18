@@ -19,12 +19,12 @@ export const validKey = (keyCode) => {
   }
 
   const keyIsSpecialSymbol = (keyCode) => {
-    return keyCode >= 186 && keyCode <= 192
+    return keyCode >= 186 && keyCode <= 190
   }
 
   const keyIsAvailableSymbol = (keyCode) => {
-    return [ 32, 219, 220, 221, 222].includes(keyCode)
+    return [ 32, 192, 219, 220, 221, 222].includes(keyCode)
 }
 
-export const rightShiftSymbol = ['°', '1', '2', '3', '4', '5', 'V', 'W', 'E', 'R', 'T', 'Z', 'A', 'S', 'D', 'F', 'G', 'H', 'Y', 'X', 'C', 'V', 'B', 'N']
-export const lefttShiftSymbol = ['6', '7', '8', '9', '0', '%', 'ˇ', 'U', 'I', 'O', 'P', '/', '(', "'", 'J', 'K', 'L', '"', '!', 'M', '?', ':', '_']
+export const rightShiftSymbol = ['°', '1', '2', '3', '4', '5', 'Q', 'V', 'W', 'E', 'R', 'T', 'A', 'S', 'D', 'F', 'G', 'Y', 'X', 'C', 'V', 'B']
+export const lefttShiftSymbol = ['6', '7', '8', '9', '0', '%', 'ˇ', 'U', 'I', 'O', 'Z', 'P', '/', '(', "'", 'J', 'N', 'K', 'L', 'H', '"', '!', 'M', '?', ':', '_']
