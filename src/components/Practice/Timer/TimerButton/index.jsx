@@ -21,7 +21,7 @@ const TimerButton = ({ onClick, isStarted, isFinished }) => {
     buttonText = 'Start';
   }
 
-  const buttonClass = isStarted ? 'btn timer-stop-btn' : 'btn timer-start-btn';
+  const buttonClass = isStarted ? 'btn timer__stop-btn' : 'btn timer__start-btn';
 
   return (
     <button className={buttonClass} onClick={handleClick}>

@@ -8,9 +8,10 @@ export const testsSections = [
        [{
            id: 1,
            exercises: 
-               [
-                   "proměnná funkce podmínka cyklus pole řetězec číslo boolean true false výstup vstup argument vrácení parametr konstanta třída objekt metoda dědičnost rozhraní inicializace destruktor inkrementace dekrementace srovnání operátor logický výraz podmíněný výraz cyklus while cyklus do-while"
-             ],
+                [
+                    "proměnná funkce podmínka cyklus",
+                    "proměnná funkce podmínka cyklus pole řetězec číslo boolean true false výstup vstup argument vrácení parametr konstanta třída objekt metoda dědičnost rozhraní inicializace destruktor inkrementace dekrementace srovnání operátor logický výraz podmíněný výraz cyklus while cyklus do-while"
+                ],
        },
      {  
            id: 2,

@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.row {
+.keyboard__row {
   display: flex;
 }
 
@@ -25,12 +25,12 @@
   cursor: pointer;
 }
 
-.special-key {
+.key__special-key {
   height: 34px;
   width: 10vw;
 }
 
-.space {
+.key__space {
   height: 34px;
   width: 40vw;
   color: black;
@@ -41,27 +41,27 @@
   opacity: 0.8;
 }
 
-.key_two {
+.key__two {
   position: relative;
 }
 
-.top {
+.key__two-top {
   position: absolute;
   left: 4px;
   top: -10px
 }
 
-.bottom {
+.key__two-bottom {
   position: absolute;
   right: 4px;
   bottom: -10px
 }
 
-.key.active {
+.key__active {
   background-color: #3abbbb;
 }
 
-.key.wrong {
+.key__wrong {
   -webkit-animation: 2s;
   animation:blinkKey 2s;
 }
@@ -96,11 +96,11 @@
     font-size: 1em;
   }
   
-  .special-key {
+  .key__special-key {
     width: 6.2rem;
   }
    
-  .space {
+  .key__space {
     height: 3em;
     width: 17em;
     margin: 0.4em;

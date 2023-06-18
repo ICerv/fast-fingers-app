@@ -1,4 +1,4 @@
-.timer-container {
+.timer__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   transition: transform 0.3s ease;
 }
 
-.time {
+.timer__container--time {
   color: white;
   opacity: 0.8;
   font-size: 1rem;
@@ -15,11 +15,11 @@
 
 @media (min-width: 768px) {
   
-  .time {
+  .timer__container--time {
     font-size: 1.4rem;
   }
 
-  .timer-container {
+  .timer__container {
     margin-top: -1.5rem;
     gap: 1.8rem;
   }

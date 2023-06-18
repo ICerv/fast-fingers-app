@@ -3,7 +3,7 @@
 .s2 { fill: #3abbbb } 
 
 @media (min-width: 768px) {
-    .adaptive-svg {
+    .adaptive__svg {
         width: 250px;
         height: 250px;
     }

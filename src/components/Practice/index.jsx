@@ -159,14 +159,14 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   localStorage.setItem('currentUrl', currentUrl);
 
   return (
-    <div className="container-page">
+    <div className="page__container">
       <CapsLockWarning />
 
-      <div className="up-container">
-        <div className="links-container">
+      <div className="page__container--up-container">
+        <div className="page__container--links-container">
           <motion.a
             href={backUrl}
-            className="link back"
+            className="link link__back"
             whileHover={{ scale: 1.1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -177,7 +177,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           {!exerciseMode && (
             <motion.a
               href={nextLink}
-              className="link next"
+              className="link link__next"
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -188,10 +188,10 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
           )}
         </div>
 
-        <div className="statistics-container">
+        <div className="page__container--statistics-container">
           {/* RESULTS  */}
-          <div className="result-container">
-            <div className="result-list">
+          <div className="page__container--result-container">
+            <div className="page__container--result-list">
               <Results name="Chyby" data={errorCount} />
               <Results name="Přesnost" data={accuracy} symbol="%" />
               {!exerciseMode ? <Results name="WPM" data={wpm} /> : null}
@@ -212,13 +212,13 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
         </div>
       </div>
 
-      <div className="middle-container">
+      <div className="page__container--middle-container">
         {/* INPUT TEXT  */}
-        <div className="input-container">
+        <div className="page__container--input-container">
           <TextInput targetText={targetText} inputText={inputText} exerciseMode={exerciseMode} />
         </div>
 
-        <div className="keyboard-container">
+        <div className="page__container--keyboard-container">
           {/* KEYBOARD  */}
           <Keyboard
             targetText={targetText}
@@ -227,7 +227,7 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
             exerciseMode={exerciseMode}
           />
 
-          <div className="hands-container">
+          <div className="page__container--hands-container">
             <div className="hand-image left">
               <Hand
                 inputText={inputText}

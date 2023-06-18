@@ -55,11 +55,11 @@ export const Timer = ({ onStart, onEnd, onReload, isStarted, targetText, current
   const formattedTime = formatTime(time);
 
   return (
-    <div className="timer-container">
+    <div className="timer__container">
       {/* START TIMER BUTTON */}
       <TimerButton onClick={handleStopStart} isStarted={isStarted} isFinished={isFinished} />
       {/* TIMER */}
-      <div className="time">Čas: {formattedTime}</div>
+      <div className="timer__container--time">Čas: {formattedTime}</div>
     </div>
   );
 };

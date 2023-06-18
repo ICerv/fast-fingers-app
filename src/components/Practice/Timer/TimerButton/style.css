@@ -15,11 +15,11 @@
 }
 
 
-.timer-start-btn {
+.timer__start-btn {
   color: green;
 }
 
-.timer-stop-btn {
+.timer__stop-btn {
   color: #c62828;
 }
 

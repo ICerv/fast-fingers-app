@@ -12,7 +12,7 @@ const Hand = ({ inputText, targetText, exerciseMode, isAlreadyError, fingers, us
   
   return (
     <svg
-      className="adaptive-svg" 
+      className="adaptive__svg" 
       version="1.2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 541 642"

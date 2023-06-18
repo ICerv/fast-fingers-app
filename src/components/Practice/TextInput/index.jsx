@@ -16,10 +16,10 @@ const TextInput = ({ targetText, inputText, exerciseMode }) => {
       if (index < inputText.length) {
         let className;
         if (char === inputText[index]) {
-          className = 'letter letter_right';
+          className = 'letter letter__right';
           isActive = true;
         } else {
-          className = 'letter letter_wrong';
+          className = 'letter letter__wrong';
           isActive = false;
         }
         return (
@@ -31,7 +31,7 @@ const TextInput = ({ targetText, inputText, exerciseMode }) => {
       if (index === inputText.length) {
         if (!exerciseMode || (exerciseMode && isActive)) {
           return (
-            <span key={index} ref={ref} className="letter letter_active">
+            <span key={index} ref={ref} className="letter letter__active">
               {char}
             </span>
           );

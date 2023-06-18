@@ -17,7 +17,7 @@
   outline: none;
 }
 
-.letter_active {
+.letter__active {
   color: white;
   border-color: white;
   border-bottom: 2px solid white;
@@ -40,12 +40,12 @@
   }
   
 
-.letter_wrong {
+.letter__wrong {
   background-color: #ffdcd9;
   color: #df3138;
 }
 
-.letter_right {
+.letter__right {
   background: #edf7e7;
   color: #108304;
 }
