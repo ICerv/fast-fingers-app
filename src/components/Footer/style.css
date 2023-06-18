@@ -1,50 +1,68 @@
 .footer {
-  width: 60%;
+  width: 65%;
   font-family: 'Roboto', sans-serif;
   background: transparent;
   color: #fff;
+  opacity: 0.8;
+
   padding: 1rem 0;
   margin-left: 20%;
 }
 
 .footer__container {
-  text-align: center;
-  line-height: 1rem;
+  line-height: 1.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.8;
 }
 
-.footer__title {
-  font-weight: bold;
-  text-align: center;
+.footer__text{
+  font-size: 11px;
+  display: flex;
+  align-items: center;
 }
 
-.footer__text {
-  color: #ccc;
+.footer__separator {
+  margin: 0 8px;
 }
 
-.footer__link {
+.footer__link-home {
   text-decoration: none;
   color: inherit;
+  font-size: 14px;
+  font-weight: bold;
   }
 
-  .footer__link:hover {
+  .footer__link-czechitas{
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+  .footer__link-home:hover,
+  .footer__link-czechitas:hover {
     text-decoration: none;
     color: #fff;
+    opacity: 0.7;
   }    
 
 @media (min-width: 768px) {
-  .footer__title {
-    font-size: 120%;
-  }
-
   .footer__container {
-    line-height: 1.3rem;
+    line-height: 1.4rem;
   }
 
-  .footer__text {
-    font-size: 14px;
-    line-height: 2.3;  }
+  .footer__link-home{
+    font-size: 18px;
 }
+
+.footer__link-czechitas{
+  font-size: 14px;
+
+}
+
+  .footer__copyright{
+    font-size: 14px;
+
+  }
+}
+
