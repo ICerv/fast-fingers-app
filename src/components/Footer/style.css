@@ -1,11 +1,11 @@
 .footer {
-  width: 65%;
+  width: 80%;
   font-family: 'Roboto', sans-serif;
   background: transparent;
   color: #fff;
   opacity: 0.8;
   padding-bottom: 5px;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .footer__container {
@@ -46,6 +46,12 @@
   }    
 
 @media (min-width: 768px) {
+
+  .footer {
+    width: 65%;
+    margin-left: 20%;
+  }
+
   .footer__container {
     line-height: 1.4rem;
   }

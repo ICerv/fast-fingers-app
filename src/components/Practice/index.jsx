@@ -26,7 +26,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
   const [progress, setProgress] = useState(0);
   const [currentProgress, setCurrentProgress] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
-  const [shiftKey, setShiftKey] = useState(false);
   const navigate = useNavigate();
 
   const onKeyCorrect = (event) => {
@@ -61,12 +60,12 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
       setErrorCount(errorCount + 1);
       setInputText((prev) => prev + event.key);
     }
-    console.log(inputText);
   };
 
   const handleInputChange = (event) => {
     event.preventDefault();
     if (!event.keyCode) return;
+    if (event.key === 'Dead') return;
 
     if (exerciseMode) {
       setIsTypingAllowed(true);
@@ -88,9 +87,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     const { key } = event;
 
     if (validKey(event.keyCode)) {
-      if (event.keyCode === 192 && shiftKey === true) {
-        event.key = '°';
-      }
       if (key === targetText.charAt(index)) {
         onKeyCorrect(event);
       } else {
@@ -101,7 +97,6 @@ const Practice = ({ targetText, nextLink, backUrl, exerciseMode }) => {
     const _accuracy =
       correctCount + errorCount !== 0 ? Math.floor((correctCount / (correctCount + errorCount)) * 100) : 0;
     setAccuracy(_accuracy);
-    setShiftKey(event.keyCode === 16);
   };
 
   useEffect(() => {
