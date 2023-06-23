@@ -104,8 +104,7 @@ export const testsSections = [
  id: 1,
  exercises: 
  [
-  "Czechitas je organizace"
-//   zaměřená na podporu digitální gramotnosti a technické kreativity u žen a dívek. Jejím cílem je snižovat nerovnosti mezi pohlavími v oblasti IT a zvýšit zastoupení žen ve světě technologií. Poskytuje vzdělávací aktivity, jako jsou školení, workshopy a kurzy v oblasti programování, webdesignu, datové analýzy, kybernetické bezpečnosti a dalších digitálních dovedností. Czechitas tak umožňuje ženám rozvíjet se v technických oborech a nabízí jim účast na akcích, soutěžích a mentoringových programech. Organizace se zaměřuje na posilování sebevědomí a osobního růstu žen v technických oblastech."
+  "Czechitas je organizace zaměřená na podporu digitální gramotnosti a technické kreativity u žen a dívek. Jejím cílem je snižovat nerovnosti mezi pohlavími v oblasti IT a zvýšit zastoupení žen ve světě technologií. Poskytuje vzdělávací aktivity, jako jsou školení, workshopy a kurzy v oblasti programování, webdesignu, datové analýzy, kybernetické bezpečnosti a dalších digitálních dovedností. Czechitas tak umožňuje ženám rozvíjet se v technických oborech a nabízí jim účast na akcích, soutěžích a mentoringových programech. Organizace se zaměřuje na posilování sebevědomí a osobního růstu žen v technických oblastech."
  ],
  },
  { 
